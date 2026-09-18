@@ -10,7 +10,8 @@ import {
   CheckCircle2, 
   AlertCircle,
   Eye,
-  Lock
+  Lock,
+  Maximize2
 } from 'lucide-react';
 import { SUBJECTS } from '../data/subjects';
 import { 
@@ -340,15 +341,16 @@ export default function Quiz({ currentSubject }) {
                   alignItems: 'center',
                   gap: '5px',
                   fontSize: '12.5px',
-                  padding: '5px 10px',
+                  padding: '5px 12px',
                   color: 'var(--primary)',
                   borderColor: 'var(--primary-border)',
-                  backgroundColor: 'var(--primary-light)'
+                  backgroundColor: 'var(--primary-light)',
+                  fontWeight: 600
                 }}
-                title="Khóa câu hỏi ở modal cố định (không bị trượt lên xuống)"
+                title="Chế độ tập trung toàn màn hình (không trượt trang)"
               >
-                <Lock size={14} />
-                <span>Khóa câu hỏi</span>
+                <Maximize2 size={14} />
+                <span>Tập trung</span>
               </button>
 
               <button

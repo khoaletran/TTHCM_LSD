@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Bookmark, Eye, EyeOff, Check, CheckCircle2, HelpCircle, Lock } from 'lucide-react';
+import { Bookmark, Eye, EyeOff, Check, CheckCircle2, HelpCircle, Maximize2 } from 'lucide-react';
 import { isBookmarked, toggleBookmark } from '../utils/storage';
 
 export default function QuestionCard({ 
@@ -65,9 +65,9 @@ export default function QuestionCard({
                 padding: '6px', 
                 color: 'var(--primary)' 
               }}
-              title="Khóa câu hỏi ở modal cố định (không bị trượt lên xuống)"
+              title="Chế độ tập trung toàn màn hình (không trượt trang)"
             >
-              <Lock size={17} />
+              <Maximize2 size={17} />
             </button>
           )}
 

@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { 
-  Lock, 
-  Unlock, 
   X, 
   ArrowLeft, 
   ArrowRight, 
@@ -9,7 +7,6 @@ import {
   HelpCircle, 
   Eye, 
   EyeOff, 
-  Clock,
   CheckCircle2,
   AlertCircle
 } from 'lucide-react';
@@ -29,17 +26,15 @@ export default function LockedQuestionModal({
   selectedAnswer = null,
   onSelectAnswer = null,
   isInstant = false,
-  timeLeft = null,
   // Bank specific props
   isBankMode = false,
-  chapterName = '',
 }) {
   const [showAnswerInBank, setShowAnswerInBank] = useState(false);
   const [slideDirection, setSlideDirection] = useState('right');
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
 
-  // Lock body scroll when modal is open
+  // Lock body scroll when in focus mode
   useEffect(() => {
     if (isOpen) {
       const originalOverflow = document.body.style.overflow;
@@ -55,7 +50,7 @@ export default function LockedQuestionModal({
     setShowAnswerInBank(false);
   }, [currentIndex]);
 
-  // Keyboard navigation
+  // Keyboard navigation (Arrow keys, Esc to exit)
   useEffect(() => {
     if (!isOpen) return;
 
@@ -116,308 +111,242 @@ export default function LockedQuestionModal({
   const optionLetters = ['A', 'B', 'C', 'D', 'E', 'F'];
   const isAnswered = selectedAnswer !== null && selectedAnswer !== undefined;
 
-  const formatTime = (secs) => {
-    if (secs == null) return '';
-    const m = Math.floor(secs / 60);
-    const s = secs % 60;
-    return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
-  };
-
   return (
     <div
       style={{
         position: 'fixed',
-        inset: 0,
-        zIndex: 1000,
-        backgroundColor: 'rgba(0, 0, 0, 0.72)',
-        backdropFilter: 'blur(5px)',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        width: '100vw',
+        height: '100vh',
+        height: '100dvh',
+        zIndex: 99999, // Che toàn bộ website và header
+        backgroundColor: 'var(--bg-card)',
         display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '12px',
-        overscrollBehavior: 'contain',
+        flexDirection: 'column',
+        overflow: 'hidden',
+        overscrollBehavior: 'none',
         touchAction: 'pan-y'
       }}
-      onClick={(e) => {
-        // Prevent background click from accidentally closing if user wants locked experience,
-        // or let them use the explicit Unlock button
-      }}
     >
+      {/* Thanh trên: Chỉ hiển thị số câu #/# và nút Thoát */}
       <div
-        className="card animate-fade-in"
         style={{
-          width: '100%',
-          maxWidth: '780px',
-          maxHeight: '92vh',
-          display: 'flex',
-          flexDirection: 'column',
-          backgroundColor: 'var(--bg-card)',
-          borderRadius: 'var(--radius-xl)',
-          border: '2px solid var(--primary)',
-          boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)',
-          overflow: 'hidden',
-          overscrollBehavior: 'contain',
-          position: 'relative'
-        }}
-        onClick={(e) => e.stopPropagation()}
-      >
-        {/* Modal Top Lock Header */}
-        <div style={{
-          padding: '14px 20px',
-          backgroundColor: 'var(--primary-light)',
-          borderBottom: '1.5px solid var(--primary-border)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          flexShrink: 0
-        }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '6px',
-              backgroundColor: 'var(--primary)',
-              color: '#ffffff',
-              padding: '4px 10px',
-              borderRadius: '9999px',
-              fontSize: '12.5px',
-              fontWeight: 700
-            }}>
-              <Lock size={13} />
-              <span>Đã khóa câu hỏi</span>
-            </span>
-
-            <span style={{ fontSize: '13.5px', fontWeight: 600, color: 'var(--primary)' }}>
-              Câu {currentIndex + 1} / {totalQuestions}
-            </span>
-
-            {chapterName && (
-              <span className="badge" style={{ display: 'none' }}>
-                {chapterName}
-              </span>
-            )}
-          </div>
-
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            {timeLeft !== null && (
-              <div style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '5px',
-                fontSize: '13px',
-                fontWeight: 700,
-                color: timeLeft < 300 ? 'var(--error-text)' : 'var(--text-main)',
-                backgroundColor: 'var(--bg-card)',
-                padding: '3px 8px',
-                borderRadius: 'var(--radius-sm)',
-                border: '1px solid var(--border)'
-              }}>
-                <Clock size={14} />
-                <span>{formatTime(timeLeft)}</span>
-              </div>
-            )}
-
-            <button
-              onClick={onClose}
-              className="btn btn-secondary btn-sm"
-              style={{
-                backgroundColor: 'var(--bg-card)',
-                borderColor: 'var(--primary-border)',
-                color: 'var(--primary)',
-                fontWeight: 600,
-                gap: '5px'
-              }}
-              title="Mở khóa và quay lại giao diện thường"
-            >
-              <Unlock size={14} />
-              <span>Mở khóa</span>
-            </button>
-          </div>
-        </div>
-
-        {/* Scrollable Question Content (contained, won't bounce page) */}
-        <div
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleTouchEnd}
-          style={{
-            flex: 1,
-            overflowY: 'auto',
-            padding: '24px 22px',
-            overscrollBehavior: 'contain',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '20px'
-          }}
-        >
-          {/* Animated Question Block */}
-          <div
-            key={currentIndex}
-            className={slideDirection === 'right' ? 'animate-slide-right' : 'animate-slide-left'}
-            style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}
-          >
-            {/* Meta Tags */}
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <span className="badge badge-primary">
-                  Câu {currentIndex + 1}
-                </span>
-                {question.clo && (
-                  <span className="badge badge-gold">
-                    CLO {question.clo}
-                  </span>
-                )}
-                {chapterName && (
-                  <span className="badge">
-                    {chapterName}
-                  </span>
-                )}
-              </div>
-
-              {isBankMode && (
-                <button
-                  onClick={() => setShowAnswerInBank(!showAnswerInBank)}
-                  className={`btn btn-sm ${showAnswerInBank ? 'btn-secondary' : 'btn-primary'}`}
-                  style={{ fontSize: '12.5px', padding: '4px 10px' }}
-                >
-                  {showAnswerInBank ? (
-                    <>
-                      <EyeOff size={14} />
-                      <span>Ẩn đáp án</span>
-                    </>
-                  ) : (
-                    <>
-                      <Eye size={14} />
-                      <span>Xem đáp án</span>
-                    </>
-                  )}
-                </button>
-              )}
-            </div>
-
-            {/* Question Text */}
-            <div style={{
-              fontSize: '17.5px',
-              fontWeight: 600,
-              color: 'var(--text-main)',
-              lineHeight: 1.6
-            }}>
-              {question.q}
-            </div>
-
-            {/* Options List */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '11px' }}>
-              {question.options.map((opt, i) => {
-                const isSelected = selectedAnswer === i;
-                const isCorrectAnswer = i === question.answer;
-
-                let btnClass = 'option-btn';
-                if (isSelected) btnClass += ' selected';
-
-                if (isInstant && isAnswered) {
-                  if (isCorrectAnswer) btnClass += ' correct';
-                  else if (isSelected) btnClass += ' incorrect';
-                } else if (isBankMode && showAnswerInBank) {
-                  if (isCorrectAnswer) btnClass += ' correct';
-                }
-
-                return (
-                  <button
-                    key={i}
-                    type="button"
-                    onClick={() => onSelectAnswer && onSelectAnswer(i)}
-                    className={btnClass}
-                    disabled={!onSelectAnswer || (isInstant && isAnswered)}
-                    style={{
-                      cursor: onSelectAnswer ? 'pointer' : 'default',
-                      padding: '13px 16px'
-                    }}
-                  >
-                    <span className="option-circle">
-                      {(isInstant && isAnswered && isCorrectAnswer) || (isBankMode && showAnswerInBank && isCorrectAnswer) ? (
-                        <Check size={14} />
-                      ) : (
-                        optionLetters[i]
-                      )}
-                    </span>
-                    <span style={{ flex: 1, fontSize: '15px' }}>{opt}</span>
-                  </button>
-                );
-              })}
-            </div>
-
-            {/* Instant feedback (Quiz mode) */}
-            {isInstant && isAnswered && (
-              <div style={{
-                padding: '16px',
-                borderRadius: 'var(--radius-md)',
-                backgroundColor: selectedAnswer === question.answer ? 'var(--success-bg)' : 'var(--error-bg)',
-                borderLeft: `4px solid ${selectedAnswer === question.answer ? 'var(--success-solid)' : 'var(--error-solid)'}`,
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '6px'
-              }}>
-                <div style={{
-                  fontSize: '14px',
-                  fontWeight: 700,
-                  color: selectedAnswer === question.answer ? 'var(--success-text)' : 'var(--error-text)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '6px'
-                }}>
-                  {selectedAnswer === question.answer ? (
-                    <>
-                      <CheckCircle2 size={18} />
-                      <span>Chính xác! Đáp án là {optionLetters[question.answer]}</span>
-                    </>
-                  ) : (
-                    <>
-                      <AlertCircle size={18} />
-                      <span>Chưa đúng! Đáp án đúng là {optionLetters[question.answer]}</span>
-                    </>
-                  )}
-                </div>
-                {question.explain && (
-                  <div style={{ fontSize: '13.5px', color: 'var(--text-main)', marginTop: '2px', lineHeight: 1.55 }}>
-                    {question.explain}
-                  </div>
-                )}
-              </div>
-            )}
-
-            {/* Bank explanation box */}
-            {isBankMode && showAnswerInBank && question.explain && (
-              <div style={{
-                padding: '14px 16px',
-                borderRadius: 'var(--radius-md)',
-                backgroundColor: 'var(--primary-light)',
-                borderLeft: '4px solid var(--primary)',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '4px'
-              }}>
-                <div style={{ fontSize: '13px', fontWeight: 700, color: 'var(--primary)', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <HelpCircle size={15} />
-                  <span>Đáp án đúng: {optionLetters[question.answer]}</span>
-                </div>
-                <div style={{ fontSize: '14px', color: 'var(--text-main)', lineHeight: 1.6 }}>
-                  {question.explain}
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* Modal Bottom Controls */}
-        <div style={{
-          padding: '14px 20px',
-          borderTop: '1px solid var(--border)',
+          padding: '12px 18px',
+          paddingTop: 'max(14px, env(safe-area-inset-top))',
+          borderBottom: '1px solid var(--border)',
           backgroundColor: 'var(--bg-card)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
           flexShrink: 0,
-          gap: '10px'
+          zIndex: 10
+        }}
+      >
+        <div style={{
+          fontSize: '17px',
+          fontWeight: 800,
+          color: 'var(--text-main)',
+          letterSpacing: '-0.3px'
+        }}>
+          Câu {currentIndex + 1} / {totalQuestions}
+        </div>
+
+        <button
+          onClick={onClose}
+          className="btn btn-secondary btn-sm"
+          style={{
+            padding: '6px 14px',
+            fontSize: '13.5px',
+            fontWeight: 600,
+            gap: '6px',
+            borderRadius: '9999px',
+            backgroundColor: 'var(--bg-subtle)',
+            border: '1px solid var(--border)'
+          }}
+          title="Thoát chế độ tập trung"
+        >
+          <X size={16} />
+          <span>Thoát</span>
+        </button>
+      </div>
+
+      {/* Vùng nội dung câu hỏi: Bỏ các badge thông tin phụ, chỉ giữ nội dung câu hỏi & đáp án */}
+      <div
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+        style={{
+          flex: 1,
+          overflowY: 'auto',
+          padding: '24px 18px',
+          overscrollBehavior: 'contain',
+          WebkitOverflowScrolling: 'touch',
+        }}
+      >
+        <div
+          key={currentIndex}
+          className={slideDirection === 'right' ? 'animate-slide-right' : 'animate-slide-left'}
+          style={{
+            maxWidth: '680px',
+            margin: '0 auto',
+            width: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '20px'
+          }}
+        >
+          {/* Nội dung câu hỏi (Không hiển thị badge CLO hay thông tin phụ) */}
+          <div style={{
+            fontSize: '18px',
+            fontWeight: 700,
+            color: 'var(--text-main)',
+            lineHeight: 1.6
+          }}>
+            {question.q}
+          </div>
+
+          {/* Danh sách phương án A, B, C, D */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '12px' }}>
+            {question.options.map((opt, i) => {
+              const isSelected = selectedAnswer === i;
+              const isCorrectAnswer = i === question.answer;
+
+              let btnClass = 'option-btn';
+              if (isSelected) btnClass += ' selected';
+
+              if (isInstant && isAnswered) {
+                if (isCorrectAnswer) btnClass += ' correct';
+                else if (isSelected) btnClass += ' incorrect';
+              } else if (isBankMode && showAnswerInBank) {
+                if (isCorrectAnswer) btnClass += ' correct';
+              }
+
+              return (
+                <button
+                  key={i}
+                  type="button"
+                  onClick={() => onSelectAnswer && onSelectAnswer(i)}
+                  className={btnClass}
+                  disabled={!onSelectAnswer || (isInstant && isAnswered)}
+                  style={{
+                    cursor: onSelectAnswer ? 'pointer' : 'default',
+                    padding: '14px 18px',
+                    fontSize: '16px',
+                    lineHeight: 1.55
+                  }}
+                >
+                  <span className="option-circle">
+                    {(isInstant && isAnswered && isCorrectAnswer) || (isBankMode && showAnswerInBank && isCorrectAnswer) ? (
+                      <Check size={15} />
+                    ) : (
+                      optionLetters[i]
+                    )}
+                  </span>
+                  <span style={{ flex: 1 }}>{opt}</span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Nút xem đáp án khi ở Ngân hàng câu hỏi */}
+          {isBankMode && (
+            <div style={{ marginTop: '4px' }}>
+              <button
+                onClick={() => setShowAnswerInBank(!showAnswerInBank)}
+                className={`btn btn-sm ${showAnswerInBank ? 'btn-secondary' : 'btn-primary'}`}
+              >
+                {showAnswerInBank ? <EyeOff size={14} /> : <Eye size={14} />}
+                <span>{showAnswerInBank ? 'Ẩn đáp án' : 'Xem đáp án & giải thích'}</span>
+              </button>
+            </div>
+          )}
+
+          {/* Giải thích khi làm bài có chấm điểm tức thì */}
+          {isInstant && isAnswered && (
+            <div style={{
+              padding: '16px',
+              borderRadius: 'var(--radius-md)',
+              backgroundColor: selectedAnswer === question.answer ? 'var(--success-bg)' : 'var(--error-bg)',
+              borderLeft: `4px solid ${selectedAnswer === question.answer ? 'var(--success-solid)' : 'var(--error-solid)'}`,
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '6px'
+            }}>
+              <div style={{
+                fontSize: '14px',
+                fontWeight: 700,
+                color: selectedAnswer === question.answer ? 'var(--success-text)' : 'var(--error-text)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px'
+              }}>
+                {selectedAnswer === question.answer ? (
+                  <>
+                    <CheckCircle2 size={18} />
+                    <span>Chính xác! Đáp án là {optionLetters[question.answer]}</span>
+                  </>
+                ) : (
+                  <>
+                    <AlertCircle size={18} />
+                    <span>Chưa đúng! Đáp án đúng là {optionLetters[question.answer]}</span>
+                  </>
+                )}
+              </div>
+              {question.explain && (
+                <div style={{ fontSize: '14px', color: 'var(--text-main)', marginTop: '4px', lineHeight: 1.6 }}>
+                  {question.explain}
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Giải thích khi ở Ngân hàng câu hỏi */}
+          {isBankMode && showAnswerInBank && question.explain && (
+            <div style={{
+              padding: '16px',
+              borderRadius: 'var(--radius-md)',
+              backgroundColor: 'var(--primary-light)',
+              borderLeft: '4px solid var(--primary)',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '6px'
+            }}>
+              <div style={{ fontSize: '13.5px', fontWeight: 700, color: 'var(--primary)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <HelpCircle size={15} />
+                <span>Đáp án đúng: {optionLetters[question.answer]}</span>
+              </div>
+              <div style={{ fontSize: '14px', color: 'var(--text-main)', lineHeight: 1.6 }}>
+                {question.explain}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Thanh dưới: Chuyển câu trước / sau cố định ở đáy màn hình */}
+      <div
+        style={{
+          padding: '12px 18px',
+          paddingBottom: 'max(14px, env(safe-area-inset-bottom))',
+          borderTop: '1px solid var(--border)',
+          backgroundColor: 'var(--bg-card)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          flexShrink: 0
+        }}
+      >
+        <div style={{
+          maxWidth: '680px',
+          margin: '0 auto',
+          width: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: '12px'
         }}>
           <button
             onClick={() => {
@@ -432,18 +361,9 @@ export default function LockedQuestionModal({
             <span>Câu trước</span>
           </button>
 
-          <div style={{
-            fontSize: '11.5px',
-            color: 'var(--text-subtle)',
-            userSelect: 'none',
-            textAlign: 'center',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '2px'
-          }}>
-            <span>‹ Vuốt trái/phải để chuyển câu ›</span>
-            <span style={{ opacity: 0.75 }}>Khung cố định, không trượt trang</span>
-          </div>
+          <span style={{ fontSize: '11.5px', color: 'var(--text-subtle)', userSelect: 'none' }}>
+            ‹ Vuốt chuyển câu ›
+          </span>
 
           <button
             onClick={() => {
