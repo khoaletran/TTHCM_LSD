@@ -4,14 +4,12 @@ import {
   ArrowLeft, 
   ArrowRight, 
   Check, 
-  HelpCircle, 
-  Bookmark, 
   Flag, 
   CheckCircle2, 
   AlertCircle,
-  Eye,
-  Lock,
-  Maximize2
+  X,
+  Clock,
+  LayoutGrid
 } from 'lucide-react';
 import { SUBJECTS } from '../data/subjects';
 import { 
@@ -22,14 +20,9 @@ import {
 import { 
   recordQuestionResult, 
   saveQuizHistory, 
-  isBookmarked, 
-  toggleBookmark,
   getWrongBank 
 } from '../utils/storage';
-import ProgressBar from '../components/ProgressBar';
-import QuizNavigator from '../components/QuizNavigator';
 import ConfirmModal from '../components/ConfirmModal';
-import LockedQuestionModal from '../components/LockedQuestionModal';
 
 export default function Quiz({ currentSubject }) {
   const [searchParams] = useSearchParams();
@@ -50,9 +43,6 @@ export default function Quiz({ currentSubject }) {
     if (mode === 'chapter' && chapterId) {
       pool = getQuestionsByChapter(currentSubject, chapterId);
     } else if (mode === 'midterm') {
-      // Scopes from new.html:
-      // TTHCM: Chapters 1-3
-      // LSD: mo-dau, ch1, ch2 part 1
       if (currentSubject === 'tthcm') {
         const ch1 = getQuestionsByChapter('tthcm', 'tthcm-ch1');
         const ch2 = getQuestionsByChapter('tthcm', 'tthcm-ch2');
@@ -65,8 +55,6 @@ export default function Quiz({ currentSubject }) {
         pool = [...q0, ...q1, ...q2];
       }
     } else if (mode === 'final') {
-      // TTHCM: Chapters 4-6
-      // LSD: ch2-1, ch2-2, ch3-1, ch3-2
       if (currentSubject === 'tthcm') {
         const ch4 = getQuestionsByChapter('tthcm', 'tthcm-ch4');
         const ch5 = getQuestionsByChapter('tthcm', 'tthcm-ch5');
@@ -99,8 +87,9 @@ export default function Quiz({ currentSubject }) {
   const [answers, setAnswers] = useState({}); // { [index]: selectedOptionIndex }
   const [flagged, setFlagged] = useState([]); // [index]
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
-  const [slideDirection, setSlideDirection] = useState('right'); // 'right' for next, 'left' for prev
-  const [isLockedModal, setIsLockedModal] = useState(false);
+  const [isExitModalOpen, setIsExitModalOpen] = useState(false);
+  const [isNavDrawerOpen, setIsNavDrawerOpen] = useState(false);
+  const [slideDirection, setSlideDirection] = useState('right');
 
   // Touch swipe states
   const [touchStart, setTouchStart] = useState(null);
@@ -118,7 +107,6 @@ export default function Quiz({ currentSubject }) {
   useEffect(() => {
     if (!isTimed || timeLeft === null) return;
     if (timeLeft <= 0) {
-      // Auto submit on time out
       handleSubmitFinal();
       return;
     }
@@ -129,6 +117,13 @@ export default function Quiz({ currentSubject }) {
 
     return () => clearInterval(timer);
   }, [isTimed, timeLeft]);
+
+  const formatTime = (seconds) => {
+    if (seconds == null) return '';
+    const m = Math.floor(seconds / 60);
+    const s = seconds % 60;
+    return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+  };
 
   const handleNext = () => {
     if (currentIndex < questions.length - 1) {
@@ -182,15 +177,12 @@ export default function Quiz({ currentSubject }) {
     if (!touchStart || !touchEnd) return;
     const distanceX = touchStart.x - touchEnd.x;
     const distanceY = touchStart.y - touchEnd.y;
-    // Verify movement is predominantly horizontal
     const isHorizontal = Math.abs(distanceX) > Math.abs(distanceY) * 1.2;
 
     if (isHorizontal && Math.abs(distanceX) > minSwipeDistance) {
       if (distanceX > 0) {
-        // Swiped left (ngón tay vuốt từ phải sang trái) -> chuyển câu sau
         handleNext();
       } else {
-        // Swiped right (ngón tay vuốt từ trái sang phải) -> chuyển câu trước
         handlePrev();
       }
     }
@@ -199,22 +191,12 @@ export default function Quiz({ currentSubject }) {
   const handleSubmitFinal = () => {
     setIsSubmitModalOpen(false);
 
-    // Calculate score
     let correctCount = 0;
-    const details = questions.map((q, idx) => {
+    questions.forEach((q, idx) => {
       const userChoice = answers[idx];
       const isCorrect = userChoice === q.answer;
       if (isCorrect) correctCount++;
-
-      // Record in local wrong bank
       recordQuestionResult(currentSubject, q.id, isCorrect);
-
-      return {
-        questionId: q.id,
-        userAnswer: userChoice ?? null,
-        correctAnswer: q.answer,
-        isCorrect,
-      };
     });
 
     const timeSpent = initialSeconds != null ? initialSeconds - Math.max(0, timeLeft || 0) : null;
@@ -230,7 +212,6 @@ export default function Quiz({ currentSubject }) {
       date: new Date().toISOString(),
     };
 
-    // Save history
     saveQuizHistory({
       subject: currentSubject,
       mode,
@@ -239,7 +220,6 @@ export default function Quiz({ currentSubject }) {
       percentage: Math.round((correctCount / questions.length) * 100),
     });
 
-    // Save session in sessionStorage for the Result page
     try {
       sessionStorage.setItem('last_quiz_result', JSON.stringify(resultData));
     } catch {}
@@ -247,15 +227,30 @@ export default function Quiz({ currentSubject }) {
     navigate('/result');
   };
 
+  const handleExitConfirm = () => {
+    setIsExitModalOpen(false);
+    navigate('/practice');
+  };
+
   const unansweredCount = questions.length - Object.values(answers).filter((a) => a != null).length;
+  const answeredCount = Object.values(answers).filter((a) => a != null).length;
+  const progressPercent = questions.length > 0 ? (answeredCount / questions.length) * 100 : 0;
 
   if (!questions || questions.length === 0) {
     return (
-      <div className="card animate-fade-in" style={{ padding: '36px', textAlign: 'center' }}>
-        <p style={{ color: 'var(--text-muted)' }}>Không có câu hỏi nào trong phạm vi đã chọn.</p>
-        <button onClick={() => navigate('/practice')} className="btn btn-primary" style={{ marginTop: '16px' }}>
-          Quay lại chọn phạm vi
-        </button>
+      <div style={{
+        height: '100dvh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '20px'
+      }}>
+        <div className="card animate-fade-in" style={{ padding: '32px', textAlign: 'center', maxWidth: '400px' }}>
+          <p style={{ color: 'var(--text-muted)' }}>Không có câu hỏi nào trong phạm vi đã chọn.</p>
+          <button onClick={() => navigate('/practice')} className="btn btn-primary" style={{ marginTop: '16px' }}>
+            Quay lại chọn phạm vi
+          </button>
+        </div>
       </div>
     );
   }
@@ -281,104 +276,149 @@ export default function Quiz({ currentSubject }) {
 
   return (
     <div style={{
-      display: 'grid',
-      gridTemplateColumns: '1fr',
-      gap: '24px',
-      alignItems: 'start'
-    }} className="quiz-layout animate-fade-in">
-      {/* Main Question Area */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-        {/* Progress Header */}
-        <ProgressBar
-          currentIndex={currentIndex}
-          totalQuestions={questions.length}
-          timeLeft={timeLeft}
-        />
+      display: 'flex',
+      flexDirection: 'column',
+      height: '100%',
+      width: '100%',
+      overflow: 'hidden',
+      backgroundColor: 'var(--bg-main)',
+    }}>
+      {/* 1. TOP BAR: Chỉ hiển thị số câu #/#, Timer (nếu có), và nút Thoát */}
+      <div style={{
+        padding: '10px 16px',
+        paddingTop: 'max(12px, env(safe-area-inset-top))',
+        borderBottom: '1px solid var(--border)',
+        backgroundColor: 'var(--bg-card)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        flexShrink: 0,
+        zIndex: 20,
+        position: 'relative'
+      }}>
+        {/* Số câu #/# (Bấm vào để mở danh sách chọn nhanh câu) */}
+        <button
+          onClick={() => setIsNavDrawerOpen(true)}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px',
+            background: 'var(--bg-subtle)',
+            border: '1px solid var(--border)',
+            borderRadius: '9999px',
+            padding: '5px 12px',
+            cursor: 'pointer',
+            color: 'var(--text-main)',
+            fontWeight: 800,
+            fontSize: '15px'
+          }}
+          title="Xem danh sách tất cả câu hỏi"
+        >
+          <span>Câu {currentIndex + 1} / {questions.length}</span>
+          <LayoutGrid size={14} style={{ color: 'var(--text-subtle)' }} />
+        </button>
 
-        {/* Mobile Swipe Hint */}
-        <div style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          padding: '0 4px',
-          fontSize: '12px',
-          color: 'var(--text-subtle)',
-          userSelect: 'none'
-        }}>
-          <span>‹ Vuốt phải: Câu trước</span>
-          <span style={{ fontSize: '11px', opacity: 0.8 }}>Vuốt hoặc dùng phím mũi tên ← →</span>
-          <span>Vuốt trái: Câu sau ›</span>
+        {/* Đồng hồ đếm ngược (nếu có) */}
+        {isTimed && timeLeft != null && (
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px',
+            fontSize: '15px',
+            fontWeight: 700,
+            color: timeLeft < 300 ? 'var(--error-solid)' : 'var(--text-main)',
+            backgroundColor: timeLeft < 300 ? 'var(--error-bg)' : 'transparent',
+            padding: '4px 8px',
+            borderRadius: 'var(--radius-sm)'
+          }}>
+            <Clock size={16} />
+            <span>{formatTime(timeLeft)}</span>
+          </div>
+        )}
+
+        {/* Nút đánh dấu & Nút Thoát */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <button
+            onClick={handleToggleFlag}
+            className="btn btn-ghost btn-sm"
+            style={{
+              color: flagged.includes(currentIndex) ? 'var(--gold-dark)' : 'var(--text-subtle)',
+              padding: '6px'
+            }}
+            title={flagged.includes(currentIndex) ? 'Bỏ đánh dấu xem lại' : 'Đánh dấu câu hỏi để xem lại'}
+          >
+            <Flag size={18} fill={flagged.includes(currentIndex) ? 'currentColor' : 'none'} />
+          </button>
+
+          <button
+            onClick={() => setIsExitModalOpen(true)}
+            className="btn btn-secondary btn-sm"
+            style={{
+              padding: '5px 12px',
+              fontSize: '13.5px',
+              fontWeight: 600,
+              gap: '4px',
+              borderRadius: '9999px'
+            }}
+            title="Thoát bài làm"
+          >
+            <X size={15} />
+            <span>Thoát</span>
+          </button>
         </div>
 
-        {/* Question Card with Touch Swipe & Slide Animation */}
+        {/* Thanh tiến độ mảnh nằm ngay dưới top bar */}
+        <div style={{
+          position: 'absolute',
+          bottom: 0,
+          left: 0,
+          right: 0,
+          height: '2.5px',
+          backgroundColor: 'var(--border)'
+        }}>
+          <div style={{
+            height: '100%',
+            width: `${progressPercent}%`,
+            backgroundColor: 'var(--primary)',
+            transition: 'width 0.2s ease'
+          }} />
+        </div>
+      </div>
+
+      {/* 2. MAIN SCROLL BODY: Không bị tràng, chỉ cuộn nội dung câu hỏi */}
+      <div
+        className="quiz-scroll-area"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+        style={{
+          padding: '18px 16px 24px 16px',
+        }}
+      >
         <div
           key={currentIndex}
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleTouchEnd}
-          className={`card touch-swipe-zone ${slideDirection === 'right' ? 'animate-slide-right' : 'animate-slide-left'}`}
-          style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: '20px' }}
+          className={slideDirection === 'right' ? 'animate-slide-right' : 'animate-slide-left'}
+          style={{
+            maxWidth: '680px',
+            margin: '0 auto',
+            width: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '18px'
+          }}
         >
-          {/* Card Top Meta */}
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span className="badge badge-primary">
-                Câu {currentIndex + 1}
-              </span>
-              {currentQ.clo && (
-                <span className="badge badge-gold">
-                  CLO {currentQ.clo}
-                </span>
-              )}
-            </div>
-
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <button
-                onClick={() => setIsLockedModal(true)}
-                className="btn btn-secondary btn-sm"
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '5px',
-                  fontSize: '12.5px',
-                  padding: '5px 12px',
-                  color: 'var(--primary)',
-                  borderColor: 'var(--primary-border)',
-                  backgroundColor: 'var(--primary-light)',
-                  fontWeight: 600
-                }}
-                title="Chế độ tập trung toàn màn hình (không trượt trang)"
-              >
-                <Maximize2 size={14} />
-                <span>Tập trung</span>
-              </button>
-
-              <button
-                onClick={handleToggleFlag}
-                className="btn btn-ghost btn-sm"
-                style={{
-                  color: flagged.includes(currentIndex) ? 'var(--gold-dark)' : 'var(--text-subtle)',
-                  padding: '6px'
-                }}
-                title={flagged.includes(currentIndex) ? 'Bỏ đánh dấu xem lại' : 'Đánh dấu để xem lại sau'}
-              >
-                <Flag size={17} fill={flagged.includes(currentIndex) ? 'currentColor' : 'none'} />
-              </button>
-            </div>
-          </div>
-
-          {/* Question Text */}
+          {/* Nội dung câu hỏi: Hoàn toàn bỏ bớt badge CLO và thông tin thừa, chỉ tập trung vào câu hỏi */}
           <div style={{
-            fontSize: '17px',
-            fontWeight: 600,
+            fontSize: '17.5px',
+            fontWeight: 700,
             color: 'var(--text-main)',
             lineHeight: 1.6
           }}>
             {currentQ.q}
           </div>
 
-          {/* Options */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '12px' }}>
+          {/* Các lựa chọn đáp án A, B, C, D */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '10px' }}>
             {currentQ.options.map((opt, i) => {
               const isSelected = selectedOption === i;
               const isCorrectAnswer = i === currentQ.answer;
@@ -398,6 +438,12 @@ export default function Quiz({ currentSubject }) {
                   onClick={() => handleSelectOption(i)}
                   className={btnClass}
                   disabled={instant && isAnswered}
+                  style={{
+                    padding: '13px 16px',
+                    fontSize: '15.5px',
+                    lineHeight: 1.55,
+                    borderRadius: 'var(--radius-md)'
+                  }}
                 >
                   <span className="option-circle">
                     {instant && isAnswered && isCorrectAnswer ? <Check size={14} /> : optionLetters[i]}
@@ -408,16 +454,17 @@ export default function Quiz({ currentSubject }) {
             })}
           </div>
 
-          {/* Instant Feedback Box */}
+          {/* Giải thích câu hỏi khi làm bài chế độ Chấm điểm tức thì (Instant mode) */}
           {instant && isAnswered && (
             <div style={{
-              padding: '16px',
+              padding: '14px 16px',
               borderRadius: 'var(--radius-md)',
               backgroundColor: selectedOption === currentQ.answer ? 'var(--success-bg)' : 'var(--error-bg)',
               borderLeft: `4px solid ${selectedOption === currentQ.answer ? 'var(--success-solid)' : 'var(--error-solid)'}`,
               display: 'flex',
               flexDirection: 'column',
-              gap: '6px'
+              gap: '6px',
+              marginTop: '4px'
             }}>
               <div style={{
                 fontSize: '14px',
@@ -440,55 +487,153 @@ export default function Quiz({ currentSubject }) {
                 )}
               </div>
               {currentQ.explain && (
-                <div style={{ fontSize: '13.5px', color: 'var(--text-main)', marginTop: '4px', lineHeight: 1.55 }}>
+                <div style={{ fontSize: '14px', color: 'var(--text-main)', marginTop: '2px', lineHeight: 1.55 }}>
                   {currentQ.explain}
                 </div>
               )}
             </div>
           )}
-
-          {/* Bottom Nav Buttons */}
-          <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            borderTop: '1px solid var(--border)',
-            paddingTop: '18px',
-            marginTop: '4px'
-          }}>
-            <button
-              onClick={handlePrev}
-              disabled={currentIndex === 0}
-              className="btn btn-secondary"
-            >
-              <ArrowLeft size={16} />
-              <span>Câu trước</span>
-            </button>
-
-            <button
-              onClick={handleNext}
-              className="btn btn-primary"
-            >
-              <span>{currentIndex === questions.length - 1 ? 'Nộp bài' : 'Câu tiếp'}</span>
-              <ArrowRight size={16} />
-            </button>
-          </div>
         </div>
       </div>
 
-      {/* Right Sidebar Navigator */}
-      <div className="quiz-sidebar">
-        <QuizNavigator
-          totalQuestions={questions.length}
-          currentIndex={currentIndex}
-          answers={answers}
-          flagged={flagged}
-          onSelectIndex={(idx) => setCurrentIndex(idx)}
-          onSubmit={() => setIsSubmitModalOpen(true)}
-        />
+      {/* 3. BOTTOM BAR: Cố định ở đáy màn hình điện thoại, nút bấm to vừa tầm ngón tay cái */}
+      <div style={{
+        padding: '10px 16px',
+        paddingBottom: 'max(12px, env(safe-area-inset-bottom))',
+        borderTop: '1px solid var(--border)',
+        backgroundColor: 'var(--bg-card)',
+        flexShrink: 0,
+        zIndex: 20
+      }}>
+        <div style={{
+          maxWidth: '680px',
+          margin: '0 auto',
+          width: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: '12px'
+        }}>
+          <button
+            onClick={handlePrev}
+            disabled={currentIndex === 0}
+            className="btn btn-secondary"
+            style={{ 
+              flex: 1, 
+              maxWidth: '135px', 
+              height: '42px', 
+              fontWeight: 600,
+              fontSize: '14px' 
+            }}
+          >
+            <ArrowLeft size={16} />
+            <span>Câu trước</span>
+          </button>
+
+          <button
+            onClick={() => setIsNavDrawerOpen(true)}
+            className="btn btn-ghost"
+            style={{ 
+              fontSize: '12.5px', 
+              color: 'var(--text-subtle)', 
+              display: 'flex', 
+              flexDirection: 'column', 
+              alignItems: 'center',
+              gap: '1px',
+              padding: '2px 8px'
+            }}
+            title="Mở danh sách câu hỏi"
+          >
+            <span style={{ fontWeight: 700, color: 'var(--text-main)', fontSize: '13px' }}>
+              {answeredCount}/{questions.length}
+            </span>
+            <span style={{ fontSize: '10.5px' }}>Danh sách</span>
+          </button>
+
+          {currentIndex < questions.length - 1 ? (
+            <button
+              onClick={handleNext}
+              className="btn btn-primary"
+              style={{ 
+                flex: 1, 
+                maxWidth: '135px', 
+                height: '42px', 
+                fontWeight: 600,
+                fontSize: '14px' 
+              }}
+            >
+              <span>Câu tiếp</span>
+              <ArrowRight size={16} />
+            </button>
+          ) : (
+            <button
+              onClick={() => setIsSubmitModalOpen(true)}
+              className="btn btn-primary"
+              style={{ 
+                flex: 1, 
+                maxWidth: '135px', 
+                height: '42px', 
+                fontWeight: 600,
+                fontSize: '14px',
+                backgroundColor: 'var(--success-solid)',
+                borderColor: 'var(--success-solid)'
+              }}
+            >
+              <span>Nộp bài</span>
+              <Check size={16} />
+            </button>
+          )}
+        </div>
       </div>
 
-      {/* Confirmation Modal */}
+      {/* 4. MODAL XÁC NHẬN THOÁT */}
+      {isExitModalOpen && (
+        <div style={{
+          position: 'fixed',
+          inset: 0,
+          zIndex: 110,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          backgroundColor: 'rgba(0, 0, 0, 0.55)',
+          backdropFilter: 'blur(2px)',
+          padding: '16px'
+        }}>
+          <div className="card animate-fade-in" style={{
+            maxWidth: '380px',
+            width: '100%',
+            padding: '22px',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '16px'
+          }}>
+            <h3 style={{ fontSize: '17px', fontWeight: 700, margin: 0 }}>
+              Xác nhận thoát bài làm?
+            </h3>
+            <p style={{ fontSize: '14px', color: 'var(--text-muted)', lineHeight: 1.5 }}>
+              Tiến độ làm bài của bạn sẽ không được lưu nếu bạn thoát ngay bây giờ. Bạn có chắc chắn muốn quay lại không?
+            </p>
+            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '10px', marginTop: '4px' }}>
+              <button
+                onClick={() => setIsExitModalOpen(false)}
+                className="btn btn-secondary"
+                style={{ minWidth: '100px' }}
+              >
+                Ở lại làm
+              </button>
+              <button
+                onClick={handleExitConfirm}
+                className="btn btn-primary"
+                style={{ minWidth: '100px', backgroundColor: 'var(--error-solid)', borderColor: 'var(--error-solid)' }}
+              >
+                Thoát
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 5. MODAL XÁC NHẬN NỘP BÀI */}
       <ConfirmModal
         isOpen={isSubmitModalOpen}
         unansweredCount={unansweredCount}
@@ -496,31 +641,120 @@ export default function Quiz({ currentSubject }) {
         onConfirm={handleSubmitFinal}
       />
 
-      {/* Locked Question Modal (Không bị trượt lên xuống) */}
-      <LockedQuestionModal
-        isOpen={isLockedModal}
-        onClose={() => setIsLockedModal(false)}
-        question={currentQ}
-        currentIndex={currentIndex}
-        totalQuestions={questions.length}
-        onPrev={handlePrev}
-        onNext={handleNext}
-        isPrevDisabled={currentIndex === 0}
-        isNextDisabled={false}
-        nextLabel={currentIndex === questions.length - 1 ? 'Nộp bài' : 'Câu tiếp'}
-        selectedAnswer={selectedOption}
-        onSelectAnswer={handleSelectOption}
-        isInstant={instant}
-        timeLeft={timeLeft}
-      />
+      {/* 6. BOTTOM SHEET: DANH SÁCH TẤT CẢ CÂU HỎI */}
+      {isNavDrawerOpen && (
+        <div 
+          className="quiz-drawer-overlay"
+          onClick={() => setIsNavDrawerOpen(false)}
+        >
+          <div 
+            className="quiz-drawer-sheet"
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              padding: '18px',
+              paddingBottom: 'max(18px, env(safe-area-inset-bottom))'
+            }}
+          >
+            {/* Sheet Header */}
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              marginBottom: '14px'
+            }}>
+              <div>
+                <h3 style={{ fontSize: '16px', fontWeight: 800 }}>Danh sách câu hỏi</h3>
+                <p style={{ fontSize: '12.5px', color: 'var(--text-subtle)', marginTop: '2px' }}>
+                  Đã làm: {answeredCount}/{questions.length} • Còn lại: {unansweredCount} câu
+                </p>
+              </div>
+              <button
+                onClick={() => setIsNavDrawerOpen(false)}
+                className="btn btn-ghost btn-sm"
+                style={{ padding: '6px' }}
+              >
+                <X size={18} />
+              </button>
+            </div>
 
-      <style>{`
-        @media (min-width: 900px) {
-          .quiz-layout {
-            grid-template-columns: 1fr 310px !important;
-          }
-        }
-      `}</style>
+            {/* Chú thích màu sắc */}
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '14px',
+              fontSize: '12px',
+              color: 'var(--text-muted)',
+              marginBottom: '14px',
+              paddingBottom: '10px',
+              borderBottom: '1px solid var(--border)'
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+                <span style={{ width: '12px', height: '12px', borderRadius: '3px', backgroundColor: 'var(--primary)' }} />
+                <span>Đã làm</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+                <span style={{ width: '12px', height: '12px', borderRadius: '3px', backgroundColor: 'var(--bg-subtle)', border: '1px solid var(--border)' }} />
+                <span>Chưa làm</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+                <span style={{ width: '8px', height: '8px', borderRadius: '9999px', backgroundColor: 'var(--gold)' }} />
+                <span>Đánh dấu</span>
+              </div>
+            </div>
+
+            {/* Grid các số câu hỏi */}
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(44px, 1fr))',
+              gap: '8px',
+              maxHeight: '48vh',
+              overflowY: 'auto',
+              paddingRight: '4px'
+            }}>
+              {questions.map((_, idx) => {
+                const isAns = answers[idx] != null;
+                const isCurr = currentIndex === idx;
+                const isFlag = flagged.includes(idx);
+
+                let cellClass = 'quiz-num-cell';
+                if (isAns) cellClass += ' answered';
+                if (isCurr) cellClass += ' current';
+                if (isFlag) cellClass += ' flagged';
+
+                return (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => {
+                      setSlideDirection(idx > currentIndex ? 'right' : 'left');
+                      setCurrentIndex(idx);
+                      setIsNavDrawerOpen(false);
+                    }}
+                    className={cellClass}
+                  >
+                    {idx + 1}
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Nút Nộp bài bên trong Sheet */}
+            <div style={{ marginTop: '16px', borderTop: '1px solid var(--border)', paddingTop: '14px' }}>
+              <button
+                onClick={() => {
+                  setIsNavDrawerOpen(false);
+                  setIsSubmitModalOpen(true);
+                }}
+                className="btn btn-primary"
+                style={{ width: '100%', height: '42px', fontWeight: 600 }}
+              >
+                <span>Nộp bài ngay</span>
+                <Check size={16} />
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

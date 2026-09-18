@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -14,6 +14,8 @@ import { getStoredTheme, setStoredTheme, getLastSubject, setLastSubject } from '
 export default function App() {
   const [theme, setTheme] = useState(() => getStoredTheme());
   const [currentSubject, setCurrentSubject] = useState(() => getLastSubject());
+  const location = useLocation();
+  const isQuizPage = location.pathname === '/quiz';
 
   // Apply theme to document
   useEffect(() => {
@@ -31,15 +33,17 @@ export default function App() {
   };
 
   return (
-    <div className="app-container">
-      <Header
-        currentSubject={currentSubject}
-        onSubjectChange={handleSubjectChange}
-        theme={theme}
-        onToggleTheme={handleToggleTheme}
-      />
+    <div className={isQuizPage ? "app-fullscreen" : "app-container"}>
+      {!isQuizPage && (
+        <Header
+          currentSubject={currentSubject}
+          onSubjectChange={handleSubjectChange}
+          theme={theme}
+          onToggleTheme={handleToggleTheme}
+        />
+      )}
 
-      <main className="main-content">
+      <main className={isQuizPage ? "main-fullscreen" : "main-content"}>
         <Routes>
           <Route 
             path="/" 
