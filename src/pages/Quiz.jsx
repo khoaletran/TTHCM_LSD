@@ -9,7 +9,8 @@ import {
   Flag, 
   CheckCircle2, 
   AlertCircle,
-  Eye
+  Eye,
+  Lock
 } from 'lucide-react';
 import { SUBJECTS } from '../data/subjects';
 import { 
@@ -27,6 +28,7 @@ import {
 import ProgressBar from '../components/ProgressBar';
 import QuizNavigator from '../components/QuizNavigator';
 import ConfirmModal from '../components/ConfirmModal';
+import LockedQuestionModal from '../components/LockedQuestionModal';
 
 export default function Quiz({ currentSubject }) {
   const [searchParams] = useSearchParams();
@@ -97,6 +99,7 @@ export default function Quiz({ currentSubject }) {
   const [flagged, setFlagged] = useState([]); // [index]
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
   const [slideDirection, setSlideDirection] = useState('right'); // 'right' for next, 'left' for prev
+  const [isLockedModal, setIsLockedModal] = useState(false);
 
   // Touch swipe states
   const [touchStart, setTouchStart] = useState(null);
@@ -328,7 +331,26 @@ export default function Quiz({ currentSubject }) {
               )}
             </div>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <button
+                onClick={() => setIsLockedModal(true)}
+                className="btn btn-secondary btn-sm"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  fontSize: '12.5px',
+                  padding: '5px 10px',
+                  color: 'var(--primary)',
+                  borderColor: 'var(--primary-border)',
+                  backgroundColor: 'var(--primary-light)'
+                }}
+                title="Khóa câu hỏi ở modal cố định (không bị trượt lên xuống)"
+              >
+                <Lock size={14} />
+                <span>Khóa câu hỏi</span>
+              </button>
+
               <button
                 onClick={handleToggleFlag}
                 className="btn btn-ghost btn-sm"
@@ -470,6 +492,24 @@ export default function Quiz({ currentSubject }) {
         unansweredCount={unansweredCount}
         onCancel={() => setIsSubmitModalOpen(false)}
         onConfirm={handleSubmitFinal}
+      />
+
+      {/* Locked Question Modal (Không bị trượt lên xuống) */}
+      <LockedQuestionModal
+        isOpen={isLockedModal}
+        onClose={() => setIsLockedModal(false)}
+        question={currentQ}
+        currentIndex={currentIndex}
+        totalQuestions={questions.length}
+        onPrev={handlePrev}
+        onNext={handleNext}
+        isPrevDisabled={currentIndex === 0}
+        isNextDisabled={false}
+        nextLabel={currentIndex === questions.length - 1 ? 'Nộp bài' : 'Câu tiếp'}
+        selectedAnswer={selectedOption}
+        onSelectAnswer={handleSelectOption}
+        isInstant={instant}
+        timeLeft={timeLeft}
       />
 
       <style>{`

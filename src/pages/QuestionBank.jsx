@@ -14,6 +14,7 @@ import { SUBJECTS } from '../data/subjects';
 import { getAllQuestions, filterQuestions } from '../data/repository';
 import { getBookmarks } from '../utils/storage';
 import QuestionCard from '../components/QuestionCard';
+import LockedQuestionModal from '../components/LockedQuestionModal';
 
 export default function QuestionBank({ currentSubject, onSelectSubject }) {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -25,6 +26,7 @@ export default function QuestionBank({ currentSubject, onSelectSubject }) {
   const [onlyBookmarked, setOnlyBookmarked] = useState(initialFilter === 'bookmarked');
   const [displayCount, setDisplayCount] = useState(25);
   const [sortOrder, setSortOrder] = useState('default'); // 'default', 'id-asc', 'id-desc'
+  const [lockedQuestionIndex, setLockedQuestionIndex] = useState(null);
 
   const sub = SUBJECTS[currentSubject] || SUBJECTS.tthcm;
   const allQuestions = useMemo(() => getAllQuestions(currentSubject), [currentSubject]);
@@ -251,6 +253,7 @@ export default function QuestionBank({ currentSubject, onSelectSubject }) {
               index={idx}
               subjectId={currentSubject}
               chapterName={getChapterName(q.section)}
+              onLockModal={(_, cardIdx) => setLockedQuestionIndex(cardIdx)}
             />
           ))}
 
@@ -268,6 +271,23 @@ export default function QuestionBank({ currentSubject, onSelectSubject }) {
             </div>
           )}
         </div>
+      )}
+
+      {/* Locked Question Modal in Bank Mode (Cố định, không bị trượt trang) */}
+      {lockedQuestionIndex !== null && filteredQuestions[lockedQuestionIndex] && (
+        <LockedQuestionModal
+          isOpen={true}
+          onClose={() => setLockedQuestionIndex(null)}
+          question={filteredQuestions[lockedQuestionIndex]}
+          currentIndex={lockedQuestionIndex}
+          totalQuestions={filteredQuestions.length}
+          onPrev={() => setLockedQuestionIndex((prev) => Math.max(0, prev - 1))}
+          onNext={() => setLockedQuestionIndex((prev) => Math.min(filteredQuestions.length - 1, prev + 1))}
+          isPrevDisabled={lockedQuestionIndex === 0}
+          isNextDisabled={lockedQuestionIndex === filteredQuestions.length - 1}
+          isBankMode={true}
+          chapterName={getChapterName(filteredQuestions[lockedQuestionIndex].section)}
+        />
       )}
     </div>
   );

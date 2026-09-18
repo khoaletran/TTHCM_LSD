@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Bookmark, Eye, EyeOff, Check, CheckCircle2, HelpCircle } from 'lucide-react';
+import { Bookmark, Eye, EyeOff, Check, CheckCircle2, HelpCircle, Lock } from 'lucide-react';
 import { isBookmarked, toggleBookmark } from '../utils/storage';
 
 export default function QuestionCard({ 
@@ -7,7 +7,8 @@ export default function QuestionCard({
   index, 
   subjectId, 
   chapterName, 
-  onBookmarkToggle 
+  onBookmarkToggle,
+  onLockModal
 }) {
   const [showAnswer, setShowAnswer] = useState(false);
   const [bookmarked, setBookmarked] = useState(() => isBookmarked(subjectId, question.id));
@@ -56,6 +57,20 @@ export default function QuestionCard({
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+          {onLockModal && (
+            <button
+              onClick={() => onLockModal(question, index)}
+              className="btn btn-ghost btn-sm"
+              style={{ 
+                padding: '6px', 
+                color: 'var(--primary)' 
+              }}
+              title="Khóa câu hỏi ở modal cố định (không bị trượt lên xuống)"
+            >
+              <Lock size={17} />
+            </button>
+          )}
+
           <button
             onClick={handleBookmark}
             className="btn btn-ghost btn-sm"
