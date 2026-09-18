@@ -4,6 +4,7 @@ import { AlertCircle } from 'lucide-react';
 export default function ConfirmModal({
   isOpen,
   unansweredCount,
+  totalQuestions,
   onCancel,
   onConfirm,
 }) {
@@ -50,7 +51,9 @@ export default function ConfirmModal({
             </h3>
             <p style={{ fontSize: '13.5px', color: 'var(--text-muted)', margin: '4px 0 0 0' }}>
               {unansweredCount > 0
-                ? `Bạn còn ${unansweredCount} câu chưa trả lời.`
+                ? totalQuestions
+                  ? `Đã làm ${totalQuestions - unansweredCount}/${totalQuestions} câu (còn ${unansweredCount} câu chưa làm).`
+                  : `Bạn còn ${unansweredCount} câu chưa trả lời.`
                 : 'Bạn đã hoàn thành tất cả câu hỏi!'}
             </p>
           </div>
@@ -58,7 +61,7 @@ export default function ConfirmModal({
 
         <p style={{ fontSize: '14.5px', color: 'var(--text-main)', lineHeight: 1.5 }}>
           {unansweredCount > 0
-            ? 'Các câu chưa chọn sẽ được tính là bỏ trống. Bạn có chắc chắn muốn kết thúc bài làm và xem điểm không?'
+            ? 'Bạn có thể nộp bài ngay bây giờ! Các câu chưa làm sẽ được tính là bỏ trống và hệ thống sẽ hiển thị kết quả, đáp án cùng phân tích chi tiết.'
             : 'Hệ thống sẽ chấm điểm và phân tích kết quả bài làm của bạn ngay lập tức.'}
         </p>
 

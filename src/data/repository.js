@@ -1,11 +1,11 @@
 // Unified Question Repository
 import { questionsLSD } from './questions_lsd.js';
 import { questionsTTHCM } from './questions_tthcm.js';
-import { SUBJECTS, getChapter, getChapterSections } from './subjects.js';
+import { SUBJECTS, getChapter, getChapterSections, SECTIONS_CONFIG, getSectionInfo } from './subjects.js';
 import { FLASHCARDS_LSD, FLASHCARDS_TTHCM } from './flashcards.js';
 import { KNOWLEDGE_LSD, KNOWLEDGE_TTHCM, getKnowledgeBySubject, getKnowledgeByChapter } from './knowledge.js';
 
-export { KNOWLEDGE_LSD, KNOWLEDGE_TTHCM, getKnowledgeBySubject, getKnowledgeByChapter };
+export { KNOWLEDGE_LSD, KNOWLEDGE_TTHCM, getKnowledgeBySubject, getKnowledgeByChapter, SECTIONS_CONFIG, getSectionInfo };
 
 const BANK = {
   lsd: questionsLSD,

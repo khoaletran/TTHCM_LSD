@@ -1,5 +1,62 @@
 // Cấu hình các môn học và chương/phần
 
+export const SECTIONS_CONFIG = {
+  'mo-dau': {
+    id: 'mo-dau',
+    code: 'Mở đầu',
+    title: 'Phần Mở đầu: Đối tượng, chức năng, nhiệm vụ và phương pháp nghiên cứu Lịch sử Đảng',
+    shortTitle: 'Đối tượng, chức năng, nhiệm vụ và phương pháp nghiên cứu',
+    description: 'Đối tượng nghiên cứu, chức năng, nhiệm vụ và các phương pháp nghiên cứu khoa học Lịch sử Đảng',
+  },
+  'ch1-1': {
+    id: 'ch1-1',
+    code: 'Mục 1.1',
+    title: 'Mục 1.1: Đảng Cộng sản Việt Nam ra đời và Cương lĩnh chính trị đầu tiên của Đảng (tháng 2/1930)',
+    shortTitle: 'Đảng ra đời & Cương lĩnh đầu tiên (1920–1930)',
+    description: 'Bối cảnh lịch sử, phong trào yêu nước, Nguyễn Ái Quốc và Hội nghị thành lập Đảng 3/2/1930',
+  },
+  'ch1-2': {
+    id: 'ch1-2',
+    code: 'Mục 1.2',
+    title: 'Mục 1.2: Lãnh đạo quá trình đấu tranh giành chính quyền (1930 – 1945)',
+    shortTitle: 'Đấu tranh giành chính quyền (1930–1945)',
+    description: 'Cao trào 1930-1931, Xô viết Nghệ Tĩnh, cao trào 1936-1939, giải phóng dân tộc 1939-1945 và Tổng khởi nghĩa CMT8',
+  },
+  'ch2-1': {
+    id: 'ch2-1',
+    code: 'Mục 2.1',
+    title: 'Mục 2.1: Lãnh đạo xây dựng, bảo vệ chính quyền cách mạng và kháng chiến chống thực dân Pháp (1945 – 1954)',
+    shortTitle: 'Bảo vệ chính quyền & Kháng chiến chống Pháp (1945–1954)',
+    description: 'Bảo vệ chính quyền non trẻ 1945-1946, đường lối toàn quốc kháng chiến và chiến thắng Điện Biên Phủ 1954',
+  },
+  'ch2-2': {
+    id: 'ch2-2',
+    code: 'Mục 2.2',
+    title: 'Mục 2.2: Lãnh đạo xây dựng chủ nghĩa xã hội ở miền Bắc và kháng chiến chống Mỹ, cứu nước (1954 – 1975)',
+    shortTitle: 'Xây dựng CNXH miền Bắc & Kháng chiến chống Mỹ (1954–1975)',
+    description: 'Đường lối cách mạng hai miền, đánh bại các chiến lược chiến tranh của Mỹ và Đại thắng mùa Xuân 1975',
+  },
+  'ch3-1': {
+    id: 'ch3-1',
+    code: 'Mục 3.1',
+    title: 'Mục 3.1: Lãnh đạo cả nước xây dựng chủ nghĩa xã hội và bảo vệ Tổ quốc (1975 – 1986)',
+    shortTitle: 'Xây dựng CNXH & Bảo vệ Tổ quốc (1975–1986)',
+    description: 'Thống nhất đất nước về mặt nhà nước, bảo vệ biên giới và các bước đột phá tìm tòi đổi mới',
+  },
+  'ch3-2': {
+    id: 'ch3-2',
+    code: 'Mục 3.2',
+    title: 'Mục 3.2: Lãnh đạo công cuộc đổi mới, đẩy mạnh công nghiệp hóa, hiện đại hóa và hội nhập quốc tế (1986 – nay)',
+    shortTitle: 'Công cuộc đổi mới & Hội nhập quốc tế (1986–nay)',
+    description: 'Đại hội VI (1986) mở đầu Đổi mới, các Cương lĩnh 1991, 2011, đẩy mạnh CNH-HĐH và hội nhập quốc tế',
+  },
+};
+
+export function getSectionInfo(sectionId) {
+  return SECTIONS_CONFIG[sectionId] || null;
+}
+
+
 export const SUBJECTS = {
   lsd: {
     id: 'lsd',

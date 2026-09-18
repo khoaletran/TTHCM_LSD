@@ -15,8 +15,10 @@ import { SUBJECTS } from '../data/subjects';
 import { 
   getAllQuestions, 
   getQuestionsByChapter, 
+  getQuestionsBySection,
   shuffleArray,
-  prepareQuestion
+  prepareQuestion,
+  getSectionInfo
 } from '../data/repository';
 import { 
   recordQuestionResult, 
@@ -31,11 +33,14 @@ export default function Quiz({ currentSubject }) {
 
   const mode = searchParams.get('mode') || 'chapter';
   const chapterId = searchParams.get('chapter') || '';
-  const countParam = parseInt(searchParams.get('count') || '20', 10);
+  const sectionId = searchParams.get('section') || '';
+  const countParam = parseInt(searchParams.get('count') || '0', 10);
   const instant = searchParams.get('instant') === '1';
   const shouldShuffle = searchParams.get('shuffle') !== '0';
   const isTimed = searchParams.get('timed') === '1';
   const sessionId = searchParams.get('t') || '';
+
+  const activeSectionInfo = sectionId ? getSectionInfo(sectionId) : null;
 
   // Load questions for the session
   const questions = useMemo(() => {
@@ -43,7 +48,11 @@ export default function Quiz({ currentSubject }) {
     const sub = SUBJECTS[currentSubject] || SUBJECTS.tthcm;
 
     if (mode === 'chapter' && chapterId) {
-      pool = getQuestionsByChapter(currentSubject, chapterId);
+      if (sectionId && sectionId !== 'all') {
+        pool = getQuestionsBySection(currentSubject, sectionId);
+      } else {
+        pool = getQuestionsByChapter(currentSubject, chapterId);
+      }
     } else if (mode === 'midterm') {
       if (currentSubject === 'tthcm') {
         const ch1 = getQuestionsByChapter('tthcm', 'tthcm-ch1');
@@ -207,6 +216,9 @@ export default function Quiz({ currentSubject }) {
     const resultData = {
       subject: currentSubject,
       mode,
+      chapterId,
+      sectionId,
+      sectionTitle: activeSectionInfo?.title || null,
       totalQuestions: questions.length,
       correctCount,
       answers,
@@ -299,27 +311,43 @@ export default function Quiz({ currentSubject }) {
         zIndex: 20,
         position: 'relative'
       }}>
-        {/* Số câu #/# (Bấm vào để mở danh sách chọn nhanh câu) */}
-        <button
-          onClick={() => setIsNavDrawerOpen(true)}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '6px',
-            background: 'var(--bg-subtle)',
-            border: '1px solid var(--border)',
-            borderRadius: '9999px',
-            padding: '5px 12px',
-            cursor: 'pointer',
-            color: 'var(--text-main)',
-            fontWeight: 800,
-            fontSize: '15px'
-          }}
-          title="Xem danh sách tất cả câu hỏi"
-        >
-          <span>Câu {currentIndex + 1} / {questions.length}</span>
-          <LayoutGrid size={14} style={{ color: 'var(--text-subtle)' }} />
-        </button>
+        {/* Số câu #/# và Huy hiệu mục (nếu có) */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', minWidth: 0 }}>
+          <button
+            onClick={() => setIsNavDrawerOpen(true)}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              background: 'var(--bg-subtle)',
+              border: '1px solid var(--border)',
+              borderRadius: '9999px',
+              padding: '5px 12px',
+              cursor: 'pointer',
+              color: 'var(--text-main)',
+              fontWeight: 800,
+              fontSize: '14.5px',
+              flexShrink: 0
+            }}
+            title="Xem danh sách tất cả câu hỏi"
+          >
+            <span>Câu {currentIndex + 1} / {questions.length}</span>
+            <LayoutGrid size={14} style={{ color: 'var(--text-subtle)' }} />
+          </button>
+
+          {activeSectionInfo && (
+            <span className="badge badge-primary" style={{
+              fontSize: '11.5px',
+              fontWeight: 700,
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              maxWidth: '120px'
+            }} title={activeSectionInfo.title}>
+              {activeSectionInfo.code || activeSectionInfo.shortTitle}
+            </span>
+          )}
+        </div>
 
         {/* Đồng hồ đếm ngược (nếu có) */}
         {isTimed && timeLeft != null && (
@@ -327,20 +355,42 @@ export default function Quiz({ currentSubject }) {
             display: 'flex',
             alignItems: 'center',
             gap: '6px',
-            fontSize: '15px',
+            fontSize: '14px',
             fontWeight: 700,
             color: timeLeft < 300 ? 'var(--error-solid)' : 'var(--text-main)',
             backgroundColor: timeLeft < 300 ? 'var(--error-bg)' : 'transparent',
             padding: '4px 8px',
-            borderRadius: 'var(--radius-sm)'
+            borderRadius: 'var(--radius-sm)',
+            flexShrink: 0
           }}>
-            <Clock size={16} />
+            <Clock size={15} />
             <span>{formatTime(timeLeft)}</span>
           </div>
         )}
 
-        {/* Nút đánh dấu & Nút Thoát */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        {/* Nút Nộp bài sớm, đánh dấu & Nút Thoát */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
+          <button
+            onClick={() => setIsSubmitModalOpen(true)}
+            className="btn btn-primary btn-sm"
+            style={{
+              backgroundColor: 'var(--success-solid)',
+              borderColor: 'var(--success-solid)',
+              color: '#ffffff',
+              padding: '5px 12px',
+              fontSize: '13px',
+              fontWeight: 700,
+              borderRadius: '9999px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '4px'
+            }}
+            title="Nộp bài và chấm điểm ngay (kể cả khi chưa làm hết tất cả)"
+          >
+            <Check size={14} />
+            <span>Nộp bài</span>
+          </button>
+
           <button
             onClick={handleToggleFlag}
             className="btn btn-ghost btn-sm"
@@ -350,22 +400,22 @@ export default function Quiz({ currentSubject }) {
             }}
             title={flagged.includes(currentIndex) ? 'Bỏ đánh dấu xem lại' : 'Đánh dấu câu hỏi để xem lại'}
           >
-            <Flag size={18} fill={flagged.includes(currentIndex) ? 'currentColor' : 'none'} />
+            <Flag size={17} fill={flagged.includes(currentIndex) ? 'currentColor' : 'none'} />
           </button>
 
           <button
             onClick={() => setIsExitModalOpen(true)}
             className="btn btn-secondary btn-sm"
             style={{
-              padding: '5px 12px',
-              fontSize: '13.5px',
+              padding: '5px 10px',
+              fontSize: '13px',
               fontWeight: 600,
-              gap: '4px',
+              gap: '3px',
               borderRadius: '9999px'
             }}
             title="Thoát bài làm"
           >
-            <X size={15} />
+            <X size={14} />
             <span>Thoát</span>
           </button>
         </div>
@@ -640,6 +690,7 @@ export default function Quiz({ currentSubject }) {
       <ConfirmModal
         isOpen={isSubmitModalOpen}
         unansweredCount={unansweredCount}
+        totalQuestions={questions.length}
         onCancel={() => setIsSubmitModalOpen(false)}
         onConfirm={handleSubmitFinal}
       />

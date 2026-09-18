@@ -10,7 +10,7 @@ import {
   HelpCircle,
   Shuffle
 } from 'lucide-react';
-import { SUBJECTS } from '../data/subjects';
+import { SUBJECTS, getSectionInfo } from '../data/subjects';
 import { getAllQuestions, getQuestionsByChapter } from '../data/repository';
 
 export default function Practice({ currentSubject }) {
@@ -20,12 +20,22 @@ export default function Practice({ currentSubject }) {
 
   const [selectedMode, setSelectedMode] = useState('chapter'); // 'chapter', 'all', 'midterm', 'final'
   const [selectedChapter, setSelectedChapter] = useState(defaultChapter || (SUBJECTS[currentSubject]?.chapters[0]?.id || ''));
-  const [questionCount, setQuestionCount] = useState(20);
+  const [selectedSection, setSelectedSection] = useState('all');
+  const [questionCount, setQuestionCount] = useState(0); // default 0: all questions
   const [instantFeedback, setInstantFeedback] = useState(false); // true: xem kết quả ngay, false: làm xong nộp
   const [isShuffle, setIsShuffle] = useState(true);
 
   const sub = SUBJECTS[currentSubject] || SUBJECTS.tthcm;
   const allQuestions = getAllQuestions(currentSubject);
+
+  const activeChapterMeta = sub.chapters.find((c) => c.id === selectedChapter) || sub.chapters[0];
+  const activeChapterSections = activeChapterMeta?.sections || [];
+  const hasSubSections = activeChapterSections.length > 1;
+
+  // Reset selected section when chapter or subject changes
+  React.useEffect(() => {
+    setSelectedSection('all');
+  }, [selectedChapter, currentSubject]);
 
   const handleStart = () => {
     const params = new URLSearchParams();
@@ -37,6 +47,9 @@ export default function Practice({ currentSubject }) {
 
     if (selectedMode === 'chapter') {
       params.set('chapter', selectedChapter);
+      if (hasSubSections && selectedSection && selectedSection !== 'all') {
+        params.set('section', selectedSection);
+      }
       params.set('count', String(questionCount));
     } else if (selectedMode === 'all') {
       params.set('count', String(questionCount));
@@ -244,8 +257,152 @@ export default function Practice({ currentSubject }) {
         </div>
       )}
 
-      {/* Question Count Selector (for Chapter & All modes) */}
-      {(selectedMode === 'chapter' || selectedMode === 'all') && (
+      {/* Section Selector (Thay thế số câu thành Mục khi chương có nhiều mục) */}
+      {selectedMode === 'chapter' && hasSubSections && (
+        <div className="card" style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '14px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px' }}>
+            <label style={{ fontSize: '14.5px', fontWeight: 700, color: 'var(--text-main)', margin: 0 }}>
+              3. Chọn mục cần ôn tập
+            </label>
+            <span style={{ fontSize: '12.5px', color: 'var(--text-subtle)' }}>
+              {activeChapterMeta?.shortName} gồm {activeChapterSections.length} mục
+            </span>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '10px' }}>
+            {/* Option: Tất cả các mục trong chương */}
+            {(() => {
+              const totalChapterQ = allQuestions.filter((q) => activeChapterSections.includes(q.section)).length;
+              const isAllSelected = selectedSection === 'all';
+
+              return (
+                <div
+                  onClick={() => setSelectedSection('all')}
+                  className="card"
+                  style={{
+                    padding: '12px 16px',
+                    borderRadius: 'var(--radius-md)',
+                    border: isAllSelected ? '2px solid var(--primary)' : '1px solid var(--border)',
+                    backgroundColor: isAllSelected ? 'var(--primary-light)' : 'var(--bg-card)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    gap: '12px',
+                    cursor: 'pointer',
+                    transition: 'all 0.15s ease'
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minWidth: 0 }}>
+                    <input
+                      type="radio"
+                      name="section-select"
+                      checked={isAllSelected}
+                      onChange={() => setSelectedSection('all')}
+                      style={{ cursor: 'pointer', flexShrink: 0 }}
+                    />
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '2px', minWidth: 0 }}>
+                      <span style={{ fontWeight: 700, fontSize: '14.5px', color: 'var(--text-main)' }}>
+                        Tất cả các mục ({activeChapterMeta?.shortName})
+                      </span>
+                      <span style={{ fontSize: '12.5px', color: 'var(--text-muted)' }}>
+                        Bao gồm toàn bộ câu hỏi của tất cả các mục trong chương này.
+                      </span>
+                    </div>
+                  </div>
+                  <span className="badge badge-primary" style={{ flexShrink: 0, fontWeight: 700 }}>
+                    {totalChapterQ} câu
+                  </span>
+                </div>
+              );
+            })()}
+
+            {/* Từng mục cụ thể: Mục 1.1, Mục 1.2, Mục 2.1, Mục 2.2, v.v. */}
+            {activeChapterSections.map((secId) => {
+              const secInfo = getSectionInfo(secId) || { title: secId, description: '' };
+              const qCount = allQuestions.filter((q) => q.section === secId).length;
+              const isSecSelected = selectedSection === secId;
+
+              return (
+                <div
+                  key={secId}
+                  onClick={() => setSelectedSection(secId)}
+                  className="card"
+                  style={{
+                    padding: '12px 16px',
+                    borderRadius: 'var(--radius-md)',
+                    border: isSecSelected ? '2px solid var(--primary)' : '1px solid var(--border)',
+                    backgroundColor: isSecSelected ? 'var(--primary-light)' : 'var(--bg-card)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    gap: '12px',
+                    cursor: 'pointer',
+                    transition: 'all 0.15s ease'
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minWidth: 0 }}>
+                    <input
+                      type="radio"
+                      name="section-select"
+                      checked={isSecSelected}
+                      onChange={() => setSelectedSection(secId)}
+                      style={{ cursor: 'pointer', flexShrink: 0 }}
+                    />
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '2px', minWidth: 0 }}>
+                      <span style={{ fontWeight: 700, fontSize: '14.5px', color: 'var(--text-main)', lineHeight: 1.35 }}>
+                        {secInfo.title}
+                      </span>
+                      {secInfo.description && (
+                        <span style={{ fontSize: '12.5px', color: 'var(--text-muted)', lineHeight: 1.35 }}>
+                          {secInfo.description}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  <span className="badge" style={{ flexShrink: 0, fontWeight: 700 }}>
+                    {qCount} câu
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Tùy chọn số lượng câu hỏi luyện tập */}
+          <div style={{
+            marginTop: '4px',
+            paddingTop: '12px',
+            borderTop: '1px solid var(--border)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '10px'
+          }}>
+            <span style={{ fontSize: '13px', color: 'var(--text-subtle)', fontWeight: 600 }}>
+              Số lượng câu (có thể nộp bài bất kỳ lúc nào):
+            </span>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+              {[0, 20, 30, 50].map((num) => {
+                const isSelected = questionCount === num;
+                return (
+                  <button
+                    key={num}
+                    type="button"
+                    onClick={() => setQuestionCount(num)}
+                    className={`btn btn-sm ${isSelected ? 'btn-primary' : 'btn-secondary'}`}
+                    style={{ minWidth: '68px' }}
+                  >
+                    {num === 0 ? 'Tất cả' : `${num} câu`}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Question Count Selector (khi không có nhiều mục hoặc khi chọn chế độ toàn bộ môn) */}
+      {((selectedMode === 'chapter' && !hasSubSections) || selectedMode === 'all') && (
         <div className="card" style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '14px' }}>
           <label style={{ fontSize: '14.5px', fontWeight: 700, color: 'var(--text-main)' }}>
             {selectedMode === 'chapter' ? '3.' : '2.'} Chọn số lượng câu hỏi
