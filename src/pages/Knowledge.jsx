@@ -89,10 +89,68 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
     }
   }, [currentSubject, initialChapter, knowledgeData]);
 
+  const activeChapterData = knowledgeData[selectedChapterId] || knowledgeData[defaultChapter];
+  const activeChapterMeta = sub.chapters.find((c) => c.id === selectedChapterId) || sub.chapters[0];
+
+  const currentChapterIndex = sub.chapters.findIndex((c) => c.id === (activeChapterMeta?.id || selectedChapterId));
+  const prevChapter = currentChapterIndex > 0 ? sub.chapters[currentChapterIndex - 1] : null;
+  const nextChapter = currentChapterIndex >= 0 && currentChapterIndex < sub.chapters.length - 1 ? sub.chapters[currentChapterIndex + 1] : null;
+
+  // List of sections in current chapter (theory sections + timeline)
+  const chapterSections = useMemo(() => {
+    if (!activeChapterData) return [];
+    const list = (activeChapterData.sections || []).map((sec) => ({
+      id: sec.id,
+      title: sec.title,
+      icon: sec.icon || 'BookOpen',
+      itemCount: sec.items?.length || 0,
+      isTimeline: false,
+    }));
+    if (activeChapterData.timeline && activeChapterData.timeline.length > 0) {
+      list.push({
+        id: 'timeline',
+        title: 'Dòng thời gian sự kiện (Timeline)',
+        icon: 'Clock',
+        itemCount: activeChapterData.timeline.length,
+        isTimeline: true,
+      });
+    }
+    return list;
+  }, [activeChapterData]);
+
+  // Selected section state inside active chapter
+  const [selectedSectionId, setSelectedSectionId] = useState(() => {
+    return activeChapterData?.sections?.[0]?.id || 'all';
+  });
+
+  // When chapter or subject changes, reset selected section to first section
+  useEffect(() => {
+    if (activeChapterData?.sections?.[0]?.id) {
+      setSelectedSectionId(activeChapterData.sections[0].id);
+    } else {
+      setSelectedSectionId('all');
+    }
+    setSearchQuery('');
+  }, [selectedChapterId, activeChapterData]);
+
+  const activeSectionIndex = chapterSections.findIndex((s) => s.id === selectedSectionId);
+
   const handleSelectChapter = (chId) => {
     setSelectedChapterId(chId);
     setSearchParams({ chapter: chId });
+    setSearchQuery('');
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleSelectSection = (secId) => {
+    setSelectedSectionId(secId);
+    setSearchQuery('');
+    const el = document.getElementById('chapter-sections-view');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      window.scrollTo({ top: 120, behavior: 'smooth' });
+    }
   };
 
   const handleCopy = (text, termKey) => {
@@ -102,13 +160,6 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
       setTimeout(() => setCopiedTerm(null), 2000);
     } catch {}
   };
-
-  const activeChapterData = knowledgeData[selectedChapterId] || knowledgeData[defaultChapter];
-  const activeChapterMeta = sub.chapters.find((c) => c.id === selectedChapterId) || sub.chapters[0];
-
-  const currentChapterIndex = sub.chapters.findIndex((c) => c.id === (activeChapterMeta?.id || selectedChapterId));
-  const prevChapter = currentChapterIndex > 0 ? sub.chapters[currentChapterIndex - 1] : null;
-  const nextChapter = currentChapterIndex >= 0 && currentChapterIndex < sub.chapters.length - 1 ? sub.chapters[currentChapterIndex + 1] : null;
 
   const handleCopyAllTimeline = () => {
     if (!activeChapterData || !activeChapterData.timeline) return;
@@ -126,11 +177,11 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
   // Filter sections by search query
   const filteredSections = useMemo(() => {
     if (!activeChapterData) return [];
-    if (!searchQuery.trim()) return activeChapterData.sections;
+    if (!searchQuery.trim()) return activeChapterData.sections || [];
 
     const queryLower = searchQuery.toLowerCase().trim();
 
-    return activeChapterData.sections
+    return (activeChapterData.sections || [])
       .map((sec) => {
         const matchedItems = sec.items.filter((item) => {
           return (
@@ -167,8 +218,37 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
     });
   }, [activeChapterData, searchQuery]);
 
+  // Calculate displayed sections based on section selection & search
+  const displayedSections = useMemo(() => {
+    if (searchQuery.trim()) {
+      return filteredSections;
+    }
+    if (selectedSectionId === 'all') {
+      return filteredSections;
+    }
+    if (selectedSectionId === 'timeline') {
+      return [];
+    }
+    return filteredSections.filter((sec) => sec.id === selectedSectionId);
+  }, [searchQuery, selectedSectionId, filteredSections]);
+
+  const shouldShowTimeline = useMemo(() => {
+    if (searchQuery.trim()) {
+      return filteredTimeline.length > 0;
+    }
+    if (selectedSectionId === 'all') {
+      return Boolean(activeChapterData?.timeline?.length);
+    }
+    if (selectedSectionId === 'timeline') {
+      return Boolean(activeChapterData?.timeline?.length);
+    }
+    return false;
+  }, [searchQuery, selectedSectionId, filteredTimeline.length, activeChapterData]);
+
+  const hasNoResults = searchQuery.trim() && displayedSections.length === 0 && !shouldShowTimeline;
+
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }} className="animate-fade-in">
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', width: '100%', maxWidth: '100%', boxSizing: 'border-box' }} className="animate-fade-in">
       {/* Header */}
       <div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
@@ -192,7 +272,10 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
         overflowX: 'auto',
         paddingBottom: '8px',
         borderBottom: '1px solid var(--border)',
-        WebkitOverflowScrolling: 'touch'
+        WebkitOverflowScrolling: 'touch',
+        maxWidth: '100%',
+        boxSizing: 'border-box',
+        scrollbarWidth: 'none'
       }}>
         {sub.chapters.map((ch) => {
           const isSelected = ch.id === selectedChapterId;
@@ -240,11 +323,13 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
       {/* Chapter Details & Action Bar */}
       {activeChapterData && (
         <div className="card" style={{
-          padding: '20px 24px',
+          padding: '20px',
           display: 'flex',
           flexDirection: 'column',
           gap: '16px',
-          borderLeft: '4px solid var(--primary)'
+          borderLeft: '4px solid var(--primary)',
+          maxWidth: '100%',
+          boxSizing: 'border-box'
         }}>
           <div style={{
             display: 'flex',
@@ -253,7 +338,7 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
             gap: '16px',
             flexWrap: 'wrap'
           }}>
-            <div style={{ flex: '1 1 320px' }}>
+            <div style={{ flex: '1 1 280px', minWidth: 0, maxWidth: '100%' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
                 <span className="badge badge-gold">
                   {activeChapterMeta?.shortName}
@@ -262,7 +347,7 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
                   {activeChapterMeta?.questionCount} câu hỏi trắc nghiệm
                 </span>
               </div>
-              <h2 style={{ fontSize: '20px', fontWeight: 800, color: 'var(--text-main)' }}>
+              <h2 style={{ fontSize: '19px', fontWeight: 800, color: 'var(--text-main)', lineHeight: 1.35, wordBreak: 'break-word' }}>
                 {activeChapterData.title}
               </h2>
               <p style={{ fontSize: '14px', color: 'var(--text-muted)', marginTop: '6px', lineHeight: 1.6 }}>
@@ -271,15 +356,17 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
             </div>
 
             {/* Quick action buttons */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0, flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0, flexWrap: 'wrap', maxWidth: '100%' }}>
               {activeChapterData.timeline && activeChapterData.timeline.length > 0 && (
                 <button
-                  onClick={() => {
-                    const el = document.getElementById('chapter-timeline');
-                    if (el) el.scrollIntoView({ behavior: 'smooth' });
-                  }}
+                  onClick={() => handleSelectSection('timeline')}
                   className="btn btn-secondary btn-sm"
-                  title="Cuộn xuống xem Dòng thời gian sự kiện của chương này"
+                  title="Xem Dòng thời gian sự kiện của chương này"
+                  style={{
+                    backgroundColor: selectedSectionId === 'timeline' ? 'var(--primary-light)' : undefined,
+                    borderColor: selectedSectionId === 'timeline' ? 'var(--primary)' : undefined,
+                    color: selectedSectionId === 'timeline' ? 'var(--primary)' : undefined,
+                  }}
                 >
                   <Clock size={15} />
                   <span>Dòng thời gian ({activeChapterData.timeline.length})</span>
@@ -314,9 +401,11 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
             backgroundColor: 'var(--bg-subtle)',
             border: '1px solid var(--border)',
             borderRadius: 'var(--radius-md)',
-            padding: '8px 14px'
+            padding: '8px 14px',
+            maxWidth: '100%',
+            boxSizing: 'border-box'
           }}>
-            <Search size={16} color="var(--text-subtle)" />
+            <Search size={16} color="var(--text-subtle)" style={{ flexShrink: 0 }} />
             <input
               type="text"
               placeholder={`Tìm nhanh trong ${activeChapterMeta?.shortName} (từ khóa, sự kiện, mốc năm, bẫy trắc nghiệm)...`}
@@ -328,14 +417,15 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
                 outline: 'none',
                 width: '100%',
                 fontSize: '14px',
-                color: 'var(--text-main)'
+                color: 'var(--text-main)',
+                minWidth: 0
               }}
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}
                 className="btn btn-ghost btn-sm"
-                style={{ padding: '2px 6px', fontSize: '12px' }}
+                style={{ padding: '2px 8px', fontSize: '12px', flexShrink: 0 }}
               >
                 Xóa
               </button>
@@ -344,10 +434,159 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
         </div>
       )}
 
+      {/* Search notice banner when query active */}
+      {searchQuery.trim() && (
+        <div className="card" style={{
+          padding: '12px 16px',
+          backgroundColor: 'var(--bg-subtle)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: '10px',
+          flexWrap: 'wrap',
+          maxWidth: '100%',
+          boxSizing: 'border-box'
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: 'var(--text-main)' }}>
+            <Search size={16} color="var(--primary)" />
+            <span>Kết quả tìm kiếm cho: <strong>"{searchQuery}"</strong> trong toàn bộ chương</span>
+          </div>
+          <button
+            onClick={() => setSearchQuery('')}
+            className="btn btn-secondary btn-sm"
+            style={{ padding: '4px 10px', fontSize: '12px' }}
+          >
+            Quay lại mục học tập
+          </button>
+        </div>
+      )}
+
+      {/* Section Navigation Tabs (Segmented Control / Horizontal Pills) */}
+      {!searchQuery.trim() && (
+        <div 
+          id="chapter-sections-view"
+          className="card" 
+          style={{
+            padding: '14px 16px',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '10px',
+            scrollMarginTop: '80px',
+            maxWidth: '100%',
+            boxSizing: 'border-box'
+          }}
+        >
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: '10px',
+            flexWrap: 'wrap'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <Layers size={16} color="var(--primary)" />
+              <span style={{ fontSize: '13.5px', fontWeight: 700, color: 'var(--text-main)' }}>
+                Phân mục học tập ({chapterSections.length} mục):
+              </span>
+            </div>
+            {selectedSectionId !== 'all' && activeSectionIndex >= 0 && (
+              <span style={{ fontSize: '12px', color: 'var(--text-subtle)' }}>
+                Đang xem mục {activeSectionIndex + 1}/{chapterSections.length}
+              </span>
+            )}
+          </div>
+
+          {/* Horizontal Scrollable Tabs */}
+          <div style={{
+            display: 'flex',
+            gap: '8px',
+            overflowX: 'auto',
+            paddingBottom: '4px',
+            WebkitOverflowScrolling: 'touch',
+            maxWidth: '100%',
+            scrollbarWidth: 'none'
+          }}>
+            {chapterSections.map((sec, idx) => {
+              const isSelected = selectedSectionId === sec.id;
+              const IconComponent = ICONS[sec.icon] || BookOpen;
+
+              return (
+                <button
+                  key={sec.id}
+                  onClick={() => handleSelectSection(sec.id)}
+                  style={{
+                    padding: '8px 14px',
+                    borderRadius: 'var(--radius-md)',
+                    border: isSelected ? '1.5px solid var(--primary)' : '1px solid var(--border)',
+                    backgroundColor: isSelected ? 'var(--primary-light)' : 'var(--bg-subtle)',
+                    color: isSelected ? 'var(--primary)' : 'var(--text-main)',
+                    fontWeight: isSelected ? 700 : 500,
+                    fontSize: '13px',
+                    cursor: 'pointer',
+                    whiteSpace: 'nowrap',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    flexShrink: 0,
+                    transition: 'all 0.15s ease'
+                  }}
+                >
+                  <IconComponent size={14} />
+                  <span>
+                    {sec.id === 'timeline'
+                      ? `⏱️ Timeline (${sec.itemCount})`
+                      : sec.id === 'traps'
+                      ? '⚠️ Bẫy trắc nghiệm'
+                      : `${idx + 1}. ${sec.title.replace(/^[IVXLCDM]+\.\s*/, '')}`}
+                  </span>
+                  {sec.id !== 'timeline' && (
+                    <span style={{
+                      fontSize: '11px',
+                      padding: '1px 5px',
+                      borderRadius: '9999px',
+                      backgroundColor: isSelected ? 'var(--primary)' : 'var(--bg-card)',
+                      color: isSelected ? '#ffffff' : 'var(--text-subtle)',
+                      fontWeight: 600
+                    }}>
+                      {sec.itemCount}
+                    </span>
+                  )}
+                </button>
+              );
+            })}
+
+            {/* View All tab */}
+            <button
+              onClick={() => handleSelectSection('all')}
+              style={{
+                padding: '8px 14px',
+                borderRadius: 'var(--radius-md)',
+                border: selectedSectionId === 'all' ? '1.5px solid var(--primary)' : '1px solid var(--border)',
+                backgroundColor: selectedSectionId === 'all' ? 'var(--primary-light)' : 'var(--bg-subtle)',
+                color: selectedSectionId === 'all' ? 'var(--primary)' : 'var(--text-subtle)',
+                fontWeight: selectedSectionId === 'all' ? 700 : 500,
+                fontSize: '13px',
+                cursor: 'pointer',
+                whiteSpace: 'nowrap',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px',
+                flexShrink: 0,
+                transition: 'all 0.15s ease'
+              }}
+              title="Xem toàn bộ các mục và dòng thời gian của chương này trên cùng một trang"
+            >
+              <BookOpen size={14} />
+              <span>Xem tất cả</span>
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Sections List */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-        {filteredSections.length === 0 && filteredTimeline.length === 0 ? (
-          <div className="card" style={{ padding: '36px', textAlign: 'center' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', maxWidth: '100%', boxSizing: 'border-box' }}>
+        {hasNoResults ? (
+          <div className="card" style={{ padding: '36px', textAlign: 'center', maxWidth: '100%' }}>
             <p style={{ color: 'var(--text-muted)' }}>
               Không tìm thấy nội dung kiến thức hay mốc sự kiện nào khớp với từ khóa "{searchQuery}".
             </p>
@@ -359,14 +598,8 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
               Xóa bộ lọc tìm kiếm
             </button>
           </div>
-        ) : filteredSections.length === 0 && filteredTimeline.length > 0 ? (
-          <div className="card" style={{ padding: '16px 20px', backgroundColor: 'var(--bg-subtle)' }}>
-            <p style={{ fontSize: '13.5px', color: 'var(--text-muted)', margin: 0 }}>
-              Không có đề mục lý thuyết nào khớp với "{searchQuery}", nhưng tìm thấy <strong>{filteredTimeline.length}</strong> mốc sự kiện phù hợp trong dòng thời gian bên dưới.
-            </p>
-          </div>
         ) : (
-          filteredSections.map((sec) => {
+          displayedSections.map((sec) => {
             const IconComponent = ICONS[sec.icon] || BookOpen;
 
             return (
@@ -374,10 +607,13 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
                 key={sec.id}
                 className="card"
                 style={{
-                  padding: '22px',
+                  padding: '20px',
                   display: 'flex',
                   flexDirection: 'column',
-                  gap: '18px'
+                  gap: '18px',
+                  maxWidth: '100%',
+                  boxSizing: 'border-box',
+                  overflow: 'hidden'
                 }}
               >
                 {/* Section Header */}
@@ -405,14 +641,16 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
                     fontSize: '17px',
                     fontWeight: 800,
                     color: sec.id === 'traps' ? 'var(--warning-text)' : 'var(--text-main)',
-                    margin: 0
+                    margin: 0,
+                    wordBreak: 'break-word',
+                    lineHeight: 1.35
                   }}>
                     {sec.title}
                   </h3>
                 </div>
 
                 {/* Section Items */}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', maxWidth: '100%' }}>
                   {sec.items.map((item, idx) => {
                     const isCopied = copiedTerm === `${sec.id}-${idx}`;
 
@@ -426,19 +664,26 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
                           border: sec.id === 'traps' ? '1px solid var(--warning-border)' : '1px solid var(--border)',
                           display: 'flex',
                           flexDirection: 'column',
-                          gap: '8px'
+                          gap: '8px',
+                          maxWidth: '100%',
+                          boxSizing: 'border-box',
+                          overflowWrap: 'break-word',
+                          wordBreak: 'break-word'
                         }}
                       >
                         <div style={{
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'space-between',
-                          gap: '10px'
+                          gap: '10px',
+                          flexWrap: 'wrap'
                         }}>
                           <div style={{
                             fontSize: '15px',
                             fontWeight: 700,
-                            color: sec.id === 'traps' ? 'var(--warning-text)' : 'var(--text-main)'
+                            color: sec.id === 'traps' ? 'var(--warning-text)' : 'var(--text-main)',
+                            lineHeight: 1.4,
+                            wordBreak: 'break-word'
                           }}>
                             {item.term}
                           </div>
@@ -450,7 +695,8 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
                               padding: '4px 8px',
                               fontSize: '12px',
                               color: isCopied ? 'var(--success-solid)' : 'var(--text-subtle)',
-                              gap: '4px'
+                              gap: '4px',
+                              flexShrink: 0
                             }}
                             title="Sao chép nội dung kiến thức này"
                           >
@@ -463,7 +709,8 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
                           fontSize: '14.5px',
                           lineHeight: 1.65,
                           color: 'var(--text-main)',
-                          whiteSpace: 'pre-line'
+                          whiteSpace: 'pre-line',
+                          wordBreak: 'break-word'
                         }}>
                           {item.content}
                         </div>
@@ -480,9 +727,12 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
                             color: 'var(--primary)',
                             display: 'inline-flex',
                             alignItems: 'center',
-                            gap: '6px'
+                            gap: '6px',
+                            maxWidth: '100%',
+                            boxSizing: 'border-box',
+                            wordBreak: 'break-word'
                           }}>
-                            <span>📌 Điểm cốt lõi:</span>
+                            <span style={{ flexShrink: 0 }}>📌 Điểm cốt lõi:</span>
                             <span>{item.highlight}</span>
                           </div>
                         )}
@@ -496,18 +746,21 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
         )}
       </div>
 
-      {/* Chapter Timeline (Dòng thời gian sự kiện lịch sử ở mục cuối trong trang của chương) */}
-      {activeChapterData?.timeline && activeChapterData.timeline.length > 0 && (
+      {/* Chapter Timeline (Dòng thời gian sự kiện lịch sử) */}
+      {shouldShowTimeline && (
         <div 
           id="chapter-timeline"
           className="card" 
           style={{
-            padding: '24px',
+            padding: '20px',
             display: 'flex',
             flexDirection: 'column',
             gap: '20px',
             borderTop: '4px solid var(--primary)',
-            scrollMarginTop: '80px'
+            scrollMarginTop: '80px',
+            maxWidth: '100%',
+            boxSizing: 'border-box',
+            overflow: 'hidden'
           }}
         >
           {/* Timeline Header */}
@@ -515,12 +768,12 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
             display: 'flex',
             alignItems: 'flex-start',
             justifyContent: 'space-between',
-            gap: '16px',
+            gap: '14px',
             flexWrap: 'wrap',
             borderBottom: '1px solid var(--border)',
             paddingBottom: '16px'
           }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', minWidth: 0, flex: '1 1 280px' }}>
               <div style={{
                 width: '38px',
                 height: '38px',
@@ -534,7 +787,7 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
               }}>
                 <Clock size={20} />
               </div>
-              <div>
+              <div style={{ minWidth: 0 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
                   <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'var(--text-main)', margin: 0 }}>
                     Dòng thời gian sự kiện lịch sử (Timeline)
@@ -555,7 +808,8 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
               style={{
                 gap: '6px',
                 color: copiedTimeline ? 'var(--success-solid)' : 'var(--text-main)',
-                borderColor: copiedTimeline ? 'var(--success-border)' : 'var(--border)'
+                borderColor: copiedTimeline ? 'var(--success-border)' : 'var(--border)',
+                flexShrink: 0
               }}
               title="Sao chép toàn bộ danh sách mốc thời gian của chương này"
             >
@@ -572,14 +826,16 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
           ) : (
             <div style={{
               position: 'relative',
-              paddingLeft: '24px',
-              marginLeft: '8px',
+              paddingLeft: '22px',
+              marginLeft: '12px',
               borderLeft: '2px solid var(--border)',
               display: 'flex',
               flexDirection: 'column',
-              gap: '22px',
+              gap: '20px',
               paddingTop: '6px',
-              paddingBottom: '6px'
+              paddingBottom: '6px',
+              maxWidth: '100%',
+              boxSizing: 'border-box'
             }}>
               {filteredTimeline.map((item, idx) => {
                 const isCopied = copiedTerm === `timeline-${idx}`;
@@ -591,15 +847,17 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
                       position: 'relative',
                       display: 'flex',
                       flexDirection: 'column',
-                      gap: '8px'
+                      gap: '8px',
+                      maxWidth: '100%',
+                      boxSizing: 'border-box'
                     }}
                   >
                     {/* Circle Node on Timeline Line */}
                     <div 
                       style={{
                         position: 'absolute',
-                        left: '-31px',
-                        top: '12px',
+                        left: '-29px',
+                        top: '14px',
                         width: '12px',
                         height: '12px',
                         borderRadius: '50%',
@@ -612,14 +870,18 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
                     {/* Milestone Content Card */}
                     <div 
                       style={{
-                        padding: '16px 18px',
+                        padding: '16px',
                         borderRadius: 'var(--radius-md)',
                         backgroundColor: 'var(--bg-subtle)',
                         border: '1px solid var(--border)',
                         display: 'flex',
                         flexDirection: 'column',
                         gap: '8px',
-                        transition: 'all 0.15s ease'
+                        transition: 'all 0.15s ease',
+                        maxWidth: '100%',
+                        boxSizing: 'border-box',
+                        overflowWrap: 'break-word',
+                        wordBreak: 'break-word'
                       }}
                     >
                       <div style={{
@@ -671,7 +933,8 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
                             padding: '3px 8px',
                             fontSize: '11.5px',
                             color: isCopied ? 'var(--success-solid)' : 'var(--text-subtle)',
-                            gap: '4px'
+                            gap: '4px',
+                            flexShrink: 0
                           }}
                           title="Sao chép mốc sự kiện này"
                         >
@@ -685,7 +948,8 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
                         fontSize: '15px',
                         fontWeight: 700,
                         color: 'var(--text-main)',
-                        lineHeight: 1.45
+                        lineHeight: 1.45,
+                        wordBreak: 'break-word'
                       }}>
                         {item.title}
                       </div>
@@ -695,7 +959,8 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
                         fontSize: '14px',
                         color: 'var(--text-muted)',
                         lineHeight: 1.6,
-                        whiteSpace: 'pre-line'
+                        whiteSpace: 'pre-line',
+                        wordBreak: 'break-word'
                       }}>
                         {item.description}
                       </div>
@@ -705,6 +970,114 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
               })}
             </div>
           )}
+        </div>
+      )}
+
+      {/* Section Switcher / Pagination Control (Chuyển mục trong chương) */}
+      {!searchQuery.trim() && selectedSectionId !== 'all' && activeSectionIndex >= 0 && (
+        <div className="card" style={{
+          padding: '12px 16px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: '12px',
+          flexWrap: 'wrap',
+          backgroundColor: 'var(--bg-card)',
+          border: '1px solid var(--primary-border)',
+          width: '100%',
+          maxWidth: '100%',
+          boxSizing: 'border-box'
+        }}>
+          {/* Previous Section Button */}
+          <button
+            onClick={() => {
+              if (activeSectionIndex > 0) {
+                handleSelectSection(chapterSections[activeSectionIndex - 1].id);
+              } else if (prevChapter) {
+                handleSelectChapter(prevChapter.id);
+              }
+            }}
+            disabled={activeSectionIndex === 0 && !prevChapter}
+            className="btn btn-secondary btn-sm"
+            style={{
+              flex: '1 1 130px',
+              maxWidth: '100%',
+              minWidth: 0,
+              boxSizing: 'border-box',
+              justifyContent: 'flex-start',
+              padding: '8px 12px',
+              opacity: activeSectionIndex === 0 && !prevChapter ? 0.4 : 1
+            }}
+          >
+            <ChevronLeft size={16} style={{ flexShrink: 0 }} />
+            <span style={{
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              whiteSpace: 'nowrap',
+              fontSize: '13px',
+              minWidth: 0
+            }}>
+              {activeSectionIndex > 0
+                ? `Mục trước: ${chapterSections[activeSectionIndex - 1].title.replace(/^[IVXLCDM]+\.\s*/, '')}`
+                : prevChapter
+                ? `← ${prevChapter.shortName}`
+                : 'Đầu chương'}
+            </span>
+          </button>
+
+          {/* Current Section Indicator Badge */}
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px',
+            flexShrink: 0
+          }}>
+            <span style={{
+              backgroundColor: 'var(--primary)',
+              color: '#ffffff',
+              padding: '4px 10px',
+              borderRadius: '9999px',
+              fontSize: '12px',
+              fontWeight: 700
+            }}>
+              Mục {activeSectionIndex + 1} / {chapterSections.length}
+            </span>
+          </div>
+
+          {/* Next Section Button */}
+          <button
+            onClick={() => {
+              if (activeSectionIndex < chapterSections.length - 1) {
+                handleSelectSection(chapterSections[activeSectionIndex + 1].id);
+              } else if (nextChapter) {
+                handleSelectChapter(nextChapter.id);
+              }
+            }}
+            className="btn btn-primary btn-sm"
+            style={{
+              flex: '1 1 130px',
+              maxWidth: '100%',
+              minWidth: 0,
+              boxSizing: 'border-box',
+              justifyContent: 'flex-end',
+              padding: '8px 12px'
+            }}
+          >
+            <span style={{
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              whiteSpace: 'nowrap',
+              fontSize: '13px',
+              minWidth: 0
+            }}>
+              {activeSectionIndex < chapterSections.length - 1
+                ? `${chapterSections[activeSectionIndex + 1].title.replace(/^[IVXLCDM]+\.\s*/, '')} →`
+                : nextChapter
+                ? `Sang ${nextChapter.shortName} →`
+                : 'Hoàn thành chương'}
+            </span>
+            <ChevronRight size={16} style={{ flexShrink: 0 }} />
+          </button>
         </div>
       )}
 
@@ -718,7 +1091,9 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
         flexDirection: 'column',
         alignItems: 'center',
         gap: '12px',
-        marginTop: '12px'
+        marginTop: '8px',
+        maxWidth: '100%',
+        boxSizing: 'border-box'
       }}>
         <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'var(--text-main)', margin: 0 }}>
           Đã nắm vững lý thuyết {activeChapterMeta?.shortName}?
@@ -742,20 +1117,26 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
           display: 'flex',
           alignItems: 'stretch',
           justifyContent: 'space-between',
-          gap: '14px',
+          gap: '12px',
           flexWrap: 'wrap',
-          marginTop: '4px'
+          marginTop: '4px',
+          width: '100%',
+          maxWidth: '100%',
+          boxSizing: 'border-box'
         }}>
           {prevChapter && (
             <button
               onClick={() => handleSelectChapter(prevChapter.id)}
               className="card"
               style={{
-                flex: '1 1 280px',
-                padding: '16px 20px',
+                flex: '1 1 240px',
+                maxWidth: '100%',
+                minWidth: 0,
+                boxSizing: 'border-box',
+                padding: '14px 16px',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '14px',
+                gap: '12px',
                 cursor: 'pointer',
                 border: '1px solid var(--border)',
                 backgroundColor: 'var(--bg-card)',
@@ -765,9 +1146,9 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
               title={`Chuyển về ${prevChapter.name}`}
             >
               <div style={{
-                width: '38px',
-                height: '38px',
-                borderRadius: '10px',
+                width: '36px',
+                height: '36px',
+                borderRadius: '8px',
                 backgroundColor: 'var(--bg-subtle)',
                 display: 'flex',
                 alignItems: 'center',
@@ -775,13 +1156,23 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
                 flexShrink: 0,
                 color: 'var(--primary)'
               }}>
-                <ChevronLeft size={20} />
+                <ChevronLeft size={18} />
               </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '3px', minWidth: 0, flex: 1 }}>
-                <span style={{ fontSize: '11.5px', color: 'var(--text-subtle)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.4px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '3px', minWidth: 0, flex: 1, overflow: 'hidden' }}>
+                <span style={{ fontSize: '11px', color: 'var(--text-subtle)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.4px' }}>
                   ← Chương trước
                 </span>
-                <span style={{ fontSize: '14px', fontWeight: 700, color: 'var(--text-main)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                <span style={{
+                  fontSize: '13.5px',
+                  fontWeight: 700,
+                  color: 'var(--text-main)',
+                  display: '-webkit-box',
+                  WebkitLineClamp: 2,
+                  WebkitBoxOrient: 'vertical',
+                  overflow: 'hidden',
+                  wordBreak: 'break-word',
+                  lineHeight: 1.35
+                }}>
                   {prevChapter.name}
                 </span>
               </div>
@@ -793,13 +1184,16 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
               onClick={() => handleSelectChapter(nextChapter.id)}
               className="card"
               style={{
-                flex: '1 1 280px',
+                flex: '1 1 240px',
+                maxWidth: '100%',
+                minWidth: 0,
+                boxSizing: 'border-box',
                 marginLeft: prevChapter ? 0 : 'auto',
-                padding: '16px 20px',
+                padding: '14px 16px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-between',
-                gap: '14px',
+                gap: '12px',
                 cursor: 'pointer',
                 border: '1px solid var(--primary-border)',
                 backgroundColor: 'var(--primary-light)',
@@ -808,18 +1202,28 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
               }}
               title={`Chuyển sang ${nextChapter.name}`}
             >
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '3px', minWidth: 0, flex: 1, textAlign: 'right' }}>
-                <span style={{ fontSize: '11.5px', color: 'var(--primary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.4px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '3px', minWidth: 0, flex: 1, textAlign: 'right', overflow: 'hidden' }}>
+                <span style={{ fontSize: '11px', color: 'var(--primary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.4px' }}>
                   Chương tiếp theo →
                 </span>
-                <span style={{ fontSize: '14px', fontWeight: 700, color: 'var(--text-main)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                <span style={{
+                  fontSize: '13.5px',
+                  fontWeight: 700,
+                  color: 'var(--text-main)',
+                  display: '-webkit-box',
+                  WebkitLineClamp: 2,
+                  WebkitBoxOrient: 'vertical',
+                  overflow: 'hidden',
+                  wordBreak: 'break-word',
+                  lineHeight: 1.35
+                }}>
                   {nextChapter.name}
                 </span>
               </div>
               <div style={{
-                width: '38px',
-                height: '38px',
-                borderRadius: '10px',
+                width: '36px',
+                height: '36px',
+                borderRadius: '8px',
                 backgroundColor: 'var(--primary)',
                 display: 'flex',
                 alignItems: 'center',
@@ -827,7 +1231,7 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
                 flexShrink: 0,
                 color: '#ffffff'
               }}>
-                <ChevronRight size={20} />
+                <ChevronRight size={18} />
               </div>
             </button>
           )}
