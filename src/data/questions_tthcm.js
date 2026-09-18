@@ -661,7 +661,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1033,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Truyền thống quý báu nhất của dân tộc Việt Nam được Hồ Chí Minh kế thừa và phát triển là",
     "options": [
@@ -675,7 +675,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1034,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Đâu không phải là tinh hoa văn hoá phương Đông mà Hồ Chí Minh tiếp thu?",
     "options": [
@@ -689,7 +689,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1035,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Tiền đề lí luận quan trọng nhất, có vai trò quyết định trong việc hình thành tư tưởng Hồ Chí Minh là",
     "options": [
@@ -703,7 +703,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1036,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 2,
     "q": "Nguyên nhân chủ yếu dẫn đến sự thất bại của những phong trào yêu nước chống thực dân Pháp xâm lược ở nước ta trước khi Đảng ra đời là do",
     "options": [
@@ -717,7 +717,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1037,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Đâu không phải là cơ sở khách quan hình thành tư tưởng Hồ Chí Minh?",
     "options": [
@@ -731,7 +731,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1038,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Hồ Chí Minh đã tiếp thu những giá trị văn hoá phương Đông nào sau đây?",
     "options": [
@@ -745,7 +745,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1039,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, ưu điểm nổi bật của học thuyết Khổng Tử là",
     "options": [
@@ -759,7 +759,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1040,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Đâu không phải là giá trị tư tưởng của Phật giáo mà Hồ Chí Minh đã tiếp thu?",
     "options": [
@@ -773,7 +773,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1041,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "“Chẳng khác gì đưa hổ cửa trước, rước beo cửa sau” là nhận định của Hồ Chí Minh về con đường cứu nước của nhà yêu nước",
     "options": [
@@ -787,7 +787,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1042,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "“Chẳng khác gì đến xin giặc rủ lòng thương” là nhận định của Hồ Chí Minh về chủ trương cứu nước của nhà yêu nước",
     "options": [
@@ -801,7 +801,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1043,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Nguyễn Ái Quốc trở thành người cộng sản đầu tiên của dân tộc Việt Nam nhờ tiếp thu",
     "options": [
@@ -815,7 +815,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1044,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 2,
     "q": "Đầu năm 1919, Nguyễn Ái Quốc gia nhập Đảng Xã hội Pháp vì",
     "options": [
@@ -829,7 +829,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1045,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Hồ Chí Minh tiếp thu và phát triển các quan điểm về dân tộc độc lập, dân quyền tự do, dân sinh hạnh phúc của",
     "options": [
@@ -843,7 +843,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1046,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Nguyễn Ái Quốc tiếp thu chủ nghĩa Mác – Lênin và trở thành người cộng sản Việt Nam từ năm",
     "options": [
@@ -857,7 +857,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1047,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Thay mặt Hội những người yêu nước Việt Nam tại Pháp, Nguyễn Tất Thành gửi đến Hội nghị Véc-xây (Versailles) bản Yêu sách của nhân dân An Nam đòi quyền",
     "options": [
@@ -871,7 +871,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1048,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 2,
     "q": "Nguyễn Ái Quốc dựa vào cơ sở nào để giải quyết tình trạng khủng hoảng, bế tắc về đường lối cách mạng Việt Nam cuối thế kỉ XIX, đầu thế kỉ XX?",
     "options": [
@@ -885,7 +885,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1049,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Tháng 7/1919, Nguyễn Ái Quốc đã viết tác phẩm nào để vạch trần bản chất xấu xa của bọn thực dân cho dù nó đã được che đậy một cách khéo léo?",
     "options": [
@@ -899,7 +899,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1050,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Nguyễn Ái Quốc đã trả lời thế nào trước câu hỏi “Anh đến Pháp với mục đích gì?” của một phóng viên người Mĩ năm 1919?",
     "options": [
@@ -913,7 +913,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1051,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 2,
     "q": "Chọn đáp án đúng với quá trình hình thành và phát triển tư tưởng Hồ Chí Minh.",
     "options": [
@@ -927,7 +927,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1052,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Tư tưởng Hồ Chí Minh về cách mạng Việt Nam cơ bản được hình thành trong",
     "options": [
@@ -941,7 +941,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1053,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Tư tưởng Hồ Chí Minh tiếp tục phát triển, soi đường cho sự nghiệp cách mạng của Đảng và nhân dân ta trong",
     "options": [
@@ -955,7 +955,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1054,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Nguyễn Tất Thành tiếp xúc với khẩu hiệu “Tự do, Bình đẳng, Bác ái” của Cách mạng Pháp từ năm",
     "options": [
@@ -969,7 +969,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1055,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Tác phẩm Bản án chế độ thực dân Pháp của Hồ Chí Minh được xuất bản bằng tiếng Pháp vào năm",
     "options": [
@@ -983,7 +983,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1056,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Tác phẩm Đường cách mệnh của Nguyễn Ái Quốc, được xuất bản lần đầu tiên vào năm nào?",
     "options": [
@@ -997,7 +997,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1057,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Tháng 7/1920, Nguyễn Ái Quốc đọc được tác phẩm nào sau đây của V.I.Lênin và có tác động lớn tới sự lựa chọn con đường cứu nước của Người?",
     "options": [
@@ -1011,7 +1011,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1058,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 2,
     "q": "Nguyễn Ái Quốc không dùng hình tượng nào dưới đây để chỉ chủ nghĩa tư bản?",
     "options": [
@@ -1025,7 +1025,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1059,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Nguyễn Ái Quốc về nước trực tiếp lãnh đạo phong trào cách mạng Việt Nam vào năm nào?",
     "options": [
@@ -1039,7 +1039,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1060,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Tác phẩm nào sau đây không phải của Hồ Chí Minh?",
     "options": [
@@ -1053,7 +1053,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1061,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 2,
     "q": "Luận điểm “Chủ nghĩa dân tộc là động lực lớn của đất nước” được đề cập trong tác phẩm Báo cáo về Bắc Kì, Trung Kì và Nam Kì (1924) được hiểu là chủ nghĩa dân tộc",
     "options": [
@@ -1067,7 +1067,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1062,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Giai đoạn Hồ Chí Minh vượt qua thử thách, giữ vững đường lối, phương pháp cách mạng Việt Nam đúng đắn sáng tạo là thời kì",
     "options": [
@@ -1081,7 +1081,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1063,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Hồ Chí Minh tìm thấy và xác định rõ phương hướng đấu tranh giải phóng dân tộc Việt Nam theo con đường cách mạng vô sản trong thời kì",
     "options": [
@@ -1095,7 +1095,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1064,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Khi kí trên bản Yêu sách của nhân dân An Nam gửi đến Hội nghị Véc-xây (1919), Hồ Chí Minh đã lấy tên là gì?",
     "options": [
@@ -1109,7 +1109,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1065,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Luận điểm “Chủ trương làm tư sản dân quyền cách mạng và thổ địa cách mạng để đi tới xã hội cộng sản” được trích từ",
     "options": [
@@ -1123,7 +1123,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1066,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, cách mạng muốn thành công thì trước hết phải có",
     "options": [
@@ -1137,7 +1137,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1067,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Nguyễn Ái Quốc tham gia Đại hội đại biểu toàn quốc lần thứ XVIII Đảng Xã hội Pháp (25/12/1920) với tư cách là đại biểu của",
     "options": [
@@ -1151,7 +1151,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1068,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 2,
     "q": "Sự kiện nào sau đây đánh dấu Nguyễn Ái Quốc trở thành người cộng sản đầu tiên của dân tộc Việt Nam?",
     "options": [
@@ -1165,7 +1165,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1069,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 2,
     "q": "Nguyễn Ái Quốc bỏ phiếu tán thành Quốc tế III (Quốc tế Cộng sản) vì",
     "options": [
@@ -1179,7 +1179,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1070,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 2,
     "q": "Quá trình xâm lược và nô dịch các nước nhỏ yếu ở châu Á, châu Phi và khu vực Mĩ Latinh của các nước đế quốc đã dẫn tới mâu thuẫn gay gắt chủ yếu mang tính quốc tế nào sau đây?",
     "options": [
@@ -1193,7 +1193,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1071,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Cuối thế kỉ XIX, đầu thế kỉ XX, tính chất xã hội Việt Nam là",
     "options": [
@@ -1207,7 +1207,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1072,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 2,
     "q": "Dưới sự tác động cuộc khai thác thuộc địa của thực dân Pháp, các giai cấp, tầng lớp trong xã hội Việt Nam đã phân hoá sâu sắc. Bộ phận nào sau đây không có tinh thần chống Pháp giành độc lập cho dân tộc?",
     "options": [
@@ -1221,7 +1221,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1073,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Những phong trào yêu nước nào sau đây theo khuynh hướng phong kiến?",
     "options": [
@@ -1235,7 +1235,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1074,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Dòng nào sau đây nêu đúng trình tự thời gian ra đời của các tổ chức?",
     "options": [
@@ -1249,7 +1249,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1075,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 2,
     "q": "Dưới ách thống trị của thực dân Pháp, trong xã hội Việt Nam đã xuất hiện những mâu thuẫn mới nào?",
     "options": [
@@ -1263,7 +1263,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1076,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Phong trào Đông Du (1905 – 1908) do ai khởi xướng?",
     "options": [
@@ -1277,7 +1277,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1077,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Chủ trương “khai dân trí, chấn dân khí, hậu dân sinh” là của ai?",
     "options": [
@@ -1291,7 +1291,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1078,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Chọn từ ngữ để hoàn chỉnh nhận định sau của Hồ Chí Minh: “Chỉ có giai cấp … là dũng cảm nhất, cách mạng nhất, luôn luôn gan góc đương đầu với bọn đế quốc thực dân.”.",
     "options": [
@@ -1305,7 +1305,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1079,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Chọn từ ngữ để hoàn chỉnh nhận định sau của Hồ Chí Minh: “Tuy Khổng Tử là phong kiến và tuy trong học thuyết của Khổng Tử có nhiều điều không đúng song … trong đó thì chúng ta nên học.”.",
     "options": [
@@ -1319,7 +1319,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1080,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Năm 1919, Hồ Chí Minh gửi tới Hội nghị Versailles bản Yêu sách của nhân dân An Nam gồm 8 điểm với nội dung cơ bản, chủ yếu là gì?",
     "options": [
@@ -1333,7 +1333,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1081,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Trong tác phẩm Đường cách mệnh (1927), theo Hồ Chí Minh, bây giờ “học thuyết nhiều, chủ nghĩa nhiều, nhưng chủ nghĩa chân chính nhất, chắc chắn nhất, cách mệnh nhất” là",
     "options": [
@@ -1347,7 +1347,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1082,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Nguyễn Tất Thành rời bến cảng Nhà Rồng ra đi tìm đường cứu nước vào ngày, tháng, năm nào?",
     "options": [
@@ -1361,7 +1361,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1083,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Tờ báo nào do Nguyễn Ái Quốc sáng lập, làm cơ quan ngôn luận của Hội Liên hiệp thuộc địa?",
     "options": [
@@ -1375,7 +1375,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1084,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Quốc tế Cộng sản (Quốc tế III) được thành lập vào năm nào?",
     "options": [
@@ -1389,7 +1389,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1085,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Hội Việt Nam Cách mạng Thanh niên (1925) được Nguyễn Ái Quốc thành lập ở đâu?",
     "options": [
@@ -1403,7 +1403,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1086,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Hội nghị Trung ương lần thứ tám (5/1941) do Nguyễn Ái Quốc chủ trì được tổ chức tại đâu?",
     "options": [
@@ -1417,7 +1417,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1087,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Tác phẩm cuối cùng Hồ Chí Minh để lại cho toàn Đảng, toàn dân trước lúc đi xa là",
     "options": [
@@ -1431,7 +1431,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1088,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Trong những năm 1934 – 1938, Nguyễn Ái Quốc học tập và nghiên cứu tại cơ sở đào tạo nào ở Liên Xô?",
     "options": [
@@ -1445,7 +1445,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1089,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 2,
     "q": "Vì sao chủ nghĩa Mác – Lênin là nhân tố quyết định bước phát triển về chất của tư tưởng Hồ Chí Minh?",
     "options": [
@@ -1459,7 +1459,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1090,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 2,
     "q": "Vì sao Cách mạng Tháng Mười Nga năm 1917 có ảnh hưởng sâu sắc đến sự lựa chọn con đường cứu nước của Nguyễn Ái Quốc?",
     "options": [
@@ -1473,7 +1473,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1091,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 2,
     "q": "Nhân tố chủ quan Hồ Chí Minh có vai trò như thế nào đối với sự hình thành tư tưởng của Người?",
     "options": [
@@ -1487,7 +1487,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1092,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 2,
     "q": "Việc Hồ Chí Minh tiếp thu tinh hoa văn hoá nhân loại thể hiện đặc điểm nổi bật nào trong phương pháp tư duy của Người?",
     "options": [
@@ -1501,7 +1501,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1093,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 2,
     "q": "Vì sao thời kỳ 1930 – 1941 được coi là thời kỳ Hồ Chí Minh vượt qua thử thách, kiên định con đường đã lựa chọn?",
     "options": [
@@ -1515,7 +1515,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1094,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-iii",
     "clo": 2,
     "q": "Vì sao nói tư tưởng Hồ Chí Minh là tài sản tinh thần vô giá của dân tộc Việt Nam?",
     "options": [
@@ -1529,7 +1529,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1095,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-iii",
     "clo": 3,
     "q": "Việc Đảng ta ban hành Chỉ thị 05-CT/TW (2016) về đẩy mạnh học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh thể hiện điều gì?",
     "options": [
@@ -1543,7 +1543,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1096,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-iii",
     "clo": 3,
     "q": "Từ cách Hồ Chí Minh tiếp thu tinh hoa văn hoá nhân loại, Việt Nam cần làm gì trong hội nhập quốc tế hiện nay?",
     "options": [
@@ -1557,7 +1557,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1097,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-iii",
     "clo": 3,
     "q": "Vận dụng bài học từ con đường cứu nước mà Hồ Chí Minh lựa chọn, Đảng ta hiện nay kiên định mục tiêu nào?",
     "options": [
@@ -1571,7 +1571,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1098,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-iii",
     "clo": 3,
     "q": "Từ tấm gương ý chí, nghị lực của Hồ Chí Minh trong thời kỳ tìm đường cứu nước, sinh viên hiện nay cần rèn luyện trước hết điều gì?",
     "options": [
@@ -1585,7 +1585,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1099,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-iii",
     "clo": 3,
     "q": "Việc UNESCO (1987) tôn vinh Hồ Chí Minh là Anh hùng giải phóng dân tộc, Nhà văn hoá kiệt xuất của Việt Nam có ý nghĩa gì đối với nước ta hiện nay?",
     "options": [
@@ -1599,7 +1599,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1521,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Cơ sở hình thành tư tưởng Hồ Chí Minh bao gồm những nhóm cơ sở chủ yếu nào?",
     "options": [
@@ -1613,7 +1613,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1522,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Trong các giá trị truyền thống tốt đẹp của dân tộc Việt Nam, giá trị nào được xem là dòng chủ lưu, xuyên suốt, tác động sâu sắc nhất đến tư tưởng Hồ Chí Minh?",
     "options": [
@@ -1627,7 +1627,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1523,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Bên cạnh chủ nghĩa yêu nước, những giá trị truyền thống nào khác của dân tộc Việt Nam đã ảnh hưởng đến sự hình thành tư tưởng, nhân cách Hồ Chí Minh?",
     "options": [
@@ -1641,7 +1641,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1524,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 2,
     "q": "Trong tinh hoa văn hóa nhân loại, Hồ Chí Minh đã tiếp thu những giá trị tích cực nào của Nho giáo?",
     "options": [
@@ -1655,7 +1655,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1525,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 2,
     "q": "Hồ Chí Minh đã tiếp thu những giá trị tiến bộ nào từ tư tưởng Phật giáo?",
     "options": [
@@ -1669,7 +1669,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1526,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 2,
     "q": "Hồ Chí Minh đã kế thừa những giá trị nào từ chủ nghĩa Tam dân của Tôn Trung Sơn?",
     "options": [
@@ -1683,7 +1683,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1527,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Trong tư tưởng văn hóa phương Tây, Hồ Chí Minh đặc biệt đề cao những giá trị dân chủ, nhân quyền nào?",
     "options": [
@@ -1697,7 +1697,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1528,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Chủ nghĩa Mác - Lênin có vai trò như thế nào đối với sự hình thành tư tưởng Hồ Chí Minh?",
     "options": [
@@ -1711,7 +1711,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1529,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 2,
     "q": "Hồ Chí Minh đã tiếp thu chủ nghĩa Mác - Lênin theo phương pháp nào, khác với cách tiếp thu kinh viện, giáo điều?",
     "options": [
@@ -1725,7 +1725,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1530,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Về mặt thực tiễn thế giới, bối cảnh nào cuối thế kỷ XIX, đầu thế kỷ XX đã tác động trực tiếp đến sự hình thành tư tưởng Hồ Chí Minh?",
     "options": [
@@ -1739,7 +1739,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1531,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Sự kiện Nguyễn Ái Quốc tham gia sáng lập Đảng Cộng sản Pháp tại Đại hội Tua (tháng 12/1920) có ý nghĩa gì đối với quá trình hình thành tư tưởng của Người?",
     "options": [
@@ -1753,7 +1753,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1532,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Về mặt thực tiễn Việt Nam, tình hình đất nước cuối thế kỷ XIX, đầu thế kỷ XX như thế nào đã tác động đến việc hình thành tư tưởng Hồ Chí Minh?",
     "options": [
@@ -1767,7 +1767,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1533,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Truyền thống quê hương, gia đình có ảnh hưởng như thế nào đến sự hình thành nhân cách, tư tưởng của Hồ Chí Minh thuở thiếu thời?",
     "options": [
@@ -1781,7 +1781,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1534,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 2,
     "q": "Nhân tố chủ quan thuộc về phẩm chất cá nhân của Hồ Chí Minh góp phần hình thành nên tư tưởng của Người bao gồm những yếu tố nào?",
     "options": [
@@ -1795,7 +1795,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1535,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 2,
     "q": "Khả năng tư duy độc lập, tự chủ, sáng tạo của Hồ Chí Minh được thể hiện rõ nét qua sự kiện nào trong quá trình tiếp cận chủ nghĩa Mác - Lênin?",
     "options": [
@@ -1809,7 +1809,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1536,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 1,
     "q": "Trong các cơ sở lý luận hình thành tư tưởng Hồ Chí Minh, yếu tố nào giữ vai trò quyết định, là bước ngoặt về chất so với các giá trị truyền thống dân tộc và tinh hoa văn hóa nhân loại?",
     "options": [
@@ -1823,7 +1823,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1537,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 3,
     "q": "Việc nghiên cứu các cơ sở hình thành tư tưởng Hồ Chí Minh (truyền thống dân tộc, tinh hoa văn hóa nhân loại, chủ nghĩa Mác - Lênin) có ý nghĩa phương pháp luận gì đối với việc học tập, làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh hiện nay?",
     "options": [
@@ -1837,7 +1837,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1538,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-i",
     "clo": 2,
     "q": "So với các nhà yêu nước tiền bối, điểm khác biệt căn bản trong việc tiếp thu tinh hoa văn hóa nhân loại của Hồ Chí Minh là gì?",
     "options": [
@@ -1851,7 +1851,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1539,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Quá trình hình thành và phát triển tư tưởng Hồ Chí Minh thường được các nhà nghiên cứu phân chia thành mấy giai đoạn chính?",
     "options": [
@@ -1865,7 +1865,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1540,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Giai đoạn trước năm 1911 trong quá trình hình thành tư tưởng Hồ Chí Minh có đặc điểm nổi bật gì?",
     "options": [
@@ -1879,7 +1879,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1541,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Giai đoạn 1911-1920 trong quá trình hình thành tư tưởng Hồ Chí Minh được đánh dấu bởi sự kiện quan trọng nào?",
     "options": [
@@ -1893,7 +1893,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1542,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 2,
     "q": "Giai đoạn 1921-1930 trong quá trình hình thành tư tưởng Hồ Chí Minh có nội dung, đặc điểm nổi bật gì?",
     "options": [
@@ -1907,7 +1907,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1543,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Tác phẩm \"Đường Kách mệnh\" (1927) tập hợp các bài giảng của Nguyễn Ái Quốc tại đâu, có ý nghĩa gì đối với sự hình thành tư tưởng Hồ Chí Minh?",
     "options": [
@@ -1921,7 +1921,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1544,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 2,
     "q": "Giai đoạn 1930-1945 trong quá trình phát triển tư tưởng Hồ Chí Minh được đặc trưng bởi điều gì?",
     "options": [
@@ -1935,7 +1935,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1545,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Giai đoạn 1945-1969, tư tưởng Hồ Chí Minh tiếp tục được bổ sung, phát triển và hoàn thiện trên cơ sở nào?",
     "options": [
@@ -1949,7 +1949,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1546,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 2,
     "q": "Trong giai đoạn 1945-1969, tác phẩm, văn kiện nào thể hiện tập trung, cô đọng nhất tư tưởng của Hồ Chí Minh về xây dựng Đảng, Nhà nước và con người?",
     "options": [
@@ -1963,7 +1963,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1547,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Sự kiện Nguyễn Ái Quốc tham gia sáng lập Đảng Cộng sản Pháp tại Đại hội Tua (12/1920) đánh dấu bước ngoặt gì trong cuộc đời hoạt động cách mạng của Người?",
     "options": [
@@ -1977,7 +1977,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1548,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 2,
     "q": "Trong giai đoạn 1930-1945, việc Hồ Chí Minh chủ trì Hội nghị Trung ương 8 (5/1941), hoàn chỉnh chủ trương đặt nhiệm vụ giải phóng dân tộc lên hàng đầu, thể hiện sự phát triển gì trong tư tưởng của Người?",
     "options": [
@@ -1991,7 +1991,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1549,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Tác phẩm nào của Nguyễn Ái Quốc, xuất bản năm 1925, tố cáo mạnh mẽ tội ác của chủ nghĩa thực dân Pháp đối với các dân tộc thuộc địa?",
     "options": [
@@ -2005,7 +2005,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1550,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 2,
     "q": "Xuyên suốt cả năm giai đoạn hình thành và phát triển, tư tưởng Hồ Chí Minh vận động theo quy luật chung nào?",
     "options": [
@@ -2019,7 +2019,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1551,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 1,
     "q": "Trong thời gian hoạt động ở Pháp (1917-1923), Nguyễn Ái Quốc đã có hoạt động báo chí nổi bật nào để tuyên truyền, vạch trần tội ác của chủ nghĩa thực dân?",
     "options": [
@@ -2033,7 +2033,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1552,
-    "section": "tthcm-ch2",
+    "section": "tthcm-ch2-ii",
     "clo": 3,
     "q": "Việc nghiên cứu quá trình hình thành, phát triển tư tưởng Hồ Chí Minh qua năm giai đoạn có ý nghĩa phương pháp luận quan trọng nào đối với người học?",
     "options": [
@@ -2047,7 +2047,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1100,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Lần đầu tiên Hồ Chí Minh đòi quyền bình đẳng, tự do cho dân tộc Việt Nam trong tác phẩm nào sau đây?",
     "options": [
@@ -2061,7 +2061,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1101,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, quyền thiêng liêng, bất khả xâm phạm của các dân tộc là",
     "options": [
@@ -2075,7 +2075,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1102,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "Trong Thư gửi đồng bào Nam Bộ (1946), Hồ Chí Minh khẳng định “Đồng bào Nam Bộ là dân nước Việt Nam. Sông có thể cạn, núi có thể mòn, song chân lí đó không bao giờ thay đổi!”. Nội dung câu nói thể hiện quan điểm nào sau đây của Hồ Chí Minh?",
     "options": [
@@ -2089,7 +2089,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1103,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Sự kiện nào sau đây đánh dấu việc Nguyễn Ái Quốc đã tìm thấy con đường cứu nước, giải phóng dân tộc – con đường cách mạng vô sản?",
     "options": [
@@ -2103,7 +2103,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1104,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "Hồ Chí Minh lựa chọn con đường cách mạng vô sản cho dân tộc Việt Nam vì đây là cuộc cách mạng",
     "options": [
@@ -2117,7 +2117,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1105,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Chọn cụm từ điền vào chỗ trống để hoàn thành nhận định sau của Hồ Chí Minh: “Cách mệnh Pháp cũng như Cách mệnh Mĩ, nghĩa là cách mạng tư bản, cách mạng …”.",
     "options": [
@@ -2131,7 +2131,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1106,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "Luận điểm nào sau đây phù hợp với quan điểm của Hồ Chí Minh trong việc giải quyết mối quan hệ giữa nhiệm vụ dân tộc và dân chủ (giai cấp) của cách mạng Việt Nam?",
     "options": [
@@ -2145,7 +2145,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1107,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Chọn cụm từ điền vào chỗ trống để hoàn thành nhận định sau của Hồ Chí Minh: “Trong thế giới bây giờ chỉ có … là đã thành công và thành công đến nơi, nghĩa là dân chúng được hưởng cái hạnh phúc tự do, bình đẳng thật.”.",
     "options": [
@@ -2159,7 +2159,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1108,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "Luận điểm nào sau đây là một trong những cơ sở lí luận khẳng định cách mạng giải phóng dân tộc muốn thắng lợi phải do Đảng Cộng sản lãnh đạo?",
     "options": [
@@ -2173,7 +2173,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1109,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "Luận điểm “Giải phóng dân tộc gắn với giải phóng giai cấp, trong đó giải phóng dân tộc là trước hết, trên hết.” của Hồ Chí Minh xuất phát từ",
     "options": [
@@ -2187,7 +2187,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1110,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, lực lượng của cách mạng giải phóng dân tộc là",
     "options": [
@@ -2201,7 +2201,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1111,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 1,
     "q": "Nội dung cốt lõi, xuyên suốt trong tư tưởng Hồ Chí Minh về cách mạng Việt Nam là",
     "options": [
@@ -2215,7 +2215,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1112,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, nền tảng của khối đại đoàn kết toàn dân trong cách mạng giải phóng dân tộc là",
     "options": [
@@ -2229,7 +2229,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1113,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Chọn cụm từ điền vào chỗ trống để hoàn thành câu nói sau của Hồ Chí Minh trong Lời kêu gọi toàn quốc kháng chiến (12/1946): “Bất kì đàn ông, đàn bà, bất kì người già, người trẻ, … tôn giáo, đảng phái, dân tộc. Hễ là người Việt Nam thì phải đứng lên đánh thực dân Pháp để cứu Tổ quốc.”.",
     "options": [
@@ -2243,7 +2243,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1114,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "Luận điểm nào sau đây phù hợp với quan điểm của Hồ Chí Minh về cách mạng giải phóng dân tộc?",
     "options": [
@@ -2257,7 +2257,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1115,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "Tính tất yếu của bạo lực cách mạng trong cách mạng giải phóng dân tộc theo Hồ Chí Minh xuất phát từ",
     "options": [
@@ -2271,7 +2271,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1116,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "“Cách mạng giải phóng dân tộc cần tiến hành chủ động, sáng tạo và có khả năng giành thắng lợi trước cách mạng vô sản ở chính quốc”, luận điểm này của Hồ Chí Minh không dựa trên cơ sở nào sau đây?",
     "options": [
@@ -2285,7 +2285,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1117,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Hình thức đấu tranh chủ yếu của bạo lực cách mạng theo quan điểm của Hồ Chí Minh là",
     "options": [
@@ -2299,7 +2299,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1118,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "Mục đích cao nhất của việc sử dụng bạo lực cách mạng theo quan điểm của Hồ Chí Minh là gì?",
     "options": [
@@ -2313,7 +2313,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1119,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "Phương pháp bạo lực cách mạng của Hồ Chí Minh thể hiện nội dung chính nào sau đây?",
     "options": [
@@ -2327,7 +2327,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1120,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 2,
     "q": "Luận điểm “Sức sản xuất đã phát triển cao, nền tảng kinh tế là tư liệu sản xuất đã trở thành của chung” của Hồ Chí Minh thể hiện quan niệm về chủ nghĩa xã hội trên phương diện nào?",
     "options": [
@@ -2341,7 +2341,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1121,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 2,
     "q": "Hồ Chí Minh khẳng định tính tất yếu đi lên chủ nghĩa xã hội ở Việt Nam dựa trên cơ sở nào?",
     "options": [
@@ -2355,7 +2355,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1122,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 2,
     "q": "Quan điểm “Nhà nước là của nhân dân, do nhân dân và vì nhân dân” của Hồ Chí Minh thể hiện đặc trưng của chế độ xã hội xã hội chủ nghĩa trên phương diện",
     "options": [
@@ -2369,7 +2369,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1123,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Luận điểm nào sau đây thể hiện đặc trưng chính trị của chủ nghĩa xã hội trong tư tưởng Hồ Chí Minh?",
     "options": [
@@ -2383,7 +2383,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1124,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 2,
     "q": "Luận điểm “Trước kia ruộng là của địa chủ, nông dân cứ cúi đầu làm lụng suốt ngày, gặt bao nhiêu thì nộp cho địa chủ hết; ngày nay, chủ nghĩa xã hội là lấy nhà máy, xe lửa, ngân hàng, v.v. làm của chung.” của Hồ Chí Minh thể hiện đặc trưng của chủ nghĩa xã hội trên phương diện",
     "options": [
@@ -2397,7 +2397,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1125,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, “Tiền đề, điều kiện để tiến tới chế độ xã hội bình đẳng, bác ái, không còn phân biệt chủng tộc, không còn gì ngăn cản những người lao động hiểu nhau và thương yêu nhau” là",
     "options": [
@@ -2411,7 +2411,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1126,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, chủ thể nào sau đây đóng vai trò quyết định sự nghiệp xây dựng chủ nghĩa xã hội?",
     "options": [
@@ -2425,7 +2425,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1127,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, nhân tố hàng đầu đảm bảo thắng lợi của sự nghiệp xây dựng chủ nghĩa xã hội là gì?",
     "options": [
@@ -2439,7 +2439,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1128,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Khi xác định mục tiêu kinh tế trong xây dựng chủ nghĩa xã hội ở Việt Nam, Hồ Chí Minh coi thành phần kinh tế nào sau đây giữ vai trò lãnh đạo nền kinh tế?",
     "options": [
@@ -2453,7 +2453,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1129,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, mục tiêu phát triển lực lượng sản xuất trong xây dựng nền kinh tế xã hội chủ nghĩa ở Việt Nam cần hướng đến là",
     "options": [
@@ -2467,7 +2467,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1130,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 2,
     "q": "Quan niệm “dân làm chủ” và “dân là chủ” của Hồ Chí Minh trong mục tiêu xây dựng chủ nghĩa xã hội ở Việt Nam được hiểu là gì?",
     "options": [
@@ -2481,7 +2481,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1131,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Hồ Chí Minh xác định mục tiêu xây dựng chủ nghĩa xã hội ở Việt Nam về văn hoá là",
     "options": [
@@ -2495,7 +2495,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1132,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Yếu tố giữ vai trò quyết định trong động lực của chủ nghĩa xã hội ở Việt Nam theo Hồ Chí Minh là",
     "options": [
@@ -2509,7 +2509,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1133,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 2,
     "q": "Đâu không phải là yếu tố làm nên động lực bên trong của chủ nghĩa xã hội ở Việt Nam theo tư tưởng Hồ Chí Minh?",
     "options": [
@@ -2523,7 +2523,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1134,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, tính chất của thời kì quá độ lên chủ nghĩa xã hội ở Việt Nam là",
     "options": [
@@ -2537,7 +2537,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1135,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 2,
     "q": "Đâu là cách hiểu đúng về quan điểm sau của Hồ Chí Minh: “Đặc điểm to nhất của ta trong thời kì quá độ là từ một nước nông nghiệp lạc hậu tiến thẳng lên chủ nghĩa xã hội không phải kinh qua giai đoạn phát triển tư bản chủ nghĩa.”?",
     "options": [
@@ -2551,7 +2551,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1136,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, nền tảng lí luận mang tính nguyên tắc để Việt Nam xây dựng chủ nghĩa xã hội là gì?",
     "options": [
@@ -2565,7 +2565,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1137,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, nguyên tắc đóng vai trò là mục tiêu trên hết, là điều kiện để xây dựng chủ nghĩa xã hội ở Việt Nam là",
     "options": [
@@ -2579,7 +2579,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1138,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, muốn xây dựng chủ nghĩa xã hội trước hết cần có",
     "options": [
@@ -2593,7 +2593,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1139,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, nguyên tắc phân phối chủ yếu trong chủ nghĩa xã hội là gì?",
     "options": [
@@ -2607,7 +2607,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1140,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 1,
     "q": "“Chủ trương làm tư sản dân quyền cách mạng và thổ địa cách mạng để đi tới xã hội cộng sản.” được trích trong tác phẩm nào?",
     "options": [
@@ -2621,7 +2621,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1141,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 2,
     "q": "Nhận định nào sau đây không phù hợp với quan điểm của Hồ Chí Minh về mối quan hệ giữa độc lập dân tộc và chủ nghĩa xã hội?",
     "options": [
@@ -2635,7 +2635,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1142,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Chọn cặp từ đúng điền vào chỗ trống để hoàn thành khẳng định sau của Nguyễn Ái Quốc khi gặp Bộ trưởng Bộ Thuộc địa Pháp An-be Xa-rô (6/1922): “Cái mà tôi cần nhất trên đời là: Đồng bào tôi được …, Tổ quốc tôi được …”.",
     "options": [
@@ -2649,7 +2649,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1143,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Chọn cặp từ đúng để hoàn thành khẳng định sau của Nguyễn Ái Quốc: “Tự do cho đồng bào tôi, độc lập cho Tổ quốc tôi, đấy là tất cả những điều tôi …, đấy là tất cả những điều tôi …”.",
     "options": [
@@ -2663,7 +2663,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1144,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Đâu không phải câu nói được Hồ Chí Minh khẳng định trong bản Tuyên ngôn độc lập (2/9/1945)?",
     "options": [
@@ -2677,7 +2677,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1145,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "Đâu là điểm xuất phát trong cách tiếp cận của Hồ Chí Minh về độc lập dân tộc trong bản Tuyên ngôn độc lập (2/9/1945)?",
     "options": [
@@ -2691,7 +2691,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1146,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Chọn các cụm từ đúng điền vào chỗ trống để hoàn thành khẳng định sau đây của Hồ Chí Minh: “Nước Việt Nam có quyền hưởng …, và sự thực đã thành một nước …. Toàn thể dân Việt Nam quyết đem tất cả tinh thần và lực lượng, tính mệnh và của cải để giữ vững quyền … ấy.”.",
     "options": [
@@ -2705,7 +2705,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1147,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Khi trả lời một nhà báo nước ngoài đầu năm 1946, Hồ Chí Minh nói: “Tôi chỉ có một sự ham muốn, ham muốn tột bậc...”. Đâu không phải nội dung được thể hiện trong mong muốn của Hồ Chí Minh?",
     "options": [
@@ -2719,7 +2719,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1148,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Đâu không phải việc làm Hồ Chí Minh yêu cầu phải thực hiện ngay sau thắng lợi của Cách mạng Tháng Tám năm 1945?",
     "options": [
@@ -2733,7 +2733,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1149,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Chọn từ đúng để hoàn thành lời căn dặn của Chủ tịch Hồ Chí Minh trong Di chúc (1969): “Dù khó khăn gian khổ đến mấy, nhân dân ta … sẽ hoàn toàn thắng lợi. Đế quốc Mĩ … phải cút khỏi nước ta. Tổ quốc ta … sẽ thống nhất. Đồng bào Nam, Bắc … sẽ sum họp một nhà.”.",
     "options": [
@@ -2747,7 +2747,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1150,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Đâu là quan điểm của C.Mác và Ph.Ăngghen về con đường cách mạng vô sản ở châu Âu?",
     "options": [
@@ -2761,7 +2761,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1151,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Đâu là quan điểm của Hồ Chí Minh về con đường cách mạng vô sản ở Việt Nam?",
     "options": [
@@ -2775,7 +2775,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1152,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Trong tác phẩm Đường cách mệnh (1927), Hồ Chí Minh cho rằng cách mệnh trước hết phải có cái gì?",
     "options": [
@@ -2789,7 +2789,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1153,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Đâu là quan điểm của Hồ Chí Minh khi xác định chủ thể làm cách mạng trong tác phẩm Đường cách mệnh (1927)?",
     "options": [
@@ -2803,7 +2803,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1154,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Chọn cụm từ đúng điền vào chỗ trống để hoàn thành luận điểm sau đây của Hồ Chí Minh: “… thì chưa phân giai cấp, nghĩa là sĩ, nông, công, thương đều nhất trí chống lại cường quyền”.",
     "options": [
@@ -2817,7 +2817,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1155,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "Mâu thuẫn chủ yếu không thể điều hoà trong xã hội thuộc địa phương Đông theo Hồ Chí Minh là mâu thuẫn giữa",
     "options": [
@@ -2831,7 +2831,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1156,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iv",
     "clo": 3,
     "q": "Vận dụng tư tưởng Hồ Chí Minh về độc lập dân tộc và chủ nghĩa xã hội trong giai đoạn hiện nay ở nước ta, chúng ta cần phải làm gì?",
     "options": [
@@ -2845,7 +2845,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1157,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Ở Việt Nam, người đầu tiên đề xuất cần phải phát triển kinh tế nhiều thành phần trong suốt thời kì quá độ lên chủ nghĩa xã hội là ai?",
     "options": [
@@ -2859,7 +2859,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1158,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, sức mạnh tổng hợp được sử dụng và phát huy trong sự nghiệp xây dựng chủ nghĩa xã hội ở Việt Nam là gì?",
     "options": [
@@ -2873,7 +2873,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1159,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 2,
     "q": "Giữa nội lực và ngoại lực, Hồ Chí Minh xác định ngoại lực có vai trò như thế nào đối với sự nghiệp xây dựng chủ nghĩa xã hội ở Việt Nam?",
     "options": [
@@ -2887,7 +2887,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1160,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, yêu cầu cần có để đảm bảo độc lập dân tộc gắn liền với chủ nghĩa xã hội phải dựa trên nền tảng của khối liên minh nào?",
     "options": [
@@ -2901,7 +2901,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1161,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, phương thức để xây dựng chủ nghĩa xã hội là gì?",
     "options": [
@@ -2915,7 +2915,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1162,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, động lực quan trọng và quyết định nhất trong công cuộc xây dựng chủ nghĩa xã hội ở Việt Nam là gì?",
     "options": [
@@ -2929,7 +2929,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1163,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Điền vào chỗ trống: “Tôi chỉ có một sự ham muốn, ham muốn tột bậc là làm sao cho nước ta được hoàn toàn độc lập, dân ta được hoàn toàn tự do, đồng bào (...)”.",
     "options": [
@@ -2943,7 +2943,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1164,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, độc lập dân tộc bao gồm những nội dung gì?",
     "options": [
@@ -2957,7 +2957,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1165,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Điền vào chỗ trống câu nói sau của Hồ Chí Minh: “Toàn quốc đồng bào hãy đứng dậy (...) mà tự giải phóng cho ta” (trích Thư kêu gọi Tổng khởi nghĩa, 1945).",
     "options": [
@@ -2971,7 +2971,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1166,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, chủ nghĩa xã hội và chủ nghĩa cộng sản khác nhau ở chỗ",
     "options": [
@@ -2985,7 +2985,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1167,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, giai đoạn thấp của chủ nghĩa cộng sản là",
     "options": [
@@ -2999,7 +2999,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1168,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, trong chế độ xã hội chủ nghĩa và cộng sản chủ nghĩa do ai làm chủ?",
     "options": [
@@ -3013,7 +3013,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1169,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iv",
     "clo": 3,
     "q": "Vận dụng nội dung tư tưởng Hồ Chí Minh về chủ nghĩa xã hội, Đại hội lần thứ XI của Đảng (2011) xác định xã hội mà nhân dân Việt Nam xây dựng gồm mấy đặc trưng?",
     "options": [
@@ -3027,7 +3027,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1170,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iv",
     "clo": 3,
     "q": "Từ thực tiễn thế giới và trong nước, năm 1991, Đại hội lần thứ VII của Đảng xác định xã hội xã hội chủ nghĩa ở Việt Nam là một xã hội",
     "options": [
@@ -3041,7 +3041,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1171,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, điều kiện cho nhân dân tiến bộ là gì?",
     "options": [
@@ -3055,7 +3055,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1172,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, cơ sở, tiền đề để tiến lên chủ nghĩa xã hội là gì?",
     "options": [
@@ -3069,7 +3069,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1173,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, điều kiện để đảm bảo nền độc lập dân tộc vững chắc là gì?",
     "options": [
@@ -3083,7 +3083,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1174,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iv",
     "clo": 3,
     "q": "Liên hệ thực tiễn xây dựng chủ nghĩa xã hội ở Việt Nam, Đại hội nào của Đảng đã thông qua Cương lĩnh xây dựng đất nước trong thời kì quá độ lên chủ nghĩa xã hội (bổ sung, phát triển năm 2011)?",
     "options": [
@@ -3097,7 +3097,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1175,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Trong Tuyên ngôn độc lập (2/9/1945), Hồ Chí Minh đã trích dẫn hai bản tuyên ngôn nào?",
     "options": [
@@ -3111,7 +3111,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1176,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "Khi “suy rộng ra” từ quyền con người nêu trong hai bản tuyên ngôn của Mỹ và Pháp, Hồ Chí Minh đã khái quát thành nội dung nào?",
     "options": [
@@ -3125,7 +3125,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1177,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 2,
     "q": "Câu nói “Nếu nước độc lập mà dân không hưởng hạnh phúc tự do, thì độc lập cũng chẳng có nghĩa lí gì” của Hồ Chí Minh khẳng định điều gì?",
     "options": [
@@ -3139,7 +3139,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1178,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Chân lí “Không có gì quý hơn độc lập, tự do” được Hồ Chí Minh nêu lên trong văn kiện nào?",
     "options": [
@@ -3153,7 +3153,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1179,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, nền độc lập thật sự, hoàn toàn và triệt để phải được thể hiện như thế nào?",
     "options": [
@@ -3167,7 +3167,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1180,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "Việc Hồ Chí Minh chủ trương kí Hiệp định Sơ bộ (6/3/1946) và Tạm ước (14/9/1946) thể hiện nguyên tắc nào trong tư tưởng của Người?",
     "options": [
@@ -3181,7 +3181,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1181,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Hồ Chí Minh nhận xét chủ trương cứu nước của Phan Bội Châu là “đưa hổ cửa trước, rước beo cửa sau” vì chủ trương đó",
     "options": [
@@ -3195,7 +3195,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1182,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Nhận xét con đường cứu nước “chẳng khác gì đến xin giặc rủ lòng thương” của Hồ Chí Minh là dành cho ai?",
     "options": [
@@ -3209,7 +3209,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1183,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 2,
     "q": "Luận điểm “Muốn cứu nước và giải phóng dân tộc không có con đường nào khác con đường cách mạng vô sản” của Hồ Chí Minh khẳng định điều gì?",
     "options": [
@@ -3223,7 +3223,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1184,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Trong tác phẩm Đường cách mệnh (1927), Hồ Chí Minh khẳng định “Đảng muốn vững thì phải có … làm cốt”. Từ còn thiếu là gì?",
     "options": [
@@ -3237,7 +3237,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1185,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 2,
     "q": "Luận điểm “Chỉ có chủ nghĩa xã hội, chủ nghĩa cộng sản mới giải phóng được các dân tộc bị áp bức và những người lao động trên thế giới khỏi ách nô lệ” khẳng định nội dung nào?",
     "options": [
@@ -3251,7 +3251,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1186,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, Đảng Cộng sản Việt Nam là Đảng của lực lượng nào?",
     "options": [
@@ -3265,7 +3265,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1187,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "Luận điểm “Công nông là gốc cách mệnh; còn học trò, nhà buôn nhỏ, điền chủ nhỏ… là bầu bạn cách mệnh của công nông” của Hồ Chí Minh thể hiện quan điểm nào?",
     "options": [
@@ -3279,7 +3279,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1188,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Đặc trưng của chủ nghĩa xã hội trên phương diện văn hoá, đạo đức và các quan hệ xã hội theo Hồ Chí Minh là gì?",
     "options": [
@@ -3293,7 +3293,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1189,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, trở lực lớn nhất, là “kẻ địch bên trong” cản trở sự nghiệp xây dựng chủ nghĩa xã hội là gì?",
     "options": [
@@ -3307,7 +3307,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1190,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 2,
     "q": "Hồ Chí Minh gọi tham ô, lãng phí, quan liêu bằng tên gọi nào?",
     "options": [
@@ -3321,7 +3321,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1191,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 2,
     "q": "Vì sao Hồ Chí Minh khẳng định con người là động lực quan trọng nhất của chủ nghĩa xã hội?",
     "options": [
@@ -3335,7 +3335,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1192,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 2,
     "q": "Vì sao theo Hồ Chí Minh, chủ nghĩa xã hội là điều kiện bảo đảm vững chắc cho nền độc lập dân tộc?",
     "options": [
@@ -3349,7 +3349,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1193,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, điều kiện tiên quyết để bảo đảm độc lập dân tộc gắn liền với chủ nghĩa xã hội là gì?",
     "options": [
@@ -3363,7 +3363,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1194,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iv",
     "clo": 3,
     "q": "Nghị quyết Trung ương 4 khoá XI và khoá XII của Đảng tập trung giải quyết vấn đề nào?",
     "options": [
@@ -3377,7 +3377,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1195,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iv",
     "clo": 3,
     "q": "Biểu hiện “tự diễn biến”, “tự chuyển hoá” trong nội bộ được hiểu là gì?",
     "options": [
@@ -3391,7 +3391,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1196,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iv",
     "clo": 3,
     "q": "Nội dung đầu tiên trong vận dụng tư tưởng Hồ Chí Minh về độc lập dân tộc gắn liền với chủ nghĩa xã hội ở nước ta hiện nay là gì?",
     "options": [
@@ -3405,7 +3405,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1197,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iv",
     "clo": 3,
     "q": "Việc thực hiện phương châm “dân biết, dân bàn, dân làm, dân kiểm tra, dân giám sát, dân thụ hưởng” hiện nay là sự vận dụng nội dung nào trong tư tưởng Hồ Chí Minh?",
     "options": [
@@ -3419,7 +3419,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1198,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iv",
     "clo": 3,
     "q": "Đường lối đối ngoại độc lập, tự chủ, đa phương hoá, đa dạng hoá quan hệ quốc tế của Việt Nam hiện nay là sự kế thừa quan điểm nào của Hồ Chí Minh?",
     "options": [
@@ -3433,7 +3433,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1199,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iv",
     "clo": 3,
     "q": "Yêu cầu “củng cố, kiện toàn, phát huy sức mạnh và hiệu quả hoạt động của toàn bộ hệ thống chính trị” hiện nay nhằm mục đích nào sau đây?",
     "options": [
@@ -3447,7 +3447,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1200,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Nội dung cơ bản của Cương lĩnh chính trị đầu tiên của Đảng (1930) xác định mục tiêu đầu tiên của cách mạng là gì?",
     "options": [
@@ -3461,7 +3461,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1201,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo quan niệm của Hồ Chí Minh, thành phần kinh tế nào được “ưu tiên phát triển” ở Việt Nam trong thời kỳ quá độ?",
     "options": [
@@ -3475,7 +3475,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1202,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iv",
     "clo": 3,
     "q": "Vận dụng quan điểm của Hồ Chí Minh về các thành phần kinh tế, hãy chỉ rõ thành phần kinh tế nào ở Việt Nam hiện nay được xác định giữ vai trò chủ đạo?",
     "options": [
@@ -3489,7 +3489,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1203,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Trong Chánh cương vắn tắt của Đảng (1930), Hồ Chí Minh nêu rõ nhiệm vụ thứ nhất về phương diện chính trị cần",
     "options": [
@@ -3503,7 +3503,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1204,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, thành phần kinh tế nào là “hình thức sở hữu của toàn dân, nó lãnh đạo nền kinh tế quốc dân và Nhà nước phải bảo đảm cho nó phát triển ưu tiên”?",
     "options": [
@@ -3517,7 +3517,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1205,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, kinh tế quốc doanh có vai trò như thế nào trong nền kinh tế quốc dân?",
     "options": [
@@ -3531,7 +3531,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1206,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, Nhà nước phải đặc biệt “khuyến khích, hướng dẫn, giúp đỡ” thành phần kinh tế nào?",
     "options": [
@@ -3545,7 +3545,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1553,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, độc lập dân tộc phải hướng tới xóa bỏ điều gì để nhân dân thực sự được hưởng tự do, hạnh phúc?",
     "options": [
@@ -3559,7 +3559,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1554,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Câu nói nổi tiếng nào của Hồ Chí Minh thể hiện rõ nhất quyết tâm giành và giữ vững độc lập, tự do của dân tộc?",
     "options": [
@@ -3573,7 +3573,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1555,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "Trong tư tưởng Hồ Chí Minh, độc lập dân tộc phải gắn liền với điều gì để có ý nghĩa thực chất đối với đời sống nhân dân?",
     "options": [
@@ -3587,7 +3587,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1556,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, chủ thể của quyền độc lập dân tộc và mọi quyền lực trong nước là ai?",
     "options": [
@@ -3601,7 +3601,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1557,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "Quan điểm \"dù có phải đốt cháy cả dãy Trường Sơn cũng phải giành cho được độc lập\" của Hồ Chí Minh (1945) thể hiện điều gì?",
     "options": [
@@ -3615,7 +3615,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1558,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Trong Tuyên ngôn độc lập (2/9/1945), Hồ Chí Minh đã khẳng định quyền của các dân tộc trên thế giới như thế nào từ quyền của mỗi cá nhân?",
     "options": [
@@ -3629,7 +3629,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1559,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "Theo tư tưởng Hồ Chí Minh, để giành được độc lập dân tộc, cần dựa vào lực lượng nào là chủ yếu, quyết định?",
     "options": [
@@ -3643,7 +3643,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1560,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, để bảo đảm quyền dân tộc tự quyết một cách thực chất, các dân tộc cần có quyền gì?",
     "options": [
@@ -3657,7 +3657,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1561,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "Vì sao Hồ Chí Minh khẳng định \"Nước Việt Nam có quyền hưởng tự do và độc lập, và sự thật đã thành một nước tự do độc lập\" trong Tuyên ngôn độc lập?",
     "options": [
@@ -3671,7 +3671,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1562,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 2,
     "q": "Trong tư tưởng Hồ Chí Minh, mối quan hệ giữa độc lập dân tộc của Việt Nam với phong trào giải phóng dân tộc trên thế giới được nhìn nhận như thế nào?",
     "options": [
@@ -3685,7 +3685,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1563,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 1,
     "q": "Theo tư tưởng Hồ Chí Minh, độc lập dân tộc gắn liền với những nguyên tắc nào trong quan hệ quốc tế mà Việt Nam theo đuổi?",
     "options": [
@@ -3699,7 +3699,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1564,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-i",
     "clo": 3,
     "q": "Trong bối cảnh hội nhập quốc tế sâu rộng hiện nay, việc vận dụng tư tưởng Hồ Chí Minh về độc lập dân tộc cần được quán triệt theo hướng nào để vừa giữ vững chủ quyền, vừa phát triển đất nước?",
     "options": [
@@ -3713,7 +3713,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1565,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, chủ nghĩa xã hội trước hết là một xã hội nhằm mục tiêu gì cho con người?",
     "options": [
@@ -3727,7 +3727,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1566,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Hồ Chí Minh xác định chủ nghĩa xã hội có đặc trưng về chế độ chính trị như thế nào?",
     "options": [
@@ -3741,7 +3741,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1567,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 2,
     "q": "Về phương diện kinh tế, chủ nghĩa xã hội theo tư tưởng Hồ Chí Minh có nền kinh tế phát triển như thế nào?",
     "options": [
@@ -3755,7 +3755,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1568,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Về văn hóa, xã hội, Hồ Chí Minh quan niệm chủ nghĩa xã hội phải là một xã hội như thế nào?",
     "options": [
@@ -3769,7 +3769,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1569,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, chủ nghĩa xã hội là công trình tập thể của ai, do ai xây dựng?",
     "options": [
@@ -3783,7 +3783,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1570,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, việc phát huy quyền làm chủ, tinh thần dân chủ của nhân dân có vai trò như thế nào trong xây dựng chủ nghĩa xã hội?",
     "options": [
@@ -3797,7 +3797,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1571,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, con người vừa là mục tiêu, vừa là động lực của sự nghiệp xây dựng chủ nghĩa xã hội, điều này thể hiện quan điểm gì?",
     "options": [
@@ -3811,7 +3811,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1572,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 2,
     "q": "Hồ Chí Minh chỉ ra những trở lực nào cần khắc phục trong quá trình xây dựng chủ nghĩa xã hội ở Việt Nam?",
     "options": [
@@ -3825,7 +3825,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1573,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam có nhiệm vụ lịch sử cơ bản nào?",
     "options": [
@@ -3839,7 +3839,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1574,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 2,
     "q": "Hồ Chí Minh nêu quan điểm gì về bước đi, cách làm trong xây dựng chủ nghĩa xã hội ở Việt Nam, tránh giáo điều, rập khuôn theo mô hình nước khác?",
     "options": [
@@ -3853,7 +3853,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1575,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, một trong những nguyên tắc quan trọng khi xây dựng chủ nghĩa xã hội là phải giữ vững vai trò gì?",
     "options": [
@@ -3867,7 +3867,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1576,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 2,
     "q": "Hồ Chí Minh coi trọng vấn đề gì trong xây dựng chủ nghĩa xã hội, coi đây là \"chìa khóa vạn năng\" để giải quyết mọi khó khăn?",
     "options": [
@@ -3881,7 +3881,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1577,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 2,
     "q": "Trong xây dựng chủ nghĩa xã hội, Hồ Chí Minh nhấn mạnh phải kết hợp chặt chẽ giữa cải tạo xã hội cũ với nhiệm vụ nào?",
     "options": [
@@ -3895,7 +3895,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1578,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, để xây dựng chủ nghĩa xã hội thành công, cần chú trọng phát triển yếu tố nào làm cơ sở vật chất - kỹ thuật?",
     "options": [
@@ -3909,7 +3909,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1579,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 3,
     "q": "Trong công cuộc đổi mới hiện nay, việc vận dụng quan điểm của Hồ Chí Minh về chủ nghĩa xã hội \"làm cho dân giàu, nước mạnh\" đòi hỏi phải giải quyết hài hòa mối quan hệ nào?",
     "options": [
@@ -3923,7 +3923,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1580,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-ii",
     "clo": 2,
     "q": "Hồ Chí Minh từng ví von, so sánh việc xây dựng chủ nghĩa xã hội với công việc nào để nhấn mạnh tính chất khó khăn, lâu dài, đòi hỏi kiên trì?",
     "options": [
@@ -3937,7 +3937,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1581,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 1,
     "q": "Theo tư tưởng Hồ Chí Minh, mối quan hệ giữa độc lập dân tộc và chủ nghĩa xã hội được xác định như thế nào?",
     "options": [
@@ -3951,7 +3951,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1582,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 2,
     "q": "Vì sao Hồ Chí Minh khẳng định độc lập dân tộc phải gắn liền với chủ nghĩa xã hội, chứ không dừng lại ở độc lập dân tộc theo kiểu cũ?",
     "options": [
@@ -3965,7 +3965,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1583,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 1,
     "q": "Trong mối quan hệ giữa độc lập dân tộc và chủ nghĩa xã hội, độc lập dân tộc có vai trò gì?",
     "options": [
@@ -3979,7 +3979,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1584,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 1,
     "q": "Trong mối quan hệ giữa độc lập dân tộc và chủ nghĩa xã hội, chủ nghĩa xã hội có vai trò gì đối với độc lập dân tộc?",
     "options": [
@@ -3993,7 +3993,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1585,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 2,
     "q": "Cương lĩnh chính trị đầu tiên của Đảng (Chánh cương vắn tắt, Sách lược vắn tắt, 1930) đã thể hiện tư tưởng gắn kết độc lập dân tộc với chủ nghĩa xã hội như thế nào?",
     "options": [
@@ -4007,7 +4007,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1586,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 1,
     "q": "Con đường cách mạng Việt Nam theo tư tưởng Hồ Chí Minh gồm mấy giai đoạn cơ bản, có mối quan hệ như thế nào?",
     "options": [
@@ -4021,7 +4021,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1587,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 2,
     "q": "Việc Đảng ta xác định đường lối \"tiến thẳng lên chủ nghĩa xã hội, bỏ qua giai đoạn phát triển tư bản chủ nghĩa\" dựa trên cơ sở lý luận nào trong tư tưởng Hồ Chí Minh?",
     "options": [
@@ -4035,7 +4035,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1588,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 1,
     "q": "Trong thực tiễn lãnh đạo cách mạng, Hồ Chí Minh đã thể hiện sự gắn kết giữa độc lập dân tộc và chủ nghĩa xã hội ngay từ văn kiện nào của Đảng?",
     "options": [
@@ -4049,7 +4049,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1589,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 2,
     "q": "Sau khi miền Bắc được giải phóng (1954), việc Đảng và Hồ Chí Minh chủ trương đồng thời tiến hành cách mạng xã hội chủ nghĩa ở miền Bắc và cách mạng dân tộc dân chủ nhân dân ở miền Nam thể hiện sự vận dụng như thế nào về mối quan hệ độc lập dân tộc - chủ nghĩa xã hội?",
     "options": [
@@ -4063,7 +4063,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1590,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 1,
     "q": "Theo tư tưởng Hồ Chí Minh, chủ nghĩa xã hội mà Việt Nam xây dựng phải bảo đảm giữ vững điều gì đã giành được qua các cuộc kháng chiến?",
     "options": [
@@ -4077,7 +4077,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1591,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 2,
     "q": "Việc kiên định mục tiêu độc lập dân tộc gắn liền với chủ nghĩa xã hội có ý nghĩa như thế nào đối với việc giữ vững định hướng chính trị của đất nước trong bối cảnh có nhiều biến động quốc tế phức tạp?",
     "options": [
@@ -4091,7 +4091,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1592,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 1,
     "q": "Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội (1991, bổ sung phát triển 2011) của Đảng đã kế thừa, phát triển tư tưởng nào của Hồ Chí Minh về mối quan hệ độc lập dân tộc - chủ nghĩa xã hội?",
     "options": [
@@ -4105,7 +4105,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1593,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 2,
     "q": "Tại sao có thể khẳng định tư tưởng Hồ Chí Minh về độc lập dân tộc gắn liền với chủ nghĩa xã hội là một đóng góp lý luận có giá trị, không chỉ đối với Việt Nam mà còn đối với phong trào giải phóng dân tộc trên thế giới?",
     "options": [
@@ -4119,7 +4119,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1594,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 1,
     "q": "Trong Di chúc (1969), Hồ Chí Minh căn dặn điều gì thể hiện niềm tin sâu sắc vào mối quan hệ độc lập dân tộc - chủ nghĩa xã hội của cách mạng Việt Nam?",
     "options": [
@@ -4133,7 +4133,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1595,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 2,
     "q": "Nhận định nào sau đây phản ánh đúng bản chất khoa học, cách mạng trong tư tưởng Hồ Chí Minh về mối quan hệ độc lập dân tộc - chủ nghĩa xã hội?",
     "options": [
@@ -4147,7 +4147,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1596,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 1,
     "q": "Theo tư tưởng Hồ Chí Minh, để bảo vệ vững chắc thành quả gắn kết giữa độc lập dân tộc và chủ nghĩa xã hội, cần phải làm tốt nhiệm vụ nào song song với xây dựng kinh tế?",
     "options": [
@@ -4161,7 +4161,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1597,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 2,
     "q": "Trước sự sụp đổ của mô hình chủ nghĩa xã hội ở Liên Xô, Đông Âu, Đảng Cộng sản Việt Nam đã khẳng định điều gì về con đường đi lên chủ nghĩa xã hội theo tư tưởng Hồ Chí Minh?",
     "options": [
@@ -4175,7 +4175,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1598,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 1,
     "q": "Đại hội đại biểu toàn quốc lần thứ VII của Đảng (1991) đã khẳng định điều gì thể hiện sự kiên định mối quan hệ độc lập dân tộc - chủ nghĩa xã hội trong tư tưởng Hồ Chí Minh?",
     "options": [
@@ -4189,7 +4189,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1599,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 3,
     "q": "Trong bối cảnh toàn cầu hóa và hội nhập quốc tế sâu rộng hiện nay, việc kiên định tư tưởng Hồ Chí Minh về độc lập dân tộc gắn liền với chủ nghĩa xã hội cần được cụ thể hóa như thế nào để vừa bảo đảm định hướng phát triển, vừa không bỏ lỡ cơ hội hội nhập?",
     "options": [
@@ -4203,7 +4203,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1600,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 2,
     "q": "Đại hội XIII của Đảng (2021) tiếp tục khẳng định mối quan hệ độc lập dân tộc gắn liền chủ nghĩa xã hội thông qua việc xác định mục tiêu tổng quát nào cho sự nghiệp xây dựng và bảo vệ Tổ quốc?",
     "options": [
@@ -4217,7 +4217,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1601,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 1,
     "q": "Theo tư tưởng Hồ Chí Minh, một trong những biểu hiện cụ thể của việc gắn kết độc lập dân tộc với chủ nghĩa xã hội trong đời sống nhân dân là gì?",
     "options": [
@@ -4231,7 +4231,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1602,
-    "section": "tthcm-ch3",
+    "section": "tthcm-ch3-iii",
     "clo": 2,
     "q": "Có thể khẳng định giá trị bền vững của tư tưởng Hồ Chí Minh về độc lập dân tộc gắn liền chủ nghĩa xã hội dựa trên căn cứ thực tiễn nào của cách mạng Việt Nam?",
     "options": [
@@ -4245,7 +4245,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1207,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Theo quan điểm của Hồ Chí Minh, ĐCSVN ra đời là sản phẩm của sự kết hợp giữa",
     "options": [
@@ -4259,7 +4259,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1208,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, Đảng văn minh được hiểu là",
     "options": [
@@ -4273,7 +4273,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1209,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Luận điểm “Chủ nghĩa Mác – Lênin kết hợp với phong trào công nhân và phong trào yêu nước dẫn tới việc thành lập Đảng Cộng sản Đông Dương vào đầu năm 1930.” được thể hiện trong",
     "options": [
@@ -4287,7 +4287,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1210,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, ĐCSVN đại diện cho lợi ích của",
     "options": [
@@ -4301,7 +4301,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1211,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Đâu là cách hiểu sai về câu nói của Hồ Chí Minh: “Đảng ta thật trong sạch, phải xứng đáng là người lãnh đạo, là người đầy tớ thật trung thành của nhân dân.”?",
     "options": [
@@ -4315,7 +4315,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1212,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, nền tảng tư tưởng của ĐCSVN là",
     "options": [
@@ -4329,7 +4329,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1213,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Hồ Chí Minh quan niệm “Đảng có vững cách mệnh mới thành công, cũng như người cầm lái có vững thuyền mới chạy” thể hiện",
     "options": [
@@ -4343,7 +4343,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1214,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Luận điểm “Đảng Cộng sản là Đảng của giai cấp công nhân, của nhân dân lao động và của dân tộc.” xác định",
     "options": [
@@ -4357,7 +4357,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1215,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Yếu tố nào sau đây quyết định bản chất giai cấp công nhân của ĐCSVN?",
     "options": [
@@ -4371,7 +4371,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1216,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Chọn từ điền vào chỗ trống để hoàn thành câu nói của Hồ Chí Minh: Đảng “là Đảng của giai cấp công nhân và nhân dân lao động, nghĩa là những người thợ thuyền, dân cày và lao động trí óc kiên quyết nhất, hăng hái nhất, trong sạch nhất, tận tâm tận lực … Tổ quốc và nhân dân”.",
     "options": [
@@ -4385,7 +4385,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1217,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Để hoàn thành nghĩa vụ của người đảng viên, Hồ Chí Minh yêu cầu mỗi đảng viên cần phải thật sự thấm nhuần",
     "options": [
@@ -4399,7 +4399,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1218,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Theo quan điểm của Hồ Chí Minh, nhà nước của nhân dân là",
     "options": [
@@ -4413,7 +4413,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1219,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Luận điểm nào sau đây không phù hợp với quan điểm của Hồ Chí Minh về Đảng văn minh?",
     "options": [
@@ -4427,7 +4427,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1220,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, nguyên tắc nào sau đây đảm bảo cho Đảng hoạt động đúng định hướng?",
     "options": [
@@ -4441,7 +4441,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1221,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, “tập thể lãnh đạo, cá nhân phụ trách” là biểu hiện của nguyên tắc",
     "options": [
@@ -4455,7 +4455,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1222,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, hiểu và thực hiện nghiêm nguyên tắc tập trung dân chủ mục đích cuối cùng là",
     "options": [
@@ -4469,7 +4469,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1223,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Chọn luận điểm đúng với quan điểm của Hồ Chí Minh về “tập thể lãnh đạo, cá nhân phụ trách”.",
     "options": [
@@ -4483,7 +4483,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1224,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Đâu không phải là nguyên tắc tổ chức Đảng theo tư tưởng Hồ Chí Minh?",
     "options": [
@@ -4497,7 +4497,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1225,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Hồ Chí Minh sử dụng hình ảnh nào sau đây để ví như sự cần thiết phải giữ gìn đoàn kết, thống nhất trong Đảng?",
     "options": [
@@ -4511,7 +4511,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1226,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Đâu là luận điểm không phù hợp với tư tưởng Hồ Chí Minh về nguyên tắc: Đảng phải giữ liên lạc mật thiết với nhân dân?",
     "options": [
@@ -4525,7 +4525,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1227,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Chọn cặp từ điền vào các chỗ trống để hoàn thành câu nói của Hồ Chí Minh về vai trò của công tác cán bộ: “Cán bộ là … của mọi công việc, muôn việc thành công hoặc thất bại đều do cán bộ tốt hoặc …”.",
     "options": [
@@ -4539,7 +4539,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1228,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, trong xã hội Việt Nam kể từ khi có Nhà nước Việt Nam Dân chủ Cộng hoà, lực lượng nào có quyền lực cao nhất?",
     "options": [
@@ -4553,7 +4553,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1229,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Chủ tịch Hồ Chí Minh đã dùng hình ảnh nào để nói về sức mạnh vạn năng của dân chủ?",
     "options": [
@@ -4567,7 +4567,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1230,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Đâu không phải đặc điểm để nhận biết Nhà nước ta mang bản chất của giai cấp công nhân?",
     "options": [
@@ -4581,7 +4581,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1231,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, để thực hiện được dân chủ trong xã hội, trước tiên cần thực hiện dân chủ trong tổ chức nào?",
     "options": [
@@ -4595,7 +4595,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1232,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Đâu là phương án không phù hợp với quan điểm của Hồ Chí Minh về tính nhân dân, tính dân tộc của Nhà nước ta?",
     "options": [
@@ -4609,7 +4609,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1233,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, để có một nhà nước hợp pháp, hợp hiến, sau Cách mạng Tháng Tám (1945) cần phải thực hiện",
     "options": [
@@ -4623,7 +4623,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1234,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Luận điểm nào sau đây phù hợp với quan điểm của Hồ Chí Minh về nhà nước vì dân?",
     "options": [
@@ -4637,7 +4637,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1235,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Trong Thư gửi Ủy ban nhân dân các kì, tỉnh, huyện và làng năm 1945, Hồ Chí Minh đã nêu ra một số luận điểm quan trọng về nhà nước dân chủ mới. Luận điểm nào thể hiện vị thế của nhân dân trong thể chế dân chủ cộng hoà?",
     "options": [
@@ -4651,7 +4651,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1236,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, điểm khác biệt giữa pháp luật dân chủ với vai trò như công cụ thực thi quyền lực của nhân dân với pháp luật tư sản, phong kiến là",
     "options": [
@@ -4665,7 +4665,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1237,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "“Các công việc của Chính phủ làm phải nhằm vào một mục đích duy nhất là mưu tự do hạnh phúc cho mọi người”, quan điểm nay của Hồ Chí Minh thể hiện bản chất gì của nhà nước?",
     "options": [
@@ -4679,7 +4679,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1238,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Câu nói của Hồ Chí Minh “Việc gì có lợi cho dân thì làm. Việc gì có hại cho dân thì phải tránh.” thể hiện",
     "options": [
@@ -4693,7 +4693,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1239,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, để kiểm soát quyền lực nhà nước, trách nhiệm đầu tiên thuộc về",
     "options": [
@@ -4707,7 +4707,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1240,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, chủ thể tối cao có quyền kiểm soát quyền lực nhà nước là",
     "options": [
@@ -4721,7 +4721,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1241,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, nguyên nhân chủ yếu nhất dẫn đến các căn bệnh trong bộ máy Nhà nước như: đặc quyền, đặc lợi, tham ô, lãng phí, quan liêu, tư túng, chia rẽ, kiêu ngạo… là",
     "options": [
@@ -4735,7 +4735,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1242,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Giải pháp mang tính căn cơ nhất để chống lại các tiêu cực trong bộ máy nhà nước là",
     "options": [
@@ -4749,7 +4749,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1243,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Khẳng định vai trò của pháp luật trong quản lí xã hội và đảm bảo quyền con người, bản Yêu sách của nhân dân An Nam gửi tới Hội nghị Véc-xây (1919) đã đề nghị cải cách nền pháp lí ở Đông Dương bằng cách thay thế chế độ ra các sắc lệnh bằng chế độ ra các",
     "options": [
@@ -4763,7 +4763,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1244,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "“Chính phủ Việt Nam sẽ tha thứ hay trừng trị họ theo luật pháp tuỳ theo thái độ của họ hiện nay và về sau. Nhưng sẽ không có ai bị tàn sát.”, luận điểm này của Hồ Chí Minh cho thấy bản chất pháp luật nước ta mang tính",
     "options": [
@@ -4777,7 +4777,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1245,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, bệnh gốc sinh ra các bệnh tham ô, lãng phí là",
     "options": [
@@ -4791,7 +4791,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1246,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Tệ nạn bà con, bạn hữu mình không tài năng gì cũng kéo vào chức này, chức nọ là biểu hiện của",
     "options": [
@@ -4805,7 +4805,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1247,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, việc một số cán bộ trong cơ quan công quyền cử chỉ lúc nào cũng kiểu “quan cách mạng” là biểu hiện của",
     "options": [
@@ -4819,7 +4819,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1248,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, nguyên nhân chủ quan như là điểm xuất phát của các căn bệnh tiêu cực trong bộ máy nhà nước là",
     "options": [
@@ -4833,7 +4833,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1249,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, một trong những biện pháp đóng vai trò quyết định, có ý nghĩa lâu dài, như “chìa khoá vạn năng” để phòng, chống các tiêu cực trong bộ máy nhà nước là",
     "options": [
@@ -4847,7 +4847,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1250,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 3,
     "q": "Vận dụng tư tưởng Hồ Chí Minh về Nhà nước, hãy xác định: căn bệnh nào gây ra tình trạng mất đoàn kết, gây rối cho công tác phòng, chống tiêu cực trong Nhà nước?",
     "options": [
@@ -4861,7 +4861,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1251,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-iii",
     "clo": 3,
     "q": "Liên hệ thực tiễn quá trình xây dựng chủ nghĩa xã hội ở Việt Nam, hãy lý giải tại sao xây dựng và chỉnh đốn Đảng lại là yếu tố quan trọng để giữ vững nền độc lập dân tộc?",
     "options": [
@@ -4875,7 +4875,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1252,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-iii",
     "clo": 3,
     "q": "Điều kiện đặc biệt quan trọng trong vận dụng tư tưởng Hồ Chí Minh để giữ vững độc lập dân tộc, chủ quyền trên con đường xây dựng chủ nghĩa xã hội hiện nay là gì?",
     "options": [
@@ -4889,7 +4889,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1253,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Đặc điểm của hệ thống chính trị ở Việt Nam là",
     "options": [
@@ -4903,7 +4903,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1254,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Trong bài Chống quan liêu, tham ô, lãng phí (năm 1952), Hồ Chí Minh viết: “Quan liêu, tham ô, lãng phí là (...). Phải tẩy sạch nó để thực hiện cần kiệm liêm chính”. Chọn đáp án đúng điền vào chỗ trống.",
     "options": [
@@ -4917,7 +4917,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1255,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Khẳng định Đảng Cộng sản “như người cầm lái” cho con thuyền là quan điểm nhất quán của Hồ Chí Minh về vấn đề nào sau đây?",
     "options": [
@@ -4931,7 +4931,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1256,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Hồ Chí Minh đã vận dụng quan điểm nào của V.I. Lênin để thành lập Đảng Cộng sản Việt Nam vào năm 1930?",
     "options": [
@@ -4945,7 +4945,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1257,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Từ nội dung tư tưởng Hồ Chí Minh về Đảng phải trong sạch, vững mạnh, hãy xác định: theo Hồ Chí Minh, sự thoái hoá, biến chất của cán bộ, đảng viên thường thấy nhất và trực tiếp nhất là ở phương diện nào?",
     "options": [
@@ -4959,7 +4959,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1258,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, Đảng Cộng sản Việt Nam ra đời là sản phẩm sự kết hợp của những yếu tố nào?",
     "options": [
@@ -4973,7 +4973,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1259,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Yếu tố nào là sự phát hiện mới của Hồ Chí Minh khi nói về quy luật ra đời của Đảng Cộng sản Việt Nam?",
     "options": [
@@ -4987,7 +4987,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1260,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Sự kết hợp giữa phong trào công nhân và phong trào yêu nước ở nước ta xuất phát chủ yếu từ mâu thuẫn nào?",
     "options": [
@@ -5001,7 +5001,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1261,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Ở nước ta, phong trào công nhân kết hợp được với phong trào yêu nước vì đều có mục tiêu chung là gì?",
     "options": [
@@ -5015,7 +5015,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1262,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Từ thực tiễn Việt Nam cuối thế kỷ XIX, đầu thế kỷ XX, hãy cho biết Đảng Cộng sản Việt Nam ra đời, tồn tại và phát triển xuất phát từ lý do cơ bản nào?",
     "options": [
@@ -5029,7 +5029,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1263,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Luận điểm “Đảng ta là đạo đức, là văn minh” được Hồ Chí Minh khẳng định trong sự kiện nào dưới đây?",
     "options": [
@@ -5043,7 +5043,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1264,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Để xây dựng “Đảng ta là đạo đức, là văn minh”, Hồ Chí Minh chú trọng rèn luyện điều gì cho cán bộ, đảng viên?",
     "options": [
@@ -5057,7 +5057,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1265,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Từ nội dung tư tưởng Hồ Chí Minh về Đảng Cộng sản Việt Nam, hãy xác định: Đảng hoạt động vì lợi ích của ai?",
     "options": [
@@ -5071,7 +5071,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1266,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Từ quan điểm của Hồ Chí Minh về Nhà nước trong sạch, vững mạnh, hãy xác định: “Trăm điều phải có thần linh pháp quyền” là nội dung thuộc về giải pháp nào dưới đây?",
     "options": [
@@ -5085,7 +5085,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1267,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, Nhà nước Việt Nam mới là một nhà nước mang bản chất của giai cấp nào?",
     "options": [
@@ -5099,7 +5099,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1268,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, Nhà nước của nhân dân là nhà nước mà tất cả mọi quyền lực trong Nhà nước và trong xã hội đều thuộc về ai?",
     "options": [
@@ -5113,7 +5113,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1269,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Sự nghiệp chính của Nhà nước Việt Nam được Hồ Chí Minh và Đảng xác định là gì?",
     "options": [
@@ -5127,7 +5127,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1270,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Từ quan điểm của Hồ Chí Minh về Nhà nước pháp quyền, hãy làm rõ: Hồ Chí Minh luôn quan tâm, chú ý đến công tác giáo dục pháp luật cho mọi người, trong đó Người dành sự quan tâm đặc biệt cho lực lượng nào?",
     "options": [
@@ -5141,7 +5141,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1271,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, trong Nhà nước dân chủ, nhân dân thực thi quyền lực thông qua bao nhiêu hình thức dân chủ?",
     "options": [
@@ -5155,7 +5155,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1272,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, trong hình thức dân chủ gián tiếp, quyền lực của Nhà nước từ đâu mà có?",
     "options": [
@@ -5169,7 +5169,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1273,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Theo quan điểm của Hồ Chí Minh, pháp luật trong Nhà nước pháp quyền nhân nghĩa phải là pháp luật vì điều gì?",
     "options": [
@@ -5183,7 +5183,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1274,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Từ quan điểm của Hồ Chí Minh về Nhà nước pháp quyền, hãy xác định tính khuyến thiện của luật pháp được thể hiện như thế nào?",
     "options": [
@@ -5197,7 +5197,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1275,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Chọn đáp án đúng điền vào chỗ trống để hoàn thành quan điểm của Hồ Chí Minh về cán bộ: “Công việc thành công hoặc thất bại, đều do cán bộ (...)”.",
     "options": [
@@ -5211,7 +5211,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1276,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, Nhà nước do nhân dân có nghĩa là gì?",
     "options": [
@@ -5225,7 +5225,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1277,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, trong việc phòng, chống tiêu cực, cán bộ, đảng viên phải đặc biệt phòng, chống những căn bệnh nào sau đây?",
     "options": [
@@ -5239,7 +5239,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1278,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Chọn đáp án đúng điền vào chỗ trống: “Đoàn kết là một truyền thống cực kỳ quý báu của Đảng và của dân tộc ta. Các đồng chí từ Trung ương đến các chi bộ cần phải giữ gìn sự đoàn kết nhất trí của Đảng như giữ gìn (...)”.",
     "options": [
@@ -5253,7 +5253,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1279,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Theo Di chúc của Hồ Chí Minh, ngay sau khi cuộc kháng chiến chống Mỹ của nhân dân ta hoàn toàn thắng lợi, việc cần phải làm trước tiên là gì?",
     "options": [
@@ -5267,7 +5267,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1280,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Ai là tác giả của luận điểm: Đảng Cộng sản phải tiêu biểu cho trí tuệ, danh dự, lương tâm của dân tộc và thời đại?",
     "options": [
@@ -5281,7 +5281,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1281,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Hồ Chí Minh ví việc mỗi cán bộ, đảng viên hằng ngày phải tự kiểm điểm, tự phê bình, tự sửa chữa giống như việc gì?",
     "options": [
@@ -5295,7 +5295,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1282,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Nguyên tắc nào trong xây dựng Đảng theo tư tưởng Hồ Chí Minh đòi hỏi mọi đảng viên đều bình đẳng trước kỷ luật của Đảng, dù ở bất cứ cương vị nào?",
     "options": [
@@ -5309,7 +5309,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1283,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Trong tác phẩm Đường cách mệnh (1927), Hồ Chí Minh khẳng định: “Cách mệnh trước hết phải có (...) để trong thì vận động và tổ chức dân chúng, ngoài thì liên lạc với dân tộc bị áp bức và vô sản giai cấp mọi nơi”. Chọn đáp án đúng điền vào chỗ trống.",
     "options": [
@@ -5323,7 +5323,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1284,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Cuộc Tổng tuyển cử đầu tiên bầu Quốc hội nước Việt Nam Dân chủ Cộng hoà được tiến hành vào thời gian nào?",
     "options": [
@@ -5337,7 +5337,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1285,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Bản Hiến pháp đầu tiên của Nhà nước Việt Nam Dân chủ Cộng hoà do Hồ Chí Minh trực tiếp chỉ đạo soạn thảo được Quốc hội thông qua năm nào?",
     "options": [
@@ -5351,7 +5351,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1286,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Chọn đáp án đúng điền vào chỗ trống trong quan điểm của Hồ Chí Minh: “Bao nhiêu lợi ích đều vì dân. Bao nhiêu quyền hạn đều của dân... Quyền hành và lực lượng đều ở nơi (...)”.",
     "options": [
@@ -5365,7 +5365,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1287,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Theo tư tưởng Hồ Chí Minh, nguyên tắc tổ chức và hoạt động cơ bản của bộ máy Nhà nước Việt Nam là",
     "options": [
@@ -5379,7 +5379,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1288,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, biểu hiện nào sau đây thuộc về căn bệnh “đặc quyền, đặc lợi” trong bộ máy nhà nước?",
     "options": [
@@ -5393,7 +5393,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1289,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Vì sao Hồ Chí Minh bổ sung yếu tố “phong trào yêu nước” vào quy luật ra đời của Đảng Cộng sản Việt Nam?",
     "options": [
@@ -5407,7 +5407,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1290,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Vì sao Hồ Chí Minh gọi tham ô, lãng phí, quan liêu là “giặc nội xâm”, “giặc ở trong lòng”?",
     "options": [
@@ -5421,7 +5421,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1291,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Vì sao theo Hồ Chí Minh, Đảng phải thường xuyên tự chỉnh đốn, tự đổi mới?",
     "options": [
@@ -5435,7 +5435,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1292,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Việc nhân dân có quyền kiểm soát, phê bình và bãi miễn những đại biểu do mình bầu ra khi họ không còn xứng đáng thể hiện nội dung nào trong tư tưởng Hồ Chí Minh?",
     "options": [
@@ -5449,7 +5449,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1293,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Điểm đặc sắc làm nên tính “nhân nghĩa” của Nhà nước pháp quyền trong tư tưởng Hồ Chí Minh là sự kết hợp giữa",
     "options": [
@@ -5463,7 +5463,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1294,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, sự khác nhau giữa “dân là chủ” và “dân làm chủ” là gì?",
     "options": [
@@ -5477,7 +5477,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1295,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-iii",
     "clo": 3,
     "q": "Đại hội đại biểu toàn quốc lần thứ XII của Đảng đã bổ sung mặt nào vào các mặt xây dựng Đảng bên cạnh chính trị, tư tưởng, tổ chức?",
     "options": [
@@ -5491,7 +5491,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1296,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-iii",
     "clo": 3,
     "q": "Nghị quyết Trung ương 4 khoá XII của Đảng nhấn mạnh nhiệm vụ ngăn chặn, đẩy lùi biểu hiện nào sau đây trong nội bộ?",
     "options": [
@@ -5505,7 +5505,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1297,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-iii",
     "clo": 3,
     "q": "Kết luận số 21-KL/TW của Ban Chấp hành Trung ương khoá XIII (năm 2021) đề cập nội dung nào sau đây?",
     "options": [
@@ -5519,7 +5519,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1298,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-iii",
     "clo": 3,
     "q": "Hiến pháp năm 2013 khẳng định Nhà nước Cộng hoà xã hội chủ nghĩa Việt Nam là",
     "options": [
@@ -5533,7 +5533,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1299,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-iii",
     "clo": 3,
     "q": "Vận dụng tư tưởng Hồ Chí Minh về Nhà nước trong sạch, vững mạnh, công cuộc phòng, chống tham nhũng, tiêu cực ở Việt Nam hiện nay được tiến hành theo phương châm nào?",
     "options": [
@@ -5547,7 +5547,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1603,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Nội dung cơ bản của Chánh cương vắn tắt và Sách lược vắn tắt (Cương lĩnh chính trị đầu tiên, 1930) do Nguyễn Ái Quốc soạn thảo là gì?",
     "options": [
@@ -5561,7 +5561,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1604,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, so với các đảng cộng sản ở những nước tư bản phát triển, quá trình ra đời của Đảng Cộng sản Việt Nam có đặc điểm riêng nào?",
     "options": [
@@ -5575,7 +5575,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1605,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, Đảng Cộng sản Việt Nam là đội tiên phong của giai cấp nào?",
     "options": [
@@ -5589,7 +5589,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1606,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, Đảng Cộng sản Việt Nam phải được xây dựng theo những nguyên tắc tổ chức, sinh hoạt cơ bản nào?",
     "options": [
@@ -5603,7 +5603,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1607,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Nguyên tắc tập trung dân chủ trong xây dựng Đảng theo tư tưởng Hồ Chí Minh được hiểu như thế nào?",
     "options": [
@@ -5617,7 +5617,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1608,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Hồ Chí Minh coi tự phê bình và phê bình là gì đối với sự trong sạch, vững mạnh của Đảng?",
     "options": [
@@ -5631,7 +5631,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1609,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Hồ Chí Minh khẳng định vai trò quyết định của cán bộ đối với sự thành bại của công việc cách mạng qua luận điểm nào?",
     "options": [
@@ -5645,7 +5645,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1610,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Vì sao Hồ Chí Minh đặc biệt coi trọng công tác cán bộ, xem \"cán bộ là cái gốc của mọi công việc\"?",
     "options": [
@@ -5659,7 +5659,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1611,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, nguyên tắc tự phê bình và phê bình trong sinh hoạt Đảng cần được thực hiện theo phương châm nào?",
     "options": [
@@ -5673,7 +5673,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1612,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, mối quan hệ giữa Đảng với nhân dân được xác định như thế nào?",
     "options": [
@@ -5687,7 +5687,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1613,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Đảng Cộng sản Việt Nam cầm quyền theo tư tưởng Hồ Chí Minh phải bảo đảm mục đích tối thượng nào?",
     "options": [
@@ -5701,7 +5701,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1614,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 2,
     "q": "Hồ Chí Minh cảnh báo nguy cơ nào có thể xảy ra đối với một đảng cầm quyền lâu dài nếu không thường xuyên tự đổi mới, tự chỉnh đốn?",
     "options": [
@@ -5715,7 +5715,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1615,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, đảng viên phải luôn đặt lợi ích nào lên trên hết, trước hết trong mọi hoạt động, công tác?",
     "options": [
@@ -5729,7 +5729,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1616,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-i",
     "clo": 3,
     "q": "Trong công cuộc xây dựng, chỉnh đốn Đảng hiện nay, việc vận dụng tư tưởng Hồ Chí Minh về các nguyên tắc tổ chức, sinh hoạt Đảng cần được thực hiện gắn với yêu cầu cấp bách nào theo tinh thần các nghị quyết Trung ương gần đây?",
     "options": [
@@ -5743,7 +5743,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1617,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, bên cạnh bản chất giai cấp công nhân, Nhà nước Việt Nam Dân chủ Cộng hòa còn mang đặc điểm gì thể hiện tính ưu việt của một nhà nước kiểu mới?",
     "options": [
@@ -5757,7 +5757,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1618,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Hồ Chí Minh khẳng định nước ta là nước dân chủ với nguyên tắc cơ bản nào về quyền lực nhà nước?",
     "options": [
@@ -5771,7 +5771,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1619,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, Nhà nước của dân được thể hiện cụ thể như thế nào trong thực tiễn tổ chức bộ máy nhà nước?",
     "options": [
@@ -5785,7 +5785,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1620,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Nhà nước do dân theo tư tưởng Hồ Chí Minh có nghĩa là gì?",
     "options": [
@@ -5799,7 +5799,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1621,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Nhà nước vì dân theo tư tưởng Hồ Chí Minh là nhà nước như thế nào?",
     "options": [
@@ -5813,7 +5813,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1622,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Hồ Chí Minh yêu cầu cán bộ, công chức nhà nước phải có phẩm chất gì để thực sự là \"công bộc\" của dân?",
     "options": [
@@ -5827,7 +5827,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1623,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, Nhà nước pháp quyền mà Việt Nam xây dựng phải bảo đảm tính hợp hiến, hợp pháp như thế nào?",
     "options": [
@@ -5841,7 +5841,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1624,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Bản Hiến pháp đầu tiên của nước Việt Nam Dân chủ Cộng hòa (1946), do Hồ Chí Minh trực tiếp chỉ đạo soạn thảo, đã ghi nhận nguyên tắc quan trọng nào về chủ quyền quốc gia?",
     "options": [
@@ -5855,7 +5855,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1625,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, để xây dựng Nhà nước trong sạch, vững mạnh, cần kiên quyết phòng, chống những tệ nạn nào?",
     "options": [
@@ -5869,7 +5869,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1626,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Hồ Chí Minh nhấn mạnh Nhà nước phải chịu sự kiểm soát, giám sát của ai để tránh lạm quyền, thoái hóa?",
     "options": [
@@ -5883,7 +5883,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1627,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Theo tư tưởng Hồ Chí Minh, một Nhà nước mạnh phải dựa trên nền tảng nào để có được sức mạnh thực sự, bền vững?",
     "options": [
@@ -5897,7 +5897,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1628,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 1,
     "q": "Trong bộ máy Nhà nước theo tư tưởng Hồ Chí Minh, Quốc hội có vị trí, vai trò như thế nào?",
     "options": [
@@ -5911,7 +5911,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1629,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 2,
     "q": "Vì sao Hồ Chí Minh coi việc xây dựng đội ngũ cán bộ, công chức \"vừa hồng vừa chuyên\" là yêu cầu cấp thiết đối với một Nhà nước kiểu mới?",
     "options": [
@@ -5925,7 +5925,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1630,
-    "section": "tthcm-ch4",
+    "section": "tthcm-ch4-ii",
     "clo": 3,
     "q": "Việc xây dựng và hoàn thiện Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam hiện nay cần vận dụng, phát triển tư tưởng Hồ Chí Minh về Nhà nước của dân, do dân, vì dân theo hướng nào để đáp ứng yêu cầu của thời kỳ mới?",
     "options": [
@@ -5939,7 +5939,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1300,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, đại đoàn kết toàn dân tộc có ý nghĩa thế nào trong sự nghiệp cách mạng?",
     "options": [
@@ -5953,7 +5953,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1301,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Năm 1951, Hồ Chí Minh tuyên bố “Đoàn kết toàn dân, phụng sự Tổ quốc” là mục đích của",
     "options": [
@@ -5967,7 +5967,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1302,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Câu nói của Chủ tịch Hồ Chí Minh “Đoàn kết, đoàn kết, đại đoàn kết. Thành công, thành công, đại thành công.” muốn nói về",
     "options": [
@@ -5981,7 +5981,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1303,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Đâu không phải là câu nói của Hồ Chí Minh về vai trò của đoàn kết?",
     "options": [
@@ -5995,7 +5995,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1304,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Chọn cặp từ điền vào các chỗ trống để hoàn thành câu nói sau của Hồ Chí Minh: “Ai có tài, có đức, có sức, có lòng … Tổ quốc và phục vụ nhân dân thì ta … với họ.”.",
     "options": [
@@ -6009,7 +6009,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1305,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Nội dung nào sau đây phù hợp với quan điểm của Hồ Chí Minh về nền tảng cơ bản của khối đại đoàn kết toàn dân tộc?",
     "options": [
@@ -6023,7 +6023,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1306,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, chủ thể của khối đại đoàn kết toàn dân tộc là",
     "options": [
@@ -6037,7 +6037,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1307,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, việc xây dựng khối đại đoàn kết toàn dân tộc phải đứng trên lập trường của giai cấp, tầng lớp nào?",
     "options": [
@@ -6051,7 +6051,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1308,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Cơ sở để thống nhất lợi ích các giai cấp, tầng lớp xã hội trong mặt trận là",
     "options": [
@@ -6065,7 +6065,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1309,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Luận điểm nào sau đây phù hợp với quan điểm của Hồ Chí Minh về vị trí của các tổ chức quần chúng và mặt trận?",
     "options": [
@@ -6079,7 +6079,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1310,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Yếu tố đảm bảo tính giai cấp trong hoạt động của Mặt trận Dân tộc thống nhất là",
     "options": [
@@ -6093,7 +6093,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1311,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, luận điểm nào sau đây không phải là các điều kiện đảm bảo xây dựng khối đại đoàn kết toàn dân tộc?",
     "options": [
@@ -6107,7 +6107,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1312,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "Chọn cụm từ đúng để hoàn thành lời căn dặn sau trong Di chúc của Chủ tịch Hồ Chí Minh (1969): “Tôi mong rằng Đảng ta sẽ ra sức hoạt động, góp phần đắc lực vào việc khôi phục lại … giữa các đảng anh em trên nền tảng chủ nghĩa Mác – Lênin và chủ nghĩa quốc tế vô sản, có lí có tình.”.",
     "options": [
@@ -6121,7 +6121,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1313,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Luận điểm của Hồ Chí Minh “Đối với những đồng bào lạc lối lầm đường, ta phải lấy tình thân ái mà cảm hoá họ” thể hiện điều kiện trực tiếp nào sau đây để thực hiện khối đại đoàn kết toàn dân tộc?",
     "options": [
@@ -6135,7 +6135,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1314,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "“Chở thuyền cũng là dân, lật thuyền cũng là dân.” muốn khẳng định vai trò của nhân dân là câu nói của",
     "options": [
@@ -6149,7 +6149,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1315,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Hình thức tổ chức Mặt trận Dân tộc thống nhất nào dưới đây do Hồ Chí Minh trực tiếp thành lập?",
     "options": [
@@ -6163,7 +6163,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1316,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Mục tiêu cao nhất của Mặt trận Việt Minh (19/5/1941) là",
     "options": [
@@ -6177,7 +6177,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1317,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Mặt trận Dân tộc thống nhất là hình thức chính trị – xã hội nhằm tập hợp các giai cấp, tầng lớp, dân tộc, tôn giáo, đảng phái, cá nhân trong, ngoài nước hướng đến mục tiêu chung là",
     "options": [
@@ -6191,7 +6191,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1318,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Nguyên tắc xây dựng và hoạt động nào sau đây đảm bảo tính giai cấp của Mặt trận?",
     "options": [
@@ -6205,7 +6205,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1319,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Chọn luận điểm đúng với vị trí, vai trò của ĐCSVN đối với Mặt trận.",
     "options": [
@@ -6219,7 +6219,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1320,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Điểm chung để quy tụ các giai cấp, tầng lớp khác nhau trong xã hội vào Mặt trận là",
     "options": [
@@ -6233,7 +6233,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1321,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Nguyên tắc hiệp thương dân chủ trong tổ chức Mặt trận xuất phát từ",
     "options": [
@@ -6247,7 +6247,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1322,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Đoàn kết thực sự theo Hồ Chí Minh được hiểu là",
     "options": [
@@ -6261,7 +6261,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1323,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Đáp án nào sau đây không phải là phương thức xây dựng khối đại đoàn kết toàn dân tộc?",
     "options": [
@@ -6275,7 +6275,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1324,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Luận điểm “Không thể chỉ dùng báo chương, sách vở, mít tinh, khẩu hiệu, truyền đơn, chỉ thị mà đủ. Trước nhất là phải tìm mọi cách giải thích cho mỗi một người dân hiểu rõ ràng: Việc đó là lợi ích cho họ và nhiệm vụ của họ, họ phải hăng hái làm cho kì được.” trong tác phẩm Dân vận (1949) của Hồ Chí Minh thể hiện",
     "options": [
@@ -6289,7 +6289,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1325,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Đâu là đáp án không phù hợp với tư tưởng của Hồ Chí Minh về mục tiêu của đoàn kết quốc tế?",
     "options": [
@@ -6303,7 +6303,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1326,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, tăng cường đoàn kết quốc tế chỉ có thể thực hiện với tinh thần của",
     "options": [
@@ -6317,7 +6317,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1327,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "Đâu không phải là lực lượng đoàn kết quốc tế theo tư tưởng của Hồ Chí Minh?",
     "options": [
@@ -6331,7 +6331,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1328,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, giai cấp công nhân quốc tế cần đoàn kết vì",
     "options": [
@@ -6345,7 +6345,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1329,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, một trong những điều kiện đảm bảo cho thắng lợi cuối cùng của phong trào cách mạng thế giới là",
     "options": [
@@ -6359,7 +6359,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1330,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "Ngày 26/6/1921, tại Pháp, Nguyễn Ái Quốc họp với một số đồng chí người An-giê-ri (Algeria), Ma-rốc (Morocco), Tuyni-di (Tunisia), Ma-đa-gát-xca (Madagascar)... để bàn việc thành lập",
     "options": [
@@ -6373,7 +6373,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1331,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "Lời tuyên ngôn “Con đường thoát duy nhất để xoá bỏ sự áp bức chỉ có thể là liên hiệp các dân tộc nhỏ yếu bị áp bức và giai cấp vô sản toàn thế giới, áp dụng những phương pháp cách mạng để lật đổ về căn bản chủ nghĩa tư bản đế quốc cực kì hung ác.” được nêu ra bởi tổ chức nào sau đây?",
     "options": [
@@ -6387,7 +6387,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1332,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, nguyên tắc đoàn kết quốc tế trên cơ sở thống nhất mục tiêu, lợi ích; có lí, có tình đối với phong trào cộng sản và công nhân quốc tế cần",
     "options": [
@@ -6401,7 +6401,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1333,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Đâu là đáp án phù hợp với quan điểm của Hồ Chí Minh về nguyên tắc đoàn kết quốc tế trên cơ sở độc lập, tự chủ.",
     "options": [
@@ -6415,7 +6415,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1334,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Trong quan hệ quốc tế, Hồ Chí Minh dùng hình ảnh nào sau đây để nói về nội lực?",
     "options": [
@@ -6429,7 +6429,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1335,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-iii",
     "clo": 3,
     "q": "Chọn cụm từ điền vào chỗ trống để hoàn thành luận điểm sau của Đảng trong Đại hội đại biểu toàn quốc lần thứ XII (2016): “… là đường lối chiến lược của cách mạng Việt Nam, là động lực và nguồn lực to lớn trong xây dựng và bảo vệ Tổ quốc.”.",
     "options": [
@@ -6443,7 +6443,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1336,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-iii",
     "clo": 3,
     "q": "Theo quan điểm của ĐCSVN hiện nay, chúng ta xây dựng khối đại đoàn kết toàn dân trên nền tảng",
     "options": [
@@ -6457,7 +6457,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1337,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "Đoạn trích sau của Hồ Chí Minh: “Mục đích của Hội là tập hợp và hướng dẫn cho mọi người dân các xứ thuộc địa hiện sống trên đất Pháp để; soi sáng cho những người dân ở thuộc địa về tình hình mọi mặt ở nước Pháp nhằm mục đích đoàn kết họ; thảo luận và nghiên cứu tất cả những vấn đề chính trị và kinh tế của thuộc địa.” là phát biểu của tổ chức nào sau đây?",
     "options": [
@@ -6471,7 +6471,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1338,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Năm 1941, Nguyễn Ái Quốc trở về nước, trong tình thế cách mạng diễn biến mau lẹ, Người đã chủ trương thành lập tổ chức nào sau đây để tập hợp đoàn kết quần chúng tham gia vào sự nghiệp cứu quốc?",
     "options": [
@@ -6485,7 +6485,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1339,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "Chọn cụm từ đúng điền vào chỗ trống để hoàn thành câu nói sau của Hồ Chí Minh: “Một dân tộc không … mà cứ ngồi chờ dân tộc khác giúp đỡ thì không xứng đáng được độc lập”.",
     "options": [
@@ -6499,7 +6499,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1340,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "Chọn từ ngữ đúng điền vào chỗ trống để hoàn thành hai câu thơ sau đây của Hồ Chí Minh: “Quan sơn muôn dặm một nhà, Bốn phương vô sản đều là …!”",
     "options": [
@@ -6513,7 +6513,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1341,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Chọn cặp từ ngữ đúng điền vào các chỗ trống để hoàn thành câu nói sau của Hồ Chí Minh: “Sử ta dạy cho ta bài học này: Lúc nào dân ta .... muôn người như một thì nước ta độc lập, tự do. Trái lại lúc nào dân ta .... thì bị nước ngoài xâm lấn.”.",
     "options": [
@@ -6527,7 +6527,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1342,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Chọn cặp từ ngữ điền vào các chỗ trống để hoàn thành câu nói sau của Hồ Chí Minh: “Đoàn kết là …, là … của thành công”.",
     "options": [
@@ -6541,7 +6541,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1343,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Chọn từ ngữ đúng hoàn thành tuyên bố sau của Hồ Chí Minh trong lời kết thúc ra mắt Đảng Lao động Việt Nam ngày 3/3/1951: “Mục đích của Đảng Lao động Việt Nam có thể gồm trong 8 chữ là: ...”.",
     "options": [
@@ -6555,7 +6555,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1344,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Chọn cụm từ đúng điền vào chỗ trống hoàn thành lời khuyên sau của Chủ tịch Hồ Chí Minh trong Thư gửi đồng bào Nam Bộ (1946): “Đồng bào đoàn kết chặt chẽ và rộng rãi. Năm ngón tay cũng có ngón vắn ngón dài. Nhưng vắn dài đều họp nhau lại nơi bàn tay. Trong mấy triệu người cũng có người thế này thế khác, nhưng thế này hay thế khác đều…”.",
     "options": [
@@ -6569,7 +6569,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1345,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Chọn cặp từ ngữ đúng điền vào các chỗ trống hoàn thành luận điểm của Hồ Chí Minh viết trong Thư gửi đồng bào Nam Bộ (1946): “Đối với những đồng bào lạc lối lầm đường, ta phải lấy … mà … họ. Có như thế mới thành đại đoàn kết, có đại đoàn kết thì tương lai chắc sẽ vẻ vang.”.",
     "options": [
@@ -6583,7 +6583,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1346,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Chọn cặp từ ngữ điền vào các chỗ trống để hoàn thành quan niệm sau của Hồ Chí Minh: “Lực lượng chủ yếu trong khối đoàn kết dân tộc là …, cho nên liên minh … là nền tảng của Mặt trận dân tộc thống nhất.”.",
     "options": [
@@ -6597,7 +6597,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1347,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Chọn các cặp từ ngữ điền vào các chỗ trống để hoàn thành quan niệm sau của Hồ Chí Minh: “Đoàn kết thực sự nghĩa là … phải nhất trí và … cũng phải nhất trí.”.",
     "options": [
@@ -6611,7 +6611,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1348,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "Chọn cặp từ ngữ đúng điền vào chỗ trống để hoàn thành nội dung câu nói của Chủ tịch Hồ Chí Minh vào tháng 9/1947, khi trả lời nhà báo người Mĩ – S.Ê-li Mây-si (S.Elie Maissie) về chính sách đối ngoại của Việt Nam: Việt Nam “… với tất cả mọi nước dân chủ và không … với một ai.”.",
     "options": [
@@ -6625,7 +6625,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1349,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Trong Lời kết thúc buổi ra mắt Đảng Lao động Việt Nam ngày 3/3/1951, Hồ Chí Minh tuyên bố mục đích của Đảng Lao động Việt Nam có thể gồm trong 8 chữ nào?",
     "options": [
@@ -6639,7 +6639,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1350,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, đại đoàn kết toàn dân tộc phải được xác định là nhiệm vụ hàng đầu của tổ chức nào?",
     "options": [
@@ -6653,7 +6653,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1351,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Vận dụng tư tưởng Hồ Chí Minh về đại đoàn kết toàn dân tộc, hãy xác định: Yếu tố nào là đòi hỏi khách quan của quần chúng nhân dân trong cuộc đấu tranh tự giải phóng?",
     "options": [
@@ -6667,7 +6667,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1352,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Công tác vận động quần chúng được gọi là công tác gì?",
     "options": [
@@ -6681,7 +6681,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1353,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Điền vào chỗ trống để hoàn thành quan điểm sau của Hồ Chí Minh: \"Đoàn kết thực sự nghĩa là vừa đoàn kết, vừa đấu tranh, học những cái tốt của nhau, (...) những cái sai của nhau và (...) trên lập trường thân ái, vì nước, vì dân\".",
     "options": [
@@ -6695,7 +6695,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1354,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Vận dụng nội dung tư tưởng của Hồ Chí Minh về đại đoàn kết toàn dân tộc, hãy điền vào chỗ trống để hoàn thiện quan điểm sau: \"Đoàn kết thực sự nghĩa là mục đích phải (...) và lập trường cũng phải (...)\".",
     "options": [
@@ -6709,7 +6709,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1355,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, đại đoàn kết toàn dân tộc là vấn đề có ý nghĩa như thế nào đối với cách mạng Việt Nam?",
     "options": [
@@ -6723,7 +6723,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1356,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Điền vào chỗ trống để hoàn thành quan điểm sau của Hồ Chí Minh: \"Đoàn kết là (...) của chúng ta\".",
     "options": [
@@ -6737,7 +6737,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1357,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, đại đoàn kết toàn dân tộc không những là khẩu hiệu chiến lược, mà còn được xác định là gì?",
     "options": [
@@ -6751,7 +6751,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1358,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Vận dụng nội dung tư tưởng của Hồ Chí Minh về đại đoàn kết toàn dân tộc, hãy điền vào chỗ trống để hoàn thiện quan điểm sau: \"Sử dạy cho ta bài học này: Lúc nào dân ta (...) muôn người như một thì nước ta được độc lập, tự do. Trái lại, lúc nào dân ta không (...) thì bị nước ngoài xâm lấn\"?",
     "options": [
@@ -6765,7 +6765,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1359,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-iii",
     "clo": 3,
     "q": "Vận dụng tư tưởng Hồ Chí Minh về đoàn kết quốc tế, tháng 10/2024, Việt Nam đã nâng cấp \"quan hệ đối tác chiến lược toàn diện\" với quốc gia nào trên thế giới?",
     "options": [
@@ -6779,7 +6779,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1360,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-iii",
     "clo": 3,
     "q": "Từ yêu cầu thực tiễn của đường lối đối ngoại, Việt Nam đã nâng cấp \"quan hệ đối tác chiến lược toàn diện\" với quốc gia nào vào tháng 11/2023?",
     "options": [
@@ -6793,7 +6793,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1361,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Tên gọi của Mặt trận dân tộc thống nhất ở Việt Nam năm 1930 là gì?",
     "options": [
@@ -6807,7 +6807,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1362,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Vận dụng nội dung tư tưởng của Hồ Chí Minh về đại đoàn kết toàn dân tộc, hãy xác định: Tổ chức nào là nơi quy tụ mọi tổ chức và cá nhân yêu nước, tập hợp mọi người dân nước Việt, cả trong nước và kiều bào sinh sông ở nước ngoài?",
     "options": [
@@ -6821,7 +6821,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1363,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "Từ nội dung tư tưởng của Hồ Chí Minh về đoàn kết quốc tế, hãy xác định: Đối với các lực lượng tiến bộ trên thế giới, Hồ Chí Minh chủ trương giương cao ngọn cờ gì?",
     "options": [
@@ -6835,7 +6835,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1364,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-iii",
     "clo": 3,
     "q": "Vận dụng tư tưởng Hồ Chí Minh về đại đoàn kết toàn dân tộc, hãy xác định: Ngày hội đại đoàn kết toàn dân tộc ở Việt Nam hiện nay là ngày nào?",
     "options": [
@@ -6849,7 +6849,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1365,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Tổ chức nào vừa là thành viên, vừa là lực lượng lãnh đạo Mặt trận Tổ quốc Việt Nam?",
     "options": [
@@ -6863,7 +6863,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1366,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, chỗ dựa vững chắc đồng thời cũng là nguồn sức mạnh vô địch của khối đại đoàn kết toàn dân tộc, quyết định thắng lợi của cách mạng là gì?",
     "options": [
@@ -6877,7 +6877,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1367,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Điền vào chỗ trống để hoàn thành quan điểm của Hồ Chí Minh: \"Ta phải nhận rằng, đã là con Lạc cháu Hồng thì ai cũng có ít hay nhiều lòng ái quốc. Đối với những đồng bào lạc lối lầm đường, ta phải lấy tình thân ái mà cảm hóa họ. Có như thế mới thành (...), có (...) thì tương lai chắc chắn sẽ vẻ vang\"?",
     "options": [
@@ -6891,7 +6891,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1368,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, phương châm \"cầu đồng tồn dị\" có nghĩa là gì?",
     "options": [
@@ -6905,7 +6905,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1369,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "\"Là sự tổng hợp của các yếu tố vật chất và tinh thần, song trước hết là sức mạnh của chủ nghĩa yêu nước và ý thức tự lực tự cường dân tộc; sức mạnh của tinh thần đoàn kết; của ý chí đấu tranh anh dũng, bất khuất cho độc lập, tự do\" là nội hàm của khái niệm gì?",
     "options": [
@@ -6919,7 +6919,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1370,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "“Là sức mạnh của phong trào cách mạng thế giới, đó còn là sức mạnh của chủ nghĩa Mác - Lênin được xác lập bởi thắng lợi của Cách mạng Tháng Mười Nga năm 1917” là nội hàm của khái niệm gì?",
     "options": [
@@ -6933,7 +6933,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1371,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, cách mạng Việt Nam chỉ có thể thành công khi thực hiện đoàn kết chặt chẽ với lực lượng nào?",
     "options": [
@@ -6947,7 +6947,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1372,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, muốn tăng cường đoàn kết quốc tế trong cuộc đấu tranh vì mục tiêu chung, các đảng cộng sản trên thế giới cần phải làm gì?",
     "options": [
@@ -6961,7 +6961,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1373,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, thực hiện đoàn kết quốc tế, kết hợp chặt chẽ chủ nghĩa yêu nước với chủ nghĩa quốc tế vô sản nhằm mục đích gì?",
     "options": [
@@ -6975,7 +6975,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1374,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "Đối với phong trào cộng sản và công nhân quốc tế, Hồ Chí Minh cho rằng sự đoàn kết giữa giai cấp công nhân quốc tế là sự bảo đảm vững chắc cho thắng lợi của chủ nghĩa nào?",
     "options": [
@@ -6989,7 +6989,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1375,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, chủ trương đoàn kết giai cấp công nhân quốc tế, đoàn kết giữa các đảng cộng sản xuất phát từ tính tất yếu nào?",
     "options": [
@@ -7003,7 +7003,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1376,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, đoàn kết quốc tế không phải là vấn đề sách lược, một thủ đoạn chính trị nhất thời mà là vấn đề cần có yêu cầu nào?",
     "options": [
@@ -7017,7 +7017,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1377,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Với việc tham gia sáng lập Hội Liên hiệp thuộc địa và Hội Liên hiệp các dân tộc bị áp bức ở Á Đông, Hồ Chí Minh đã góp phần đặt cơ sở cho việc ra đời của Mặt trận nào?",
     "options": [
@@ -7031,7 +7031,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1378,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "Đoàn kết trên cơ sở thống nhất mục tiêu và lợi ích, có lý, có tình, đối với các dân tộc trên thế giới, Hồ Chí Minh giương cao ngọn cờ gì?",
     "options": [
@@ -7045,7 +7045,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1631,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Cơ sở hình thành tư tưởng đại đoàn kết toàn dân tộc của Hồ Chí Minh bắt nguồn chủ yếu từ đâu?",
     "options": [
@@ -7059,7 +7059,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1632,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Câu nói nào của Hồ Chí Minh thể hiện rõ nhất vai trò, sức mạnh của đại đoàn kết dân tộc?",
     "options": [
@@ -7073,7 +7073,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1633,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, đại đoàn kết dân tộc trước hết là đại đoàn kết giữa lực lượng nào, làm nền tảng, nòng cốt?",
     "options": [
@@ -7087,7 +7087,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1634,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Theo tư tưởng Hồ Chí Minh, để xây dựng khối đại đoàn kết toàn dân tộc rộng rãi, cần có quan điểm, thái độ như thế nào đối với các giai tầng, tôn giáo, dân tộc khác nhau trong xã hội?",
     "options": [
@@ -7101,7 +7101,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1635,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Hình thức tổ chức để hiện thực hóa khối đại đoàn kết toàn dân tộc theo tư tưởng Hồ Chí Minh là gì?",
     "options": [
@@ -7115,7 +7115,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1636,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Mặt trận dân tộc thống nhất theo tư tưởng Hồ Chí Minh cần được xây dựng, hoạt động trên nguyên tắc nào để phát huy hiệu quả?",
     "options": [
@@ -7129,7 +7129,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1637,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, đại đoàn kết dân tộc không chỉ là mục tiêu, nhiệm vụ hàng đầu của Đảng mà còn là gì đối với cả dân tộc?",
     "options": [
@@ -7143,7 +7143,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1638,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Trong tư tưởng Hồ Chí Minh, đại đoàn kết dân tộc gắn liền chặt chẽ với hoạt động nào của quần chúng nhân dân để trở thành sức mạnh vật chất, có tổ chức?",
     "options": [
@@ -7157,7 +7157,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1639,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Hồ Chí Minh cho rằng đoàn kết phải gắn liền với đấu tranh, đấu tranh để làm gì?",
     "options": [
@@ -7171,7 +7171,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1640,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, vai trò lãnh đạo của Đảng đối với khối đại đoàn kết toàn dân tộc được thể hiện như thế nào?",
     "options": [
@@ -7185,7 +7185,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1641,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 1,
     "q": "Trong bài nói chuyện với đồng bào các dân tộc, Hồ Chí Minh thường nhấn mạnh nguyên tắc đoàn kết nào giữa các dân tộc anh em trong đại gia đình các dân tộc Việt Nam?",
     "options": [
@@ -7199,7 +7199,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1642,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-i",
     "clo": 3,
     "q": "Trong bối cảnh hiện nay, việc vận dụng tư tưởng Hồ Chí Minh về đại đoàn kết toàn dân tộc cần chú trọng giải quyết hài hòa mối quan hệ nào để phát huy sức mạnh toàn dân tộc phục vụ phát triển đất nước?",
     "options": [
@@ -7213,7 +7213,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1643,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Nhận thức của Hồ Chí Minh về đoàn kết quốc tế đã có sự phát triển như thế nào qua các giai đoạn hoạt động cách mạng của Người?",
     "options": [
@@ -7227,7 +7227,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1644,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "Câu nói \"Quan sơn muôn dặm một nhà, bốn phương vô sản đều là anh em\" của Hồ Chí Minh thể hiện điều gì?",
     "options": [
@@ -7241,7 +7241,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1645,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Trong tư tưởng Hồ Chí Minh, đoàn kết quốc tế được xây dựng dựa trên nguyên tắc nào là cốt lõi?",
     "options": [
@@ -7255,7 +7255,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1646,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "Hồ Chí Minh chủ trương đoàn kết ba nước Đông Dương (Việt Nam - Lào - Campuchia) dựa trên tinh thần gì?",
     "options": [
@@ -7269,7 +7269,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1647,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Luận điểm \"kết hợp sức mạnh dân tộc với sức mạnh thời đại\" trong tư tưởng Hồ Chí Minh về đoàn kết quốc tế được hiểu như thế nào?",
     "options": [
@@ -7283,7 +7283,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1648,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, đối tượng đoàn kết quốc tế của cách mạng Việt Nam, ngoài phong trào cộng sản, còn bao gồm lực lượng nào?",
     "options": [
@@ -7297,7 +7297,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1649,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Việc Hồ Chí Minh chủ động tranh thủ sự đồng tình của nhân dân Pháp, kể cả một bộ phận binh sĩ Pháp, trong cuộc kháng chiến chống Pháp thể hiện quan điểm gì?",
     "options": [
@@ -7311,7 +7311,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1650,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "\"Chủ nghĩa quốc tế vô sản\" trong tư tưởng Hồ Chí Minh gắn liền và thống nhất với yếu tố nào?",
     "options": [
@@ -7325,7 +7325,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1651,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "Trong quan hệ với các nước xã hội chủ nghĩa anh em (Liên Xô, Trung Quốc...), Hồ Chí Minh coi trọng nguyên tắc gì để giữ vững đường lối độc lập, tự chủ của Việt Nam?",
     "options": [
@@ -7339,7 +7339,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1652,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Việc hình thành Mặt trận nhân dân thế giới đoàn kết với Việt Nam chống đế quốc Mỹ xâm lược (thập niên 1960-1970) là kết quả trực tiếp của tư tưởng nào của Hồ Chí Minh?",
     "options": [
@@ -7353,7 +7353,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1653,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, cơ sở thực tiễn hình thành tư tưởng đoàn kết quốc tế của Người bắt nguồn từ đâu?",
     "options": [
@@ -7367,7 +7367,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1654,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Hình thức \"ngoại giao tâm công\" mà Hồ Chí Minh vận dụng trong đoàn kết, tranh thủ quốc tế có đặc điểm nổi bật gì?",
     "options": [
@@ -7381,7 +7381,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1655,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "Trong tư tưởng Hồ Chí Minh, mối quan hệ giữa đoàn kết dân tộc và đoàn kết quốc tế được xác định như thế nào?",
     "options": [
@@ -7395,7 +7395,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1656,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Vì sao Hồ Chí Minh coi việc mở rộng quan hệ đoàn kết, hữu nghị với nhân dân các nước láng giềng và khu vực là yêu cầu quan trọng?",
     "options": [
@@ -7409,7 +7409,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1657,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, đoàn kết quốc tế phải phục vụ mục tiêu cao nhất nào của cách mạng Việt Nam?",
     "options": [
@@ -7423,7 +7423,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1658,
-    "section": "tthcm-ch5",
+    "section": "tthcm-ch5-ii",
     "clo": 2,
     "q": "Bài học nào từ tư tưởng Hồ Chí Minh về đoàn kết quốc tế có ý nghĩa nền tảng cho việc xây dựng đường lối đối ngoại của Việt Nam sau này?",
     "options": [
@@ -7437,7 +7437,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1379,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Chọn đáp án đúng điền vào chỗ trống trong Di chúc của Hồ Chí Minh: “Mỗi đảng viên và cán bộ phải thật sự thấm nhuần (...), thật sự cần kiệm liêm chính, chí công vô tư. Phải giữ gìn Đảng ta thật trong sạch, phải xứng đáng là người lãnh đạo, là người đày tớ thật trung thành của nhân dân”?",
     "options": [
@@ -7451,7 +7451,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1380,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, để phục vụ sự nghiệp cách mạng xã hội chủ nghĩa thì nền văn hóa phải như thế nào?",
     "options": [
@@ -7465,7 +7465,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1381,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, việc “mỗi cán bộ, mỗi đảng viên, mỗi ngày phải tự kiểm điểm, tự phê bình, tự sửa chữa” giống như điều gì?",
     "options": [
@@ -7479,7 +7479,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1382,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Vận dụng quan điểm của Hồ Chí Minh về quan hệ giữa văn hóa với các lĩnh vực khác, hãy chọn đáp án đúng hoàn thành câu sau: “Văn hóa không hoàn toàn phụ thuộc vào (...), mà có vai trò tác động tích cực trở lại (...)”?",
     "options": [
@@ -7493,7 +7493,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1383,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Vận dụng quan điểm của Hồ Chí Minh về vai trò của văn hóa, hãy xác định lĩnh vực văn hóa nào đào tạo con người mới, nguồn nhân lực chất lượng cao cho sự nghiệp cách mạng?",
     "options": [
@@ -7507,7 +7507,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1384,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, để giữ gìn cốt cách văn hóa dân tộc và tiếp thu văn hóa nhân loại, cần phải làm gì?",
     "options": [
@@ -7521,7 +7521,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1385,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, “chiến sĩ nghệ thuật” có nhiệm vụ gì?",
     "options": [
@@ -7535,7 +7535,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1386,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Vận dụng quan điểm của Hồ Chí Minh về văn hóa, văn kiện nào của Đảng đã nêu rõ phải xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc, phát triển toàn diện, thống nhất trong đa dạng, thấm nhuần sâu sắc tinh thần nhân văn, dân chủ, tiến bộ?",
     "options": [
@@ -7549,7 +7549,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1387,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, mục đích của việc tiếp thu văn hóa nhân loại là gì?",
     "options": [
@@ -7563,7 +7563,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1388,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Vận dụng tư tưởng Hồ Chí Minh về đạo đức, hãy xác định yếu tố nào là chỗ dựa giúp cho con người vững vàng trong mọi thử thách?",
     "options": [
@@ -7577,7 +7577,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1389,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, “siêng năng, chăm chỉ, cố gắng dẻo dai” là nội dung của khái niệm nào?",
     "options": [
@@ -7591,7 +7591,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1390,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, “không xa xỉ, không hoang phí, không bừa bãi” là nội dung của khái niệm nào?",
     "options": [
@@ -7605,7 +7605,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1391,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, “không tham địa vị, không tham tiền tài, không tham sung sướng, không ham người tâng bốc mình; vì vậy mà quang minh chính đại, không bao giờ hủ hóa” là nội dung của khái niệm nào?",
     "options": [
@@ -7619,7 +7619,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1392,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, “không tà, nghĩa là thẳng thắn, đứng đắn” là nội dung của khái niệm nào?",
     "options": [
@@ -7633,7 +7633,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1393,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, luôn vì lợi ích chung, không tư lợi, có tinh thần “lo trước thiên hạ, vui sau thiên hạ” là nội dung của khái niệm nào?",
     "options": [
@@ -7647,7 +7647,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1394,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Từ nội dung tư tưởng Hồ Chí Minh về đạo đức, hãy xác định phẩm chất đạo đức nào là phẩm chất bao trùm, quan trọng nhất và chi phối các phẩm chất khác?",
     "options": [
@@ -7661,7 +7661,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1395,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Vận dụng quan điểm của Hồ Chí Minh về những nguyên tắc xây dựng đạo đức cách mạng, hãy xác định nguyên tắc nào đối lập với thói đạo đức giả, nói một đường làm một nẻo?",
     "options": [
@@ -7675,7 +7675,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1396,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Trong tác phẩm Đạo đức cách mạng (năm 1958), Hồ Chí Minh viết: “... là một sự nghiệp rất vẻ vang, nhưng nó cũng là một nhiệm vụ rất nặng nề, một cuộc đấu tranh rất phức tạp, lâu dài, gian khổ”. Nhiệm vụ được đề cập trong trích dẫn là gì?",
     "options": [
@@ -7689,7 +7689,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1397,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Từ nội dung tư tưởng Hồ Chí Minh về đạo đức, hãy xác định phẩm chất đạo đức nào được Hồ Chí Minh sử dụng với những nội dung mới, rộng lớn, tạo nên một cuộc cách mạng trong quan niệm về đạo đức?",
     "options": [
@@ -7703,7 +7703,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1398,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Vận dụng quan điểm của Hồ Chí Minh về những chuẩn mực đạo đức cách mạng, hãy xác định phẩm chất nào vốn là những khái niệm cũ trong đạo đức truyền thống, được Hồ Chí Minh lọc bỏ nội dung không phù hợp và đưa vào những nội dung mới đáp ứng yêu cầu của cách mạng?",
     "options": [
@@ -7717,7 +7717,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1399,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Vận dụng quan điểm của Hồ Chí Minh về những nguyên tắc xây dựng đạo đức cách mạng, hãy xác định nguyên tắc nào được xem là quan trọng bậc nhất trong xây dựng nền đạo đức mới?",
     "options": [
@@ -7731,7 +7731,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1400,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Vận dụng quan điểm của Hồ Chí Minh về những chuẩn mực đạo đức cách mạng, hãy xác định luận điểm nào vừa là lời kêu gọi hành động, vừa là định hướng chính trị - đạo đức cho mỗi người Việt Nam không chỉ trong cuộc đấu tranh cách mạng trước đây, hôm nay mà còn lâu dài về sau?",
     "options": [
@@ -7745,7 +7745,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1401,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 1,
     "q": "Từ quan điểm của Hồ Chí Minh về con người, hãy chọn đáp án đúng hoàn thành câu sau: “Giải phóng dân tộc là (...), giành lại độc lập cho dân tộc”?",
     "options": [
@@ -7759,7 +7759,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1402,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "Từ quan niệm của Hồ Chí Minh về con người, hãy xác định đáp án nào dưới đây là đúng?",
     "options": [
@@ -7773,7 +7773,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1403,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Quan điểm “Văn hoá là sự tổng hợp của mọi phương thức sinh hoạt cùng với biểu hiện của nó mà loài người đã sản sinh ra nhằm thích ứng những nhu cầu đời sống và đòi hỏi của sự sinh tồn.” được Hồ Chí Minh đưa ra trong bối cảnh nào sau đây?",
     "options": [
@@ -7787,7 +7787,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1404,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, mối quan hệ giữa văn hoá với chính trị thể hiện",
     "options": [
@@ -7801,7 +7801,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1405,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, mối quan hệ giữa giữ gìn bản sắc văn hoá dân tộc và tiếp thu tinh hoa văn hoá nhân loại được hiểu là",
     "options": [
@@ -7815,7 +7815,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1406,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Khát vọng xây dựng đất nước độc lập, nhân dân tự do, hạnh phúc của Hồ Chí Minh là một trong những biểu hiện về",
     "options": [
@@ -7829,7 +7829,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1407,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, chủ trương xây dựng nền văn hoá có nội dung xã hội chủ nghĩa và tính dân tộc được đưa ra trong khoảng thời gian",
     "options": [
@@ -7843,7 +7843,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1408,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Với những cống hiến xuất sắc của Chủ tịch Hồ Chí Minh cho dân tộc Việt Nam và nhân loại tiến bộ thế giới, năm 1987, Tổ chức Giáo dục, Khoa học và Văn hoá của Liên hợp quốc (UNESCO) đã thông qua Nghị quyết 24C/18.6.5 về kỉ niệm 100 năm Ngày sinh của Người vào năm 1990 với tư cách là",
     "options": [
@@ -7857,7 +7857,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1409,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, tính quần chúng của văn hoá được hiểu là",
     "options": [
@@ -7871,7 +7871,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1410,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Đoạn trích “Cũng như sông thì có nguồn mới có nước, không có nguồn thì sông cạn. Cây phải có gốc, không có gốc thì cây héo. Người cách mạng phải có đạo đức, không có đạo đức thì dù tài giỏi mấy cũng không lãnh đạo được nhân dân…” nằm trong tác phẩm nào sau đây của Chủ tịch Hồ Chí Minh?",
     "options": [
@@ -7885,7 +7885,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1411,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, một trong những nguyên nhân cần phải có đạo đức cách mạng là",
     "options": [
@@ -7899,7 +7899,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1412,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Chọn từ điền vào chỗ trống để hoàn thành câu nói của Hồ Chí Minh: “Có … cách mạng thì khi gặp khó khăn, gian khổ, thất bại, cũng không sợ sệt, rụt rè, lùi bước.”.",
     "options": [
@@ -7913,7 +7913,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1413,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Lời căn dặn “Đảng ta là một Đảng cầm quyền. Mỗi đảng viên và cán bộ phải thật sự thấm nhuần đạo đức cách mạng, thật sự cần kiệm liêm chính, chí công vô tư…” của Chủ tịch Hồ Chí Minh thể hiện trong tác phẩm",
     "options": [
@@ -7927,7 +7927,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1414,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, phẩm chất đạo đức “trung với nước” cần được hiểu đầy đủ là",
     "options": [
@@ -7941,7 +7941,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1415,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Chọn nội dung đầy đủ nhất theo quan niệm của Hồ Chí Minh về phẩm chất đạo đức “cần”.",
     "options": [
@@ -7955,7 +7955,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1416,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Quan niệm “Lao động là nghĩa vụ thiêng liêng, là nguồn sống, nguồn hạnh phúc của chúng ta.” biểu hiện nội hàm của phẩm chất đạo đức nào?",
     "options": [
@@ -7969,7 +7969,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1417,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, “tiết kiệm” không phải là",
     "options": [
@@ -7983,7 +7983,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1418,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, chữ “liêm” được hiểu là",
     "options": [
@@ -7997,7 +7997,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1419,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Nội dung nào sau đây không phù hợp với nội hàm phẩm chất đạo đức “chính” theo quan điểm của Hồ Chí Minh?",
     "options": [
@@ -8011,7 +8011,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1420,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, “lo trước thiên hạ, vui sau thiên hạ” là biểu hiện của phẩm chất nào sau đây?",
     "options": [
@@ -8025,7 +8025,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1421,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Tình cảm nhân ái dành cho người nghèo khổ, những người bị mất quyền, những người bị áp bức, bị bóc lột không phân biệt màu da, dân tộc là biểu hiện của phẩm chất đạo đức nào sau đây?",
     "options": [
@@ -8039,7 +8039,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1422,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Tinh thần quốc tế trong sáng Hồ Chí Minh được hiểu là",
     "options": [
@@ -8053,7 +8053,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1423,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Hành vi phân biệt chủng tộc, gây chia rẽ, thù hằn dân tộc không phải là biểu hiện của",
     "options": [
@@ -8067,7 +8067,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1424,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Câu nói “Đảng viên đi trước, làng nước theo sau.” nói đến nguyên tắc nào trong xây dựng đạo đức cách mạng?",
     "options": [
@@ -8081,7 +8081,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1425,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, nêu cao tinh thần độc lập, tự chủ, tự lực, tự cường cùng với tăng cường đoàn kết và hợp tác quốc tế là biểu hiện của",
     "options": [
@@ -8095,7 +8095,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1426,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, “Miệng thì nói dân chủ, nhưng làm việc thì họ theo lối “quan” chủ”.” là biểu hiện của",
     "options": [
@@ -8109,7 +8109,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1427,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Chọn cặp từ ngữ điền vào các chỗ trống để hoàn thành luận điểm sau của Hồ Chí Minh: “Lấy…, … để hằng ngày giáo dục lẫn nhau là một trong những cách tốt nhất để xây dựng Đảng, xây dựng các tổ chức cách mạng, xây dựng con người mới, cuộc sống mới.”.",
     "options": [
@@ -8123,7 +8123,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1428,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, mối quan hệ giữa xây đi đôi với chống trong tu dưỡng, rèn luyện đạo đức cách mạng được hiểu là",
     "options": [
@@ -8137,7 +8137,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1429,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Chọn cụm từ điền vào chỗ trống để hoàn thành quan điểm của Hồ Chí Minh: “Mỗi con người đều có thiện và ác ở trong lòng. Ta phải biết làm cho … nảy nở như hoa mùa xuân và phần xấu bị mất dần đi, đó là thái độ của người cách mạng.”.",
     "options": [
@@ -8151,7 +8151,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1430,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Chọn cụm từ thích hợp điền vào chỗ trống để hoàn thành lời nhắc nhở sau của Hồ Chí Minh: “Một dân tộc, một đảng và mỗi con người, ngày hôm qua là vĩ đại, có sức hấp dẫn lớn, không nhất định hôm nay và ngày mai vẫn được mọi người yêu mến và ca ngợi, nếu …, nếu sa vào chủ nghĩa cá nhân.”.",
     "options": [
@@ -8165,7 +8165,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1431,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Hồ Chí Minh sử dụng hình ảnh “cũng như ngọc càng mài càng sáng, vàng càng luyện càng trong” để yêu cầu mỗi người cần",
     "options": [
@@ -8179,7 +8179,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1432,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "“Chữ người, nghĩa hẹp là gia đình, anh em, họ hàng, bè bạn; nghĩa rộng là đồng bào cả nước; rộng hơn nữa là cả loài người.”, tư tưởng này của Hồ Chí Minh thể hiện",
     "options": [
@@ -8193,7 +8193,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1433,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "Nhận định nào sau đây không đúng tư tưởng của Hồ Chí Minh về con người?",
     "options": [
@@ -8207,7 +8207,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1434,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, mục tiêu cuối cùng của sự nghiệp cách mạng là",
     "options": [
@@ -8221,7 +8221,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1435,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "Hồ Chí Minh dẫn lại câu nói của người dân tỉnh Quảng Bình khi Người có dịp về thăm: “Dễ mười lần không dân cũng chịu. Khó trăm lần dân liệu cũng xong.”. Câu nói trên thể hiện con người là",
     "options": [
@@ -8235,7 +8235,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1436,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, xây dựng con người là nhiệm vụ mang tính",
     "options": [
@@ -8249,7 +8249,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1437,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 1,
     "q": "Chọn cụm từ điền vào chỗ trống để hoàn thành quan điểm sau của Hồ Chí Minh: “Muốn xây dựng chủ nghĩa xã hội, trước hết cần phải có … xã hội chủ nghĩa.”.",
     "options": [
@@ -8263,7 +8263,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1438,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "Dẫn lại ý của người xưa, Hồ Chí Minh nói “Vì lợi ích mười năm thì phải trồng cây. Vì lợi ích trăm năm thì phải trồng người.”. Câu nói trên khẳng định",
     "options": [
@@ -8277,7 +8277,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1439,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "Đâu không phải là nội dung xây dựng con người một cách toàn diện theo tư tưởng Hồ Chí Minh?",
     "options": [
@@ -8291,7 +8291,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1440,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "Đâu không phải là biện pháp để giáo dục con người theo quan điểm của Hồ Chí Minh?",
     "options": [
@@ -8305,7 +8305,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1441,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Chủ trương xây dựng nền văn hoá Việt Nam tiên tiến, đậm đà bản sắc dân tộc lần đầu tiên được Đảng nêu ra ở",
     "options": [
@@ -8319,7 +8319,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1442,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Nghị quyết Hội nghị lần thứ 5 Ban Chấp hành Trung ương khoá VIII (1998) xác định: Xây dựng và phát triển văn hoá là sự nghiệp của",
     "options": [
@@ -8333,7 +8333,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1443,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Đảng nêu phương hướng “Xây dựng nền văn hoá và con người Việt Nam phát triển toàn diện, hướng đến chân – thiện – mĩ, thấm nhuần tinh thần dân tộc, nhân văn, dân chủ và khoa học” trong văn kiện",
     "options": [
@@ -8347,7 +8347,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1444,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Định nghĩa về văn hóa của Hồ Chí Minh được nêu trong mục “Đọc sách” ở phần cuối tập Nhật ký trong tù vào thời gian nào?",
     "options": [
@@ -8361,7 +8361,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1445,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Theo định nghĩa của Hồ Chí Minh (tháng 8/1943), loài người sáng tạo ra những giá trị văn hóa nhằm mục đích gì?",
     "options": [
@@ -8375,7 +8375,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1446,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Theo định nghĩa văn hóa của Hồ Chí Minh, văn hóa bao gồm những gì?",
     "options": [
@@ -8389,7 +8389,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1447,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Điểm đặc sắc trong định nghĩa văn hóa năm 1943 của Hồ Chí Minh so với cách hiểu văn hóa thông thường là gì?",
     "options": [
@@ -8403,7 +8403,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1448,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, xét trong kết cấu của hình thái kinh tế - xã hội, văn hóa thuộc phạm trù nào?",
     "options": [
@@ -8417,7 +8417,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1449,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Luận điểm “Văn hóa soi đường cho quốc dân đi” được Hồ Chí Minh nêu tại sự kiện nào?",
     "options": [
@@ -8431,7 +8431,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1450,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Luận điểm “Văn hóa không thể đứng ngoài mà phải ở trong kinh tế và chính trị” của Hồ Chí Minh có nghĩa là gì?",
     "options": [
@@ -8445,7 +8445,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1451,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Đề cương về văn hóa Việt Nam năm 1943 xác định nền văn hóa mới phải được xây dựng theo ba nguyên tắc nào?",
     "options": [
@@ -8459,7 +8459,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1452,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Trong thời kỳ kháng chiến chống thực dân Pháp, Hồ Chí Minh chủ trương nền văn hóa Việt Nam mang tính chất nào?",
     "options": [
@@ -8473,7 +8473,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1453,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Khẩu hiệu “Kháng chiến hóa văn hóa, văn hóa hóa kháng chiến” của Hồ Chí Minh khẳng định điều gì?",
     "options": [
@@ -8487,7 +8487,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1454,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, tình cảm lớn nhất mà văn hóa cần bồi dưỡng cho con người là gì?",
     "options": [
@@ -8501,7 +8501,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1455,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Chức năng nào của văn hóa gắn liền với nhiệm vụ chống giặc dốt, nâng cao trình độ hiểu biết của nhân dân?",
     "options": [
@@ -8515,7 +8515,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1456,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, chức năng bồi dưỡng phẩm chất, phong cách và lối sống của văn hóa hướng con người tới mục tiêu cuối cùng nào?",
     "options": [
@@ -8529,7 +8529,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1457,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Vì sao Hồ Chí Minh khẳng định văn hóa phải phục vụ nhiệm vụ chính trị?",
     "options": [
@@ -8543,7 +8543,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1458,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Luận điểm “Văn hóa nghệ thuật cũng là một mặt trận. Anh chị em là chiến sĩ trên mặt trận ấy” thể hiện quan điểm nào của Hồ Chí Minh?",
     "options": [
@@ -8557,7 +8557,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1459,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Trong năm điểm lớn định hướng xây dựng nền văn hóa dân tộc (năm 1943), nội dung “xây dựng luân lý” được Hồ Chí Minh xác định là gì?",
     "options": [
@@ -8571,7 +8571,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1460,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Quan điểm của Đảng ta hiện nay “văn hóa phải được đặt ngang hàng với kinh tế, chính trị, xã hội” là sự kế thừa trực tiếp luận điểm nào của Hồ Chí Minh?",
     "options": [
@@ -8585,7 +8585,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1461,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Hội nghị Văn hóa toàn quốc năm 2021 được tổ chức nhân kỷ niệm 75 năm sự kiện nào?",
     "options": [
@@ -8599,7 +8599,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1462,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Theo tư tưởng Hồ Chí Minh về chức năng nâng cao dân trí của văn hóa, chủ trương nào của Đảng và Nhà nước ta hiện nay là sự tiếp nối trực tiếp?",
     "options": [
@@ -8613,7 +8613,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1463,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Luận điểm “Người cách mạng phải có đạo đức, không có đạo đức thì dù tài giỏi mấy cũng không lãnh đạo được nhân dân” khẳng định vai trò nào của đạo đức?",
     "options": [
@@ -8627,7 +8627,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1464,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Tác phẩm nào của Hồ Chí Minh xuất bản năm 1927 mở đầu bằng phần “Tư cách một người cách mệnh”?",
     "options": [
@@ -8641,7 +8641,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1465,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Trong bài nói tại lễ kỷ niệm 30 năm Ngày thành lập Đảng (năm 1960), Hồ Chí Minh đã khái quát về Đảng ta như thế nào?",
     "options": [
@@ -8655,7 +8655,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1466,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Luận điểm “Trời có bốn mùa... Người có bốn đức: Cần, Kiệm, Liêm, Chính. Thiếu một đức thì không thành người” được Hồ Chí Minh nêu trong tác phẩm nào?",
     "options": [
@@ -8669,7 +8669,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1467,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, một dân tộc biết cần, biết kiệm, biết liêm là một dân tộc như thế nào?",
     "options": [
@@ -8683,7 +8683,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1468,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Chuẩn mực “trung với nước, hiếu với dân” của Hồ Chí Minh được kế thừa và phát triển từ phạm trù đạo đức truyền thống nào?",
     "options": [
@@ -8697,7 +8697,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1469,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, tình yêu thương con người được thể hiện như thế nào đối với người có sai lầm, khuyết điểm?",
     "options": [
@@ -8711,7 +8711,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1470,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Hai câu thơ “Quan sơn muôn dặm một nhà / Bốn phương vô sản đều là anh em” của Hồ Chí Minh thể hiện chuẩn mực đạo đức nào?",
     "options": [
@@ -8725,7 +8725,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1471,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, tinh thần quốc tế trong sáng đòi hỏi phải chống lại khuynh hướng nào?",
     "options": [
@@ -8739,7 +8739,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1472,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Nguyên tắc xây dựng đạo đức cách mạng nào đòi hỏi vừa bồi dưỡng những giá trị đạo đức mới, vừa kiên quyết chống lại cái xấu, cái sai, cái vô đạo đức?",
     "options": [
@@ -8753,7 +8753,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1473,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Hồ Chí Minh đã ví chủ nghĩa cá nhân là gì?",
     "options": [
@@ -8767,7 +8767,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1474,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Tác phẩm cuối cùng của Hồ Chí Minh bàn về đạo đức, đăng trên báo Nhân Dân ngày 3/2/1969, có tên là gì?",
     "options": [
@@ -8781,7 +8781,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1475,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Luận điểm “Đạo đức cách mạng không phải trên trời sa xuống. Nó do đấu tranh, rèn luyện bền bỉ hằng ngày mà phát triển và củng cố” khẳng định nguyên tắc nào?",
     "options": [
@@ -8795,7 +8795,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1476,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Chuẩn mực “cần, kiệm, liêm, chính, chí công vô tư” của Hồ Chí Minh được Đảng ta xác định thành một trong năm điều của văn bản nào ban hành năm 2024?",
     "options": [
@@ -8809,7 +8809,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1477,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "Khi xem xét con người, Hồ Chí Minh đặt con người trong những mối quan hệ nào?",
     "options": [
@@ -8823,7 +8823,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1478,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 1,
     "q": "Hoàn thành luận điểm của Hồ Chí Minh: “Trong bầu trời không gì quý bằng...”?",
     "options": [
@@ -8837,7 +8837,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1479,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "Luận điểm “Vô luận việc gì, đều do người làm ra” của Hồ Chí Minh khẳng định điều gì?",
     "options": [
@@ -8851,7 +8851,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1480,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, nội dung “con người là mục tiêu của cách mạng” được thể hiện ở điểm nào?",
     "options": [
@@ -8865,7 +8865,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1481,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "Luận điểm “Muốn xây dựng chủ nghĩa xã hội, trước hết cần có những con người xã hội chủ nghĩa” khẳng định điều gì?",
     "options": [
@@ -8879,7 +8879,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1482,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 1,
     "q": "Hai câu thơ “Hiền dữ phải đâu là tính sẵn / Phần nhiều do giáo dục mà nên” nằm trong tác phẩm nào của Hồ Chí Minh?",
     "options": [
@@ -8893,7 +8893,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1483,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "Luận điểm “Một tấm gương sống còn có giá trị hơn một trăm bài diễn văn tuyên truyền” nhấn mạnh phương pháp nào trong xây dựng con người?",
     "options": [
@@ -8907,7 +8907,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1484,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "Từ quan điểm mỗi con người đều có phần thiện và phần ác ở trong lòng, Hồ Chí Minh xác định nhiệm vụ của giáo dục là gì?",
     "options": [
@@ -8921,7 +8921,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1485,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 1,
     "q": "Theo tư tưởng Hồ Chí Minh, sự nghiệp giải phóng con người bao gồm những nội dung nào?",
     "options": [
@@ -8935,7 +8935,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1486,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Vận dụng tư tưởng Hồ Chí Minh về “trồng người”, quan điểm nào của Đảng ta hiện nay là sự kế thừa trực tiếp?",
     "options": [
@@ -8949,7 +8949,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1487,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Phương châm “dân biết, dân bàn, dân làm, dân kiểm tra, dân giám sát, dân thụ hưởng” hiện nay thể hiện sự vận dụng quan điểm nào của Hồ Chí Minh về con người?",
     "options": [
@@ -8963,7 +8963,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1488,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Nghị quyết Trung ương 5 khóa VIII (năm 1998) của Đảng đề cập nội dung nào?",
     "options": [
@@ -8977,7 +8977,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1489,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 2,
     "q": "Theo quan điểm của Đảng ta, nội dung cốt lõi của tính chất “tiên tiến” trong nền văn hóa Việt Nam hiện nay là gì?",
     "options": [
@@ -8991,7 +8991,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1490,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 2,
     "q": "Theo quan điểm của Đảng ta, “bản sắc dân tộc” của văn hóa Việt Nam bao gồm những giá trị nào?",
     "options": [
@@ -9005,7 +9005,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1491,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Nghị quyết số 33-NQ/TW Hội nghị Trung ương 9 khóa XI (năm 2014) đề cập nội dung nào?",
     "options": [
@@ -9019,7 +9019,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1492,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Điểm mới nổi bật của Nghị quyết Trung ương 9 khóa XI (năm 2014) so với Nghị quyết Trung ương 5 khóa VIII (năm 1998) là gì?",
     "options": [
@@ -9033,7 +9033,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1493,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Chỉ thị số 05-CT/TW ngày 15/5/2016 của Bộ Chính trị đề cập nội dung nào?",
     "options": [
@@ -9047,7 +9047,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1494,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "So với Chỉ thị 06-CT/TW (năm 2006) và Chỉ thị 03-CT/TW (năm 2011), điểm mới của Chỉ thị 05-CT/TW (năm 2016) là gì?",
     "options": [
@@ -9061,7 +9061,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1495,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Kết luận số 01-KL/TW ngày 18/5/2021 của Bộ Chính trị khóa XIII đề cập nội dung nào?",
     "options": [
@@ -9075,7 +9075,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1496,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Nghị quyết Trung ương 4 khóa XII (năm 2016) đã chỉ ra bao nhiêu biểu hiện suy thoái về tư tưởng chính trị, đạo đức, lối sống, “tự diễn biến”, “tự chuyển hóa”?",
     "options": [
@@ -9089,7 +9089,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1497,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Đại hội XIII của Đảng (năm 2021) nhấn mạnh nhiệm vụ nào trong xây dựng văn hóa, con người Việt Nam?",
     "options": [
@@ -9103,7 +9103,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1498,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Luận điểm “Văn hóa còn thì dân tộc còn” nêu tại Hội nghị Văn hóa toàn quốc ngày 24/11/2021 tiếp nối tư tưởng nào của Hồ Chí Minh?",
     "options": [
@@ -9117,7 +9117,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1499,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Mặt trái của kinh tế thị trường tác động tiêu cực đến đạo đức, lối sống hiện nay biểu hiện rõ nhất ở điều gì?",
     "options": [
@@ -9131,7 +9131,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1500,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Vận dụng nguyên tắc “xây đi đôi với chống” của Hồ Chí Minh, công tác phòng, chống tham nhũng, tiêu cực hiện nay cần gắn liền với nhiệm vụ nào?",
     "options": [
@@ -9145,7 +9145,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1501,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Quy định số 08-QĐi/TW (năm 2018) của Ban Chấp hành Trung ương khóa XII về trách nhiệm nêu gương là sự cụ thể hóa nguyên tắc đạo đức nào của Hồ Chí Minh?",
     "options": [
@@ -9159,7 +9159,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1502,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Trước tác động tiêu cực của mạng xã hội đến đạo đức, lối sống của giới trẻ, giải pháp phù hợp với tư tưởng Hồ Chí Minh là gì?",
     "options": [
@@ -9173,7 +9173,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1503,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Phong trào “Toàn dân đoàn kết xây dựng đời sống văn hóa” hiện nay thể hiện quan điểm nào của Hồ Chí Minh?",
     "options": [
@@ -9187,7 +9187,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1504,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Yêu cầu xây dựng đội ngũ cán bộ “vừa hồng vừa chuyên” hiện nay là sự vận dụng quan điểm nào của Hồ Chí Minh?",
     "options": [
@@ -9201,7 +9201,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1505,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Theo quan điểm của Đảng ta, nguyên nhân chủ yếu dẫn đến sự suy thoái về đạo đức, lối sống của một bộ phận cán bộ, đảng viên hiện nay là gì?",
     "options": [
@@ -9215,7 +9215,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1506,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iv",
     "clo": 3,
     "q": "Đối với sinh viên hiện nay, việc học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh cần bắt đầu từ đâu?",
     "options": [
@@ -9229,7 +9229,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1659,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, văn hóa được định nghĩa là gì trong bài viết \"Mục đọc sách\" (1943)?",
     "options": [
@@ -9243,7 +9243,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1660,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, vị trí và vai trò của văn hóa trong đời sống xã hội được xác định như thế nào?",
     "options": [
@@ -9257,7 +9257,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1661,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Hồ Chí Minh chỉ rõ mối quan hệ giữa văn hóa và kinh tế như thế nào?",
     "options": [
@@ -9271,7 +9271,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1662,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, văn hóa có mối quan hệ như thế nào với các vấn đề xã hội (như đạo đức xã hội, phong tục, tập quán, dư luận xã hội)?",
     "options": [
@@ -9285,7 +9285,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1663,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Luận điểm \"Văn hóa soi đường cho quốc dân đi\" của Hồ Chí Minh thể hiện chức năng nào của văn hóa?",
     "options": [
@@ -9299,7 +9299,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1664,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Luận điểm của Hồ Chí Minh coi văn hóa là \"một mặt trận\" và văn nghệ sĩ là \"chiến sĩ\" trên mặt trận đó có ý nghĩa gì?",
     "options": [
@@ -9313,7 +9313,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1665,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, một trong ba chức năng chủ yếu của văn hóa là gì (bên cạnh bồi dưỡng tư tưởng, tình cảm và phẩm chất, lối sống)?",
     "options": [
@@ -9327,7 +9327,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1666,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Vì sao Hồ Chí Minh coi việc nâng cao dân trí, xóa mù chữ là nhiệm vụ văn hóa cấp bách ngay sau Cách mạng Tháng Tám 1945?",
     "options": [
@@ -9341,7 +9341,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1667,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Theo tư tưởng Hồ Chí Minh, văn hóa giáo dục cần hướng tới mục tiêu đào tạo con người như thế nào?",
     "options": [
@@ -9355,7 +9355,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1668,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, phương châm học tập cần được thực hiện như thế nào để có hiệu quả thực sự?",
     "options": [
@@ -9369,7 +9369,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1669,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, văn hóa văn nghệ (văn học, nghệ thuật) cần phục vụ ai và phản ánh điều gì?",
     "options": [
@@ -9383,7 +9383,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1670,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Hồ Chí Minh yêu cầu văn nghệ sĩ phải có phẩm chất gì để tác phẩm có giá trị và sức sống lâu bền?",
     "options": [
@@ -9397,7 +9397,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1671,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Trong lĩnh vực văn hóa đời sống, Hồ Chí Minh phát động các phong trào nào nhằm xây dựng lối sống mới?",
     "options": [
@@ -9411,7 +9411,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1672,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, việc xây dựng đời sống văn hóa mới cần được thực hiện theo phương thức nào?",
     "options": [
@@ -9425,7 +9425,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1673,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, tính chất của nền văn hóa mới Việt Nam cần xây dựng là gì?",
     "options": [
@@ -9439,7 +9439,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1674,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, cần có thái độ đấu tranh như thế nào đối với các khuynh hướng lệch lạc trong quá trình giao lưu, tiếp biến văn hóa?",
     "options": [
@@ -9453,7 +9453,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1675,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 1,
     "q": "Hồ Chí Minh coi báo chí, xuất bản là một bộ phận của lĩnh vực văn hóa nào và phải phục vụ mục đích gì?",
     "options": [
@@ -9467,7 +9467,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1676,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-i",
     "clo": 2,
     "q": "Quan điểm của Hồ Chí Minh về vai trò của văn hóa đối với sự phát triển kinh tế - xã hội có ý nghĩa gì đối với chiến lược phát triển đất nước?",
     "options": [
@@ -9481,7 +9481,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1677,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, vai trò của đạo đức đối với người cách mạng được khẳng định như thế nào?",
     "options": [
@@ -9495,7 +9495,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1678,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, mối quan hệ giữa \"đức\" và \"tài\" của người cán bộ, đảng viên được xác định như thế nào?",
     "options": [
@@ -9509,7 +9509,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1679,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, phẩm chất \"Trung với nước\" của người cán bộ, đảng viên đòi hỏi cụ thể điều gì?",
     "options": [
@@ -9523,7 +9523,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1680,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Trong các phẩm chất đạo đức cách mạng mà Hồ Chí Minh nêu ra, \"cần, kiệm, liêm, chính, chí công vô tư\" thuộc nhóm phẩm chất nào?",
     "options": [
@@ -9537,7 +9537,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1681,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, phẩm chất \"Chính\" trong \"cần, kiệm, liêm, chính\" được hiểu như thế nào?",
     "options": [
@@ -9551,7 +9551,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1682,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Phẩm chất đạo đức \"Yêu thương con người, sống có tình nghĩa\" trong tư tưởng Hồ Chí Minh trước hết dành cho đối tượng nào?",
     "options": [
@@ -9565,7 +9565,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1683,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, tình yêu thương con người phải được thể hiện cụ thể như thế nào, không chỉ là tình cảm chung chung?",
     "options": [
@@ -9579,7 +9579,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1684,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Đạo đức cách mạng của Hồ Chí Minh gắn liền như thế nào với chủ nghĩa nhân văn cao cả của Người?",
     "options": [
@@ -9593,7 +9593,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1685,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, nguyên tắc \"nói đi đôi với làm, nêu gương về đạo đức\" có ý nghĩa như thế nào đối với cán bộ, đảng viên?",
     "options": [
@@ -9607,7 +9607,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1686,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Trong nguyên tắc \"xây đi đôi với chống\", Hồ Chí Minh xác định đối tượng cần \"chống\" chủ yếu là gì?",
     "options": [
@@ -9621,7 +9621,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1687,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, nguyên tắc \"tu dưỡng đạo đức suốt đời\" xuất phát từ nhận thức nào về quá trình rèn luyện đạo đức?",
     "options": [
@@ -9635,7 +9635,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1688,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-ii",
     "clo": 2,
     "q": "Chủ nghĩa cá nhân mà Hồ Chí Minh coi là \"kẻ địch bên trong\", \"giặc nội xâm\" nguy hiểm có bản chất là gì?",
     "options": [
@@ -9649,7 +9649,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1689,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, con người được nhìn nhận trước hết là gì trong tính đa dạng của nó?",
     "options": [
@@ -9663,7 +9663,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1690,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "Quan điểm của Hồ Chí Minh về con người được hình thành trên cơ sở nào?",
     "options": [
@@ -9677,7 +9677,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1691,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, việc \"trồng người\" có quan hệ như thế nào với sự nghiệp cách mạng lâu dài của dân tộc?",
     "options": [
@@ -9691,7 +9691,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1692,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, con người vừa là mục tiêu, vừa là động lực của cách mạng được hiểu như thế nào?",
     "options": [
@@ -9705,7 +9705,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1693,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "Vì sao Hồ Chí Minh coi con người là động lực quan trọng nhất của cách mạng và sự phát triển đất nước?",
     "options": [
@@ -9719,7 +9719,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1694,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, để con người thực sự là động lực phát huy hiệu quả, cần có điều kiện gì?",
     "options": [
@@ -9733,7 +9733,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1695,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 1,
     "q": "Nội dung \"trồng người\" theo Hồ Chí Minh bao gồm việc bồi dưỡng những yếu tố nào cho con người?",
     "options": [
@@ -9747,7 +9747,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1696,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, để chiến lược \"trồng người\" đạt hiệu quả bền vững, Đảng và Nhà nước cần đặc biệt quan tâm điều gì trong công tác cán bộ?",
     "options": [
@@ -9761,7 +9761,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1697,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, chủ thể chịu trách nhiệm thực hiện chiến lược \"trồng người\" là ai?",
     "options": [
@@ -9775,7 +9775,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1698,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, tiêu chuẩn con người mới cần được xây dựng bao gồm những giá trị nào?",
     "options": [
@@ -9789,7 +9789,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1699,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "Theo tư tưởng Hồ Chí Minh, việc \"trồng người\" phải gắn liền chặt chẽ với nhiệm vụ nào của sự nghiệp cách mạng?",
     "options": [
@@ -9803,7 +9803,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1700,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, đối với thế hệ trẻ (thanh niên, thiếu niên, nhi đồng), việc \"trồng người\" có ý nghĩa đặc biệt như thế nào?",
     "options": [
@@ -9817,7 +9817,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1701,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "Theo Hồ Chí Minh, phương pháp \"trồng người\" hiệu quả cần kết hợp những yếu tố giáo dục nào?",
     "options": [
@@ -9831,7 +9831,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1702,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 1,
     "q": "Trong Di chúc, Hồ Chí Minh căn dặn Đảng phải chăm lo điều gì đối với thế hệ trẻ sau khi Người qua đời?",
     "options": [
@@ -9845,7 +9845,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1703,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "Quan điểm \"Hiền dữ phải đâu là tính sẵn, phần nhiều do giáo dục mà nên\" (Hồ Chí Minh trích trong Nhật ký trong tù) thể hiện điều gì về bản chất con người?",
     "options": [
@@ -9859,7 +9859,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1704,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, để xây dựng con người mới xã hội chủ nghĩa, cần đặc biệt chú trọng khắc phục điều gì trong mỗi cá nhân?",
     "options": [
@@ -9873,7 +9873,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1705,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 2,
     "q": "Giá trị lý luận và thực tiễn lớn nhất của tư tưởng Hồ Chí Minh về con người đối với sự nghiệp đổi mới hiện nay là gì?",
     "options": [
@@ -9887,7 +9887,7 @@ export const questionsTTHCM = [
   },
   {
     "id": 1706,
-    "section": "tthcm-ch6",
+    "section": "tthcm-ch6-iii",
     "clo": 1,
     "q": "Theo Hồ Chí Minh, khi nhìn nhận, đánh giá con người cần có thái độ như thế nào?",
     "options": [

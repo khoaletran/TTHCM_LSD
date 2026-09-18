@@ -21,7 +21,6 @@ export default function Practice({ currentSubject }) {
   const [selectedMode, setSelectedMode] = useState('chapter'); // 'chapter', 'all', 'midterm', 'final'
   const [selectedChapter, setSelectedChapter] = useState(defaultChapter || (SUBJECTS[currentSubject]?.chapters[0]?.id || ''));
   const [selectedSection, setSelectedSection] = useState('all');
-  const [questionCount, setQuestionCount] = useState(0); // default 0: all questions
   const [instantFeedback, setInstantFeedback] = useState(false); // true: xem kết quả ngay, false: làm xong nộp
   const [isShuffle, setIsShuffle] = useState(true);
 
@@ -50,9 +49,9 @@ export default function Practice({ currentSubject }) {
       if (hasSubSections && selectedSection && selectedSection !== 'all') {
         params.set('section', selectedSection);
       }
-      params.set('count', String(questionCount));
+      params.set('count', '0');
     } else if (selectedMode === 'all') {
-      params.set('count', String(questionCount));
+      params.set('count', '0');
     } else if (selectedMode === 'midterm') {
       params.set('count', currentSubject === 'tthcm' ? '40' : '50');
       params.set('timed', '1');
@@ -366,64 +365,46 @@ export default function Practice({ currentSubject }) {
               );
             })}
           </div>
-
-          {/* Tùy chọn số lượng câu hỏi luyện tập */}
-          <div style={{
-            marginTop: '4px',
-            paddingTop: '12px',
-            borderTop: '1px solid var(--border)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap',
-            gap: '10px'
-          }}>
-            <span style={{ fontSize: '13px', color: 'var(--text-subtle)', fontWeight: 600 }}>
-              Số lượng câu (có thể nộp bài bất kỳ lúc nào):
-            </span>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-              {[0, 20, 30, 50].map((num) => {
-                const isSelected = questionCount === num;
-                return (
-                  <button
-                    key={num}
-                    type="button"
-                    onClick={() => setQuestionCount(num)}
-                    className={`btn btn-sm ${isSelected ? 'btn-primary' : 'btn-secondary'}`}
-                    style={{ minWidth: '68px' }}
-                  >
-                    {num === 0 ? 'Tất cả' : `${num} câu`}
-                  </button>
-                );
-              })}
-            </div>
-          </div>
         </div>
       )}
 
-      {/* Question Count Selector (khi không có nhiều mục hoặc khi chọn chế độ toàn bộ môn) */}
-      {((selectedMode === 'chapter' && !hasSubSections) || selectedMode === 'all') && (
-        <div className="card" style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '14px' }}>
-          <label style={{ fontSize: '14.5px', fontWeight: 700, color: 'var(--text-main)' }}>
-            {selectedMode === 'chapter' ? '3.' : '2.'} Chọn số lượng câu hỏi
-          </label>
-
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
-            {[10, 20, 30, 40, 50, 0].map((num) => {
-              const isSelected = questionCount === num;
-              return (
-                <button
-                  key={num}
-                  type="button"
-                  onClick={() => setQuestionCount(num)}
-                  className={`btn ${isSelected ? 'btn-primary' : 'btn-secondary'}`}
-                  style={{ minWidth: '76px' }}
-                >
-                  {num === 0 ? 'Tất cả' : `${num} câu`}
-                </button>
-              );
-            })}
+      {/* Khi chương chỉ có 1 khối nội dung (không chia mục nhỏ như Chương 1 TTHCM, Phần Mở đầu LSĐ) */}
+      {selectedMode === 'chapter' && !hasSubSections && (
+        <div className="card" style={{ padding: '16px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px', flexWrap: 'wrap', backgroundColor: 'var(--bg-card)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <Sparkles size={20} style={{ color: 'var(--primary)', flexShrink: 0 }} />
+            <div>
+              <span style={{ fontWeight: 700, fontSize: '14.5px', color: 'var(--text-main)' }}>
+                {activeChapterMeta?.name}
+              </span>
+              <p style={{ fontSize: '13px', color: 'var(--text-muted)', margin: '2px 0 0 0' }}>
+                Chương gồm một khối nội dung duy nhất với toàn bộ {allQuestions.filter((q) => activeChapterSections.includes(q.section)).length} câu hỏi. Bạn có thể nộp bài bất kỳ lúc nào.
+              </p>
+            </div>
           </div>
+          <span className="badge badge-primary" style={{ fontWeight: 700, flexShrink: 0 }}>
+            {allQuestions.filter((q) => activeChapterSections.includes(q.section)).length} câu hỏi
+          </span>
+        </div>
+      )}
+
+      {/* Khi chọn chế độ Toàn bộ môn */}
+      {selectedMode === 'all' && (
+        <div className="card" style={{ padding: '16px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px', flexWrap: 'wrap', backgroundColor: 'var(--bg-card)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <Sparkles size={20} style={{ color: 'var(--primary)', flexShrink: 0 }} />
+            <div>
+              <span style={{ fontWeight: 700, fontSize: '14.5px', color: 'var(--text-main)' }}>
+                Luyện toàn bộ ngân hàng môn {sub.shortName}
+              </span>
+              <p style={{ fontSize: '13px', color: 'var(--text-muted)', margin: '2px 0 0 0' }}>
+                Hệ thống sẽ tổng hợp toàn bộ {allQuestions.length} câu hỏi của học phần. Bạn có thể luyện tập và bấm "Nộp bài" bất kỳ lúc nào để xem kết quả.
+              </p>
+            </div>
+          </div>
+          <span className="badge badge-primary" style={{ fontWeight: 700, flexShrink: 0 }}>
+            {allQuestions.length} câu hỏi
+          </span>
         </div>
       )}
 
