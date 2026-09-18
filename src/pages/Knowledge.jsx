@@ -27,7 +27,9 @@ import {
   ChevronRight,
   ExternalLink,
   Copy,
-  Check
+  Check,
+  Clock,
+  History
 } from 'lucide-react';
 import { SUBJECTS } from '../data/subjects';
 import { getKnowledgeBySubject } from '../data/repository';
@@ -36,6 +38,8 @@ import { getKnowledgeBySubject } from '../data/repository';
 const ICONS = {
   BookOpen,
   Calendar,
+  Clock,
+  History,
   AlertTriangle,
   Compass,
   Target,
@@ -73,6 +77,7 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
 
   const [searchQuery, setSearchQuery] = useState('');
   const [copiedTerm, setCopiedTerm] = useState(null);
+  const [copiedTimeline, setCopiedTimeline] = useState(false);
 
   // Sync state when subject or URL param changes
   useEffect(() => {
@@ -98,6 +103,19 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
 
   const activeChapterData = knowledgeData[selectedChapterId] || knowledgeData[defaultChapter];
   const activeChapterMeta = sub.chapters.find((c) => c.id === selectedChapterId) || sub.chapters[0];
+
+  const handleCopyAllTimeline = () => {
+    if (!activeChapterData || !activeChapterData.timeline) return;
+    const header = `[${sub.name}] ${activeChapterData.title}\nDÒNG THỜI GIAN CÁC MỐC SỰ KIỆN LỊCH SỬ QUAN TRỌNG:\n\n`;
+    const text = activeChapterData.timeline
+      .map((item, idx) => `${idx + 1}. [${item.time}] ${item.title}\n   -> ${item.description}${item.tag ? ` (${item.tag})` : ''}`)
+      .join('\n\n');
+    try {
+      navigator.clipboard.writeText(header + text);
+      setCopiedTimeline(true);
+      setTimeout(() => setCopiedTimeline(false), 2000);
+    } catch {}
+  };
 
   // Filter sections by search query
   const filteredSections = useMemo(() => {
@@ -125,6 +143,22 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
         return null;
       })
       .filter(Boolean);
+  }, [activeChapterData, searchQuery]);
+
+  // Filter timeline by search query
+  const filteredTimeline = useMemo(() => {
+    if (!activeChapterData || !activeChapterData.timeline) return [];
+    if (!searchQuery.trim()) return activeChapterData.timeline;
+
+    const queryLower = searchQuery.toLowerCase().trim();
+    return activeChapterData.timeline.filter((item) => {
+      return (
+        item.time.toLowerCase().includes(queryLower) ||
+        item.title.toLowerCase().includes(queryLower) ||
+        item.description.toLowerCase().includes(queryLower) ||
+        (item.tag && item.tag.toLowerCase().includes(queryLower))
+      );
+    });
   }, [activeChapterData, searchQuery]);
 
   return (
@@ -158,6 +192,7 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
           const isSelected = ch.id === selectedChapterId;
           const chapterKnow = knowledgeData[ch.id];
           const totalPoints = chapterKnow ? chapterKnow.sections.reduce((acc, s) => acc + s.items.length, 0) : 0;
+          const totalMilestones = chapterKnow?.timeline ? chapterKnow.timeline.length : 0;
 
           return (
             <button
@@ -189,7 +224,7 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
                 color: isSelected ? '#fff' : 'var(--text-subtle)',
                 fontWeight: 600
               }}>
-                {totalPoints} mục
+                {totalPoints} mục {totalMilestones > 0 && `• ${totalMilestones} mốc`}
               </span>
             </button>
           );
@@ -231,6 +266,20 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
 
             {/* Quick action buttons */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0, flexWrap: 'wrap' }}>
+              {activeChapterData.timeline && activeChapterData.timeline.length > 0 && (
+                <button
+                  onClick={() => {
+                    const el = document.getElementById('chapter-timeline');
+                    if (el) el.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="btn btn-secondary btn-sm"
+                  title="Cuộn xuống xem Dòng thời gian sự kiện của chương này"
+                >
+                  <Clock size={15} />
+                  <span>Dòng thời gian ({activeChapterData.timeline.length})</span>
+                </button>
+              )}
+
               <button
                 onClick={() => navigate(`/bank?chapter=${selectedChapterId}`)}
                 className="btn btn-secondary btn-sm"
@@ -291,10 +340,10 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
 
       {/* Sections List */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-        {filteredSections.length === 0 ? (
+        {filteredSections.length === 0 && filteredTimeline.length === 0 ? (
           <div className="card" style={{ padding: '36px', textAlign: 'center' }}>
             <p style={{ color: 'var(--text-muted)' }}>
-              Không tìm thấy nội dung kiến thức nào khớp với từ khóa "{searchQuery}".
+              Không tìm thấy nội dung kiến thức hay mốc sự kiện nào khớp với từ khóa "{searchQuery}".
             </p>
             <button
               onClick={() => setSearchQuery('')}
@@ -303,6 +352,12 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
             >
               Xóa bộ lọc tìm kiếm
             </button>
+          </div>
+        ) : filteredSections.length === 0 && filteredTimeline.length > 0 ? (
+          <div className="card" style={{ padding: '16px 20px', backgroundColor: 'var(--bg-subtle)' }}>
+            <p style={{ fontSize: '13.5px', color: 'var(--text-muted)', margin: 0 }}>
+              Không có đề mục lý thuyết nào khớp với "{searchQuery}", nhưng tìm thấy <strong>{filteredTimeline.length}</strong> mốc sự kiện phù hợp trong dòng thời gian bên dưới.
+            </p>
           </div>
         ) : (
           filteredSections.map((sec) => {
@@ -434,6 +489,218 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
           })
         )}
       </div>
+
+      {/* Chapter Timeline (Dòng thời gian sự kiện lịch sử ở mục cuối trong trang của chương) */}
+      {activeChapterData?.timeline && activeChapterData.timeline.length > 0 && (
+        <div 
+          id="chapter-timeline"
+          className="card" 
+          style={{
+            padding: '24px',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '20px',
+            borderTop: '4px solid var(--primary)',
+            scrollMarginTop: '80px'
+          }}
+        >
+          {/* Timeline Header */}
+          <div style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            justifyContent: 'space-between',
+            gap: '16px',
+            flexWrap: 'wrap',
+            borderBottom: '1px solid var(--border)',
+            paddingBottom: '16px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <div style={{
+                width: '38px',
+                height: '38px',
+                borderRadius: '10px',
+                backgroundColor: 'var(--primary-light)',
+                color: 'var(--primary)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexShrink: 0
+              }}>
+                <Clock size={20} />
+              </div>
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                  <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'var(--text-main)', margin: 0 }}>
+                    Dòng thời gian sự kiện lịch sử (Timeline)
+                  </h3>
+                  <span className="badge badge-primary" style={{ fontSize: '12px' }}>
+                    {filteredTimeline.length} mốc sự kiện
+                  </span>
+                </div>
+                <p style={{ fontSize: '13.5px', color: 'var(--text-muted)', marginTop: '4px', margin: 0 }}>
+                  Tổng hợp theo thứ tự thời gian các sự kiện, năm, tháng cốt lõi phục vụ ôn thi của {activeChapterMeta?.shortName}.
+                </p>
+              </div>
+            </div>
+
+            <button
+              onClick={handleCopyAllTimeline}
+              className="btn btn-secondary btn-sm"
+              style={{
+                gap: '6px',
+                color: copiedTimeline ? 'var(--success-solid)' : 'var(--text-main)',
+                borderColor: copiedTimeline ? 'var(--success-border)' : 'var(--border)'
+              }}
+              title="Sao chép toàn bộ danh sách mốc thời gian của chương này"
+            >
+              {copiedTimeline ? <Check size={14} /> : <Copy size={14} />}
+              <span>{copiedTimeline ? 'Đã sao chép timeline' : 'Sao chép toàn bộ timeline'}</span>
+            </button>
+          </div>
+
+          {/* Timeline List */}
+          {filteredTimeline.length === 0 ? (
+            <div style={{ padding: '24px', textAlign: 'center', color: 'var(--text-muted)' }}>
+              Không có mốc sự kiện nào khớp với từ khóa "{searchQuery}".
+            </div>
+          ) : (
+            <div style={{
+              position: 'relative',
+              paddingLeft: '24px',
+              marginLeft: '8px',
+              borderLeft: '2px solid var(--border)',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '22px',
+              paddingTop: '6px',
+              paddingBottom: '6px'
+            }}>
+              {filteredTimeline.map((item, idx) => {
+                const isCopied = copiedTerm === `timeline-${idx}`;
+
+                return (
+                  <div 
+                    key={idx}
+                    style={{
+                      position: 'relative',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '8px'
+                    }}
+                  >
+                    {/* Circle Node on Timeline Line */}
+                    <div 
+                      style={{
+                        position: 'absolute',
+                        left: '-31px',
+                        top: '12px',
+                        width: '12px',
+                        height: '12px',
+                        borderRadius: '50%',
+                        backgroundColor: 'var(--primary)',
+                        border: '2.5px solid var(--bg-card)',
+                        boxShadow: '0 0 0 2px var(--primary-border)'
+                      }}
+                    />
+
+                    {/* Milestone Content Card */}
+                    <div 
+                      style={{
+                        padding: '16px 18px',
+                        borderRadius: 'var(--radius-md)',
+                        backgroundColor: 'var(--bg-subtle)',
+                        border: '1px solid var(--border)',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '8px',
+                        transition: 'all 0.15s ease'
+                      }}
+                    >
+                      <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        gap: '8px',
+                        flexWrap: 'wrap'
+                      }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                          {/* Time Badge */}
+                          <span style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '5px',
+                            backgroundColor: 'var(--primary)',
+                            color: '#ffffff',
+                            padding: '3px 10px',
+                            borderRadius: 'var(--radius-sm)',
+                            fontWeight: 700,
+                            fontSize: '12.5px',
+                            letterSpacing: '0.2px'
+                          }}>
+                            <Calendar size={12} />
+                            <span>{item.time}</span>
+                          </span>
+
+                          {/* Tag */}
+                          {item.tag && (
+                            <span style={{
+                              fontSize: '11.5px',
+                              fontWeight: 600,
+                              padding: '2px 8px',
+                              borderRadius: '9999px',
+                              backgroundColor: 'var(--bg-card)',
+                              color: 'var(--text-subtle)',
+                              border: '1px solid var(--border)'
+                            }}>
+                              {item.tag}
+                            </span>
+                          )}
+                        </div>
+
+                        {/* Copy single milestone */}
+                        <button
+                          onClick={() => handleCopy(`[${item.time}] ${item.title}: ${item.description}`, `timeline-${idx}`)}
+                          className="btn btn-ghost btn-sm"
+                          style={{
+                            padding: '3px 8px',
+                            fontSize: '11.5px',
+                            color: isCopied ? 'var(--success-solid)' : 'var(--text-subtle)',
+                            gap: '4px'
+                          }}
+                          title="Sao chép mốc sự kiện này"
+                        >
+                          {isCopied ? <Check size={12} /> : <Copy size={12} />}
+                          <span>{isCopied ? 'Đã chép' : 'Chép'}</span>
+                        </button>
+                      </div>
+
+                      {/* Title */}
+                      <div style={{
+                        fontSize: '15px',
+                        fontWeight: 700,
+                        color: 'var(--text-main)',
+                        lineHeight: 1.45
+                      }}>
+                        {item.title}
+                      </div>
+
+                      {/* Description */}
+                      <div style={{
+                        fontSize: '14px',
+                        color: 'var(--text-muted)',
+                        lineHeight: 1.6,
+                        whiteSpace: 'pre-line'
+                      }}>
+                        {item.description}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Bottom Practice CTA */}
       <div className="card" style={{
