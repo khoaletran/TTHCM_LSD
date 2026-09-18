@@ -11,7 +11,8 @@ import {
   X, 
   Bookmark,
   Sparkles,
-  ArrowRightLeft
+  ArrowRightLeft,
+  GraduationCap
 } from 'lucide-react';
 import { SUBJECTS } from '../data/subjects';
 
@@ -25,7 +26,7 @@ export default function Header({ currentSubject, onSubjectChange, theme, onToggl
     { label: 'Trang chủ', path: '/', icon: BookOpen },
     { label: 'Ngân hàng câu hỏi', path: '/bank', icon: Layers },
     { label: 'Luyện tập', path: '/practice', icon: CheckCircle2 },
-    { label: 'Ghi nhớ', path: '/flashcards', icon: Sparkles },
+    { label: 'Kiến thức', path: '/knowledge', icon: GraduationCap },
     { label: 'Câu hay sai', path: '/wrong-review', icon: RotateCcw },
   ];
 

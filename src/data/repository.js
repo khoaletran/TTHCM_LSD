@@ -3,6 +3,9 @@ import { questionsLSD } from './questions_lsd.js';
 import { questionsTTHCM } from './questions_tthcm.js';
 import { SUBJECTS, getChapter, getChapterSections } from './subjects.js';
 import { FLASHCARDS_LSD, FLASHCARDS_TTHCM } from './flashcards.js';
+import { KNOWLEDGE_LSD, KNOWLEDGE_TTHCM, getKnowledgeBySubject, getKnowledgeByChapter } from './knowledge.js';
+
+export { KNOWLEDGE_LSD, KNOWLEDGE_TTHCM, getKnowledgeBySubject, getKnowledgeByChapter };
 
 const BANK = {
   lsd: questionsLSD,

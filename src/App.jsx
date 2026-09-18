@@ -7,6 +7,7 @@ import QuestionBank from './pages/QuestionBank';
 import Practice from './pages/Practice';
 import Quiz from './pages/Quiz';
 import Result from './pages/Result';
+import Knowledge from './pages/Knowledge';
 import Flashcards from './pages/Flashcards';
 import WrongReview from './pages/WrongReview';
 import { getStoredTheme, setStoredTheme, getLastSubject, setLastSubject } from './utils/storage';
@@ -84,12 +85,17 @@ export default function App() {
             element={<Result />} 
           />
           <Route 
-            path="/flashcards" 
+            path="/knowledge" 
             element={
-              <Flashcards 
+              <Knowledge 
                 currentSubject={currentSubject} 
+                onSelectSubject={handleSubjectChange} 
               />
             } 
+          />
+          <Route 
+            path="/flashcards" 
+            element={<Navigate to="/knowledge" replace />} 
           />
           <Route 
             path="/wrong-review" 

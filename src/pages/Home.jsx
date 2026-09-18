@@ -188,16 +188,20 @@ export default function Home({ currentSubject, onSelectSubject }) {
           </div>
         </div>
 
-        <div className="card" style={{ padding: '18px', display: 'flex', alignItems: 'center', gap: '14px' }}>
+        <div 
+          onClick={() => navigate('/knowledge')}
+          className="card" 
+          style={{ padding: '18px', display: 'flex', alignItems: 'center', gap: '14px', cursor: 'pointer' }}
+        >
           <div style={{ width: '42px', height: '42px', borderRadius: '10px', backgroundColor: 'var(--gold-light)', color: 'var(--gold-dark)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-            <Sparkles size={22} />
+            <GraduationCap size={22} />
           </div>
           <div>
             <div style={{ fontSize: '22px', fontWeight: 800, color: 'var(--text-main)' }}>
-              {subStats?.chapters?.reduce((acc, c) => acc + (c.flashcardCount || 0), 0) || 0}
+              {subStats?.totalChapters}
             </div>
             <div style={{ fontSize: '12.5px', color: 'var(--text-muted)' }}>
-              Thẻ ghi nhớ cốt lõi
+              Chương tóm tắt kiến thức
             </div>
           </div>
         </div>
@@ -288,7 +292,16 @@ export default function Home({ currentSubject, onSelectSubject }) {
                 </div>
               </div>
 
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0, flexWrap: 'wrap' }}>
+                <button
+                  onClick={() => navigate(`/knowledge?chapter=${ch.id}`)}
+                  className="btn btn-ghost btn-sm"
+                  style={{ border: '1px solid var(--border)' }}
+                  title="Đọc tóm tắt kiến thức & bẫy trắc nghiệm chương này"
+                >
+                  <GraduationCap size={14} />
+                  <span>Kiến thức</span>
+                </button>
                 <button
                   onClick={() => navigate(`/bank?chapter=${ch.id}`)}
                   className="btn btn-secondary btn-sm"
