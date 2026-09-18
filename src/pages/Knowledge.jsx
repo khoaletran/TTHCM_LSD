@@ -25,6 +25,7 @@ import {
   Flame, 
   Rocket, 
   ChevronRight,
+  ChevronLeft,
   ExternalLink,
   Copy,
   Check,
@@ -91,6 +92,7 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
   const handleSelectChapter = (chId) => {
     setSelectedChapterId(chId);
     setSearchParams({ chapter: chId });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleCopy = (text, termKey) => {
@@ -103,6 +105,10 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
 
   const activeChapterData = knowledgeData[selectedChapterId] || knowledgeData[defaultChapter];
   const activeChapterMeta = sub.chapters.find((c) => c.id === selectedChapterId) || sub.chapters[0];
+
+  const currentChapterIndex = sub.chapters.findIndex((c) => c.id === (activeChapterMeta?.id || selectedChapterId));
+  const prevChapter = currentChapterIndex > 0 ? sub.chapters[currentChapterIndex - 1] : null;
+  const nextChapter = currentChapterIndex >= 0 && currentChapterIndex < sub.chapters.length - 1 ? sub.chapters[currentChapterIndex + 1] : null;
 
   const handleCopyAllTimeline = () => {
     if (!activeChapterData || !activeChapterData.timeline) return;
@@ -729,6 +735,104 @@ export default function Knowledge({ currentSubject, onSelectSubject }) {
           <span>Bắt đầu luyện thi ngay ({activeChapterMeta?.questionCount} câu)</span>
         </button>
       </div>
+
+      {/* Chapter Navigation (Nút chuyển chương trước / sau ở cuối trang) */}
+      {(prevChapter || nextChapter) && (
+        <div style={{
+          display: 'flex',
+          alignItems: 'stretch',
+          justifyContent: 'space-between',
+          gap: '14px',
+          flexWrap: 'wrap',
+          marginTop: '4px'
+        }}>
+          {prevChapter && (
+            <button
+              onClick={() => handleSelectChapter(prevChapter.id)}
+              className="card"
+              style={{
+                flex: '1 1 280px',
+                padding: '16px 20px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '14px',
+                cursor: 'pointer',
+                border: '1px solid var(--border)',
+                backgroundColor: 'var(--bg-card)',
+                textAlign: 'left',
+                transition: 'all 0.15s ease'
+              }}
+              title={`Chuyển về ${prevChapter.name}`}
+            >
+              <div style={{
+                width: '38px',
+                height: '38px',
+                borderRadius: '10px',
+                backgroundColor: 'var(--bg-subtle)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexShrink: 0,
+                color: 'var(--primary)'
+              }}>
+                <ChevronLeft size={20} />
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '3px', minWidth: 0, flex: 1 }}>
+                <span style={{ fontSize: '11.5px', color: 'var(--text-subtle)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.4px' }}>
+                  ← Chương trước
+                </span>
+                <span style={{ fontSize: '14px', fontWeight: 700, color: 'var(--text-main)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                  {prevChapter.name}
+                </span>
+              </div>
+            </button>
+          )}
+
+          {nextChapter && (
+            <button
+              onClick={() => handleSelectChapter(nextChapter.id)}
+              className="card"
+              style={{
+                flex: '1 1 280px',
+                marginLeft: prevChapter ? 0 : 'auto',
+                padding: '16px 20px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                gap: '14px',
+                cursor: 'pointer',
+                border: '1px solid var(--primary-border)',
+                backgroundColor: 'var(--primary-light)',
+                textAlign: 'right',
+                transition: 'all 0.15s ease'
+              }}
+              title={`Chuyển sang ${nextChapter.name}`}
+            >
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '3px', minWidth: 0, flex: 1, textAlign: 'right' }}>
+                <span style={{ fontSize: '11.5px', color: 'var(--primary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.4px' }}>
+                  Chương tiếp theo →
+                </span>
+                <span style={{ fontSize: '14px', fontWeight: 700, color: 'var(--text-main)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                  {nextChapter.name}
+                </span>
+              </div>
+              <div style={{
+                width: '38px',
+                height: '38px',
+                borderRadius: '10px',
+                backgroundColor: 'var(--primary)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexShrink: 0,
+                color: '#ffffff'
+              }}>
+                <ChevronRight size={20} />
+              </div>
+            </button>
+          )}
+        </div>
+      )}
     </div>
   );
 }
