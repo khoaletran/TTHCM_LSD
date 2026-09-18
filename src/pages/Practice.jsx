@@ -33,6 +33,7 @@ export default function Practice({ currentSubject }) {
     params.set('subject', currentSubject);
     params.set('instant', instantFeedback ? '1' : '0');
     params.set('shuffle', isShuffle ? '1' : '0');
+    params.set('t', String(Date.now()));
 
     if (selectedMode === 'chapter') {
       params.set('chapter', selectedChapter);

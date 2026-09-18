@@ -1,8 +1,8 @@
 // Unified Question Repository
-import { questionsLSD } from './questions_lsd';
-import { questionsTTHCM } from './questions_tthcm';
-import { SUBJECTS, getChapter, getChapterSections } from './subjects';
-import { FLASHCARDS_LSD, FLASHCARDS_TTHCM } from './flashcards';
+import { questionsLSD } from './questions_lsd.js';
+import { questionsTTHCM } from './questions_tthcm.js';
+import { SUBJECTS, getChapter, getChapterSections } from './subjects.js';
+import { FLASHCARDS_LSD, FLASHCARDS_TTHCM } from './flashcards.js';
 
 const BANK = {
   lsd: questionsLSD,
@@ -95,8 +95,8 @@ export function getGlobalStats() {
 }
 
 // Tìm kiếm câu hỏi với bộ lọc
-export function filterQuestions(subjectId, { query = '', chapterId = '', section = '' } = {}) {
-  let list = getAllQuestions(subjectId);
+export function filterQuestions(subjectId, { query = '', chapterId = '', section = '', sourceList = null } = {}) {
+  let list = sourceList ? [...sourceList] : getAllQuestions(subjectId);
 
   if (chapterId) {
     const sections = getChapterSections(subjectId, chapterId);
@@ -129,6 +129,26 @@ export function shuffleArray(arr) {
   return copy;
 }
 
+// Xáo trộn vị trí các lựa chọn A, B, C, D của câu hỏi và cập nhật lại chỉ số đáp án đúng
+export function prepareQuestion(q) {
+  if (!q || !Array.isArray(q.options) || q.options.length <= 1) return q;
+  const indices = q.options.map((_, i) => i);
+  const shuffledIndices = shuffleArray(indices);
+  const newOptions = shuffledIndices.map((i) => q.options[i]);
+  const newAnswer = shuffledIndices.indexOf(q.answer);
+  return {
+    ...q,
+    options: newOptions,
+    answer: newAnswer >= 0 ? newAnswer : 0,
+  };
+}
+
+// Xáo trộn đáp án cho toàn bộ danh sách câu hỏi
+export function prepareQuestions(questions) {
+  if (!Array.isArray(questions)) return [];
+  return questions.map(prepareQuestion);
+}
+
 // Lấy bộ câu hỏi luyện tập ngẫu nhiên
 export function getPracticeSet(subjectId, { chapterId = '', count = 20, random = true } = {}) {
   let list = chapterId
@@ -143,5 +163,5 @@ export function getPracticeSet(subjectId, { chapterId = '', count = 20, random =
     list = list.slice(0, count);
   }
 
-  return list;
+  return list.map(prepareQuestion);
 }

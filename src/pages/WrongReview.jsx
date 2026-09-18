@@ -10,7 +10,7 @@ import {
   AlertCircle
 } from 'lucide-react';
 import { SUBJECTS } from '../data/subjects';
-import { getAllQuestions } from '../data/repository';
+import { getAllQuestions, prepareQuestion, prepareQuestions } from '../data/repository';
 import { getWrongBank, clearWrongBank } from '../utils/storage';
 import QuestionCard from '../components/QuestionCard';
 
@@ -19,12 +19,13 @@ export default function WrongReview({ currentSubject }) {
   const [bankRefresh, setBankRefresh] = useState(0);
 
   const sub = SUBJECTS[currentSubject] || SUBJECTS.tthcm;
-  const allQuestions = getAllQuestions(currentSubject);
+  const allQuestions = useMemo(() => getAllQuestions(currentSubject), [currentSubject]);
 
   const wrongEntries = useMemo(() => {
     const rawBank = getWrongBank(currentSubject);
     const wrongIds = Object.keys(rawBank).map(Number);
-    return allQuestions.filter((q) => wrongIds.includes(q.id)).map((q) => ({
+    const matched = allQuestions.filter((q) => wrongIds.includes(q.id));
+    return prepareQuestions(matched).map((q) => ({
       ...q,
       wrongCount: rawBank[String(q.id)]?.wrongCount || 1,
       lastFailedAt: rawBank[String(q.id)]?.lastFailedAt || null,
@@ -47,6 +48,7 @@ export default function WrongReview({ currentSubject }) {
     params.set('count', String(wrongEntries.length));
     params.set('instant', '1'); // Study mode with instant feedback
     params.set('shuffle', '1');
+    params.set('t', String(Date.now()));
 
     navigate(`/quiz?${params.toString()}`);
   };

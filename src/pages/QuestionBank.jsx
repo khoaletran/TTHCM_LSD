@@ -11,7 +11,7 @@ import {
   ArrowUpDown
 } from 'lucide-react';
 import { SUBJECTS } from '../data/subjects';
-import { getAllQuestions, filterQuestions } from '../data/repository';
+import { getAllQuestions, filterQuestions, prepareQuestions } from '../data/repository';
 import { getBookmarks } from '../utils/storage';
 import QuestionCard from '../components/QuestionCard';
 import LockedQuestionModal from '../components/LockedQuestionModal';
@@ -29,7 +29,7 @@ export default function QuestionBank({ currentSubject, onSelectSubject }) {
   const [lockedQuestionIndex, setLockedQuestionIndex] = useState(null);
 
   const sub = SUBJECTS[currentSubject] || SUBJECTS.tthcm;
-  const allQuestions = useMemo(() => getAllQuestions(currentSubject), [currentSubject]);
+  const allQuestions = useMemo(() => prepareQuestions(getAllQuestions(currentSubject)), [currentSubject]);
 
   // Sync state when URL params change
   useEffect(() => {
@@ -51,6 +51,7 @@ export default function QuestionBank({ currentSubject, onSelectSubject }) {
     let result = filterQuestions(currentSubject, {
       query,
       chapterId: selectedChapter,
+      sourceList: allQuestions,
     });
 
     if (onlyBookmarked) {

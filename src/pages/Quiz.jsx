@@ -15,7 +15,8 @@ import { SUBJECTS } from '../data/subjects';
 import { 
   getAllQuestions, 
   getQuestionsByChapter, 
-  shuffleArray 
+  shuffleArray,
+  prepareQuestion
 } from '../data/repository';
 import { 
   recordQuestionResult, 
@@ -34,6 +35,7 @@ export default function Quiz({ currentSubject }) {
   const instant = searchParams.get('instant') === '1';
   const shouldShuffle = searchParams.get('shuffle') !== '0';
   const isTimed = searchParams.get('timed') === '1';
+  const sessionId = searchParams.get('t') || '';
 
   // Load questions for the session
   const questions = useMemo(() => {
@@ -80,8 +82,9 @@ export default function Quiz({ currentSubject }) {
       pool = pool.slice(0, countParam);
     }
 
-    return pool;
-  }, [currentSubject, mode, chapterId, countParam, shouldShuffle]);
+    // Luôn luôn xáo trộn các phương án A, B, C, D của từng câu hỏi
+    return pool.map(prepareQuestion);
+  }, [currentSubject, mode, chapterId, countParam, shouldShuffle, sessionId]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState({}); // { [index]: selectedOptionIndex }
